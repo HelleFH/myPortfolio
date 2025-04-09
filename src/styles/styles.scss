@@ -1,0 +1,130 @@
+/* Google Fonts import for Exo, Lato, and Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+$primary-color: #334453;
+$secondary-color: #88b1db;
+$tertiary-color: #5e7b9b;
+$highlight-color: #adcee8;
+
+.main-content {
+  max-width: 95vw;
+}
+
+body {
+  margin: 0 !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Exo', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  color: var(--black-color);
+  scroll-behavior: smooth;
+
+
+}
+
+
+
+a:visited,
+a:hover {
+  color: inherit !important;
+  ;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Libre Franklin'
+}
+
+h1:not(.hero__title),
+h2,
+h3 {
+  color: $primary-color;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+h2,
+h3,
+h1 {
+  font-weight: 600;
+}
+
+p {
+  font-family: 'lato';
+}
+
+
+/* Base button styles */
+button:not(.chevron-button, .close-button, .contact-modal__close-btn, .btn-close, .close-btn, .close-modal) {
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: var(--small-gap);
+  place-self: center;
+
+  background-color: var(--coral-reef) opacity(0.8);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  color: var(--white-color);
+  fill: var(--white-color);
+  font-size: 0.9rem;
+  font-family: 'inter';
+  font-weight: 400;
+  padding: 7px 16px 9px;
+  transition: background-color .2s ease;
+  height: fit-content;
+  width: fit-content;
+  cursor: pointer;
+  letter-spacing: -0.03rem;
+}
+
+
+/* General button hover effect, excluding close buttons */
+button:hover:not(.chevron-button, .close-button, .contact-modal__close-btn, .btn-close, .close-modal, .close-button.top-right, .close-btn) {
+  background-color: rgb(86, 77, 75, 0.5);
+
+}
+
+
+
+/* Active effect */
+button:active {
+  transform: translateY(0);
+  opacity: 0.9;
+}
+
+/* Styling for links */
+a {
+  cursor: pointer;
+}
+
+a:visited,
+a:hover,
+a:active {
+  color: inherit !important;
+}
+
+#hs-overlay-cta-92296409586 {
+  display: none !important;
+}
+
+/* Mobile styles for buttons on smaller screens */
+@media (max-width: 1000px) {}

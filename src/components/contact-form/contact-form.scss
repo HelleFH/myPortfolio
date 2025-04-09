@@ -1,0 +1,113 @@
+@import '/src/styles/main';
+
+
+/* Modal Overlay */
+.contact-modal__overlay {
+  @include flex-column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+
+  z-index: 9998;
+}
+
+/* Modal */
+.contact-modal {
+  z-index: 999;
+  background: var(--white-color);
+  padding: var(--padding);
+  color: var(--black-color);
+  border-radius: var(--border-radius);
+  width: 98%;
+  max-width: 600px;
+  position: relative;
+  box-shadow: var(--box-shadow);
+  overflow-y: auto;
+  box-sizing: border-box;
+  max-height: 99vh;
+  gap: var(--large-gap);
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__header-title {
+    @include flex-column;
+    margin-top: -4rem;
+
+  }
+
+  &__logo {
+    height: 30px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap)
+  }
+
+  &__close-btn {
+    font-size: var(--large-paragraph-font);
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* Form elements */
+  .form-group {
+    margin-bottom: 1rem;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    text-align: left;
+  }
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: var(--small-border-radius);
+  }
+
+  textarea {
+    min-height: 150px;
+    resize: vertical;
+  }
+
+  &__error {
+    border-color: red;
+  }
+
+  .error-message {
+    color: red;
+    margin-top: 0.5rem;
+  }
+
+
+}
+
+@media screen and (max-width: 768px) {
+  .contact-modal {
+
+    &__header-title {
+      margin-top: -5rem;
+    }
+
+    textarea {
+      min-height: 50px;
+      resize: vertical;
+    }
+  }
+}
