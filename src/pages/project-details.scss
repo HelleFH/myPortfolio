@@ -7,83 +7,102 @@
     box-sizing: border-box;
     background-color: #f4f4f4;
     padding-top: 10rem;
-  
 
-.hero::before, .hero  {display:none;}
+
+    .hero::before,
+    .hero {
+        display: none;
+    }
+
     .buttons-container {
         display: flex;
         gap: 1.5em;
         flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
+        align-items: center;
+        justify-content: flex-end;
         margin-top: 2rem;
         padding: 1rem 2rem;
 
-        button {
+        a:not(.login-button, .nav-button)
+         {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            border-radius: 30px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+            border: none;
+
+            // Dark theme style
             background-color: var(--gravel) !important;
+            color: #fff !important;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+
+            &:hover {
+                background-color: var(--coral-reef) !important;
+                color: var(--gravel) !important;
+                transform: translateY(-2px);
+                box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            }
+
+            &:active {
+                transform: scale(0.98);
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            }
         }
 
         @media (min-width: 600px) {
             flex-direction: row;
         }
     }
-}
 
+}
+.login-button, .nav-button {
+    background: none !important;
+    border: none !important;
+    color: #007acc !important;
+    font-size: 1rem !important;
+    font-weight: 500 !important;
+    text-decoration: underline !important;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  
+    &:hover {
+      color: #005f8a;
+      text-decoration: none;
+    }
+  
+    &:active {
+      color: #003f66;
+    }
+  }
+  
 .project-header {
     font-size: 2.5rem;
     font-weight: 700;
     color: #222;
     text-align: center;
     width: 100%;
-    padding:var(--padding);
+    padding: var(--padding);
 
 
 }
-
-.chevron-container {
+.navigation-buttons {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    position: absolute;
-    top: 50%;
-    width: 100%;
-}
-
-.chevron-button {
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    color: #444;
-    cursor: pointer;
-    transition: color 0.2s ease;
-    padding: 5px;
-
-    &__right {
-        right: 50px;
-        position: absolute;
-    }
-
-    &__left {
-        left: 50px;
-        position: absolute;
-    }
-
-    &:hover {
-        color: #007acc;
-    }
-
-    &:disabled {
-        color: #ccc;
-        cursor: not-allowed;
-    }
-}
-
-.chevron-content {
-    flex: 1;
-    text-align: center;
-}
-
+    gap: 1.5rem;
+    margin-top: 2rem;
+    padding: 0 2rem;
+ 
+  }
+  
+  
 .project-details-container {
     padding: 2rem;
     display: flex;
@@ -170,21 +189,6 @@
 
 
 
-.login-button {
-    color: #007acc;
-    text-decoration: none;
-    font-weight: 500;
-    padding: 8px 20px;
-    border: 2px solid #007acc;
-    border-radius: 20px;
-    transition: background-color 0.3s ease-in-out;
-    margin-top: 1rem;
-
-    &:hover {
-        background-color: #007acc;
-        color: #fff;
-    }
-}
 
 .back-button {
     font-size: 1.1rem;
@@ -194,7 +198,7 @@
     cursor: pointer;
     transition: color 0.3s ease;
     margin-top: 2rem;
-    padding-left:var(--large-padding);
+    padding-left: var(--large-padding);
 
     &:hover {
         font-weight: 600;

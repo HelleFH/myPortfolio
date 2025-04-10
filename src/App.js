@@ -31,7 +31,7 @@ function App() {
           }
         />
 
-<Route path="/project/:id" element={<ProjectDetail />} />
+<Route path="/project/:type/:id" element={<ProjectDetail />} />
 
       </Routes>
     </AnimatePresence>

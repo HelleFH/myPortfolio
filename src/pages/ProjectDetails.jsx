@@ -8,42 +8,31 @@ import Layout from "../components/layout/layout";
 import './project-details.scss'
 
 const ProjectDetail = () => {
-  const { id } = useParams(); // To fetch the project ID from the URL params
-  const navigate = useNavigate();
-  const location = useLocation();
+  const { id, type } = useParams();
+const navigate = useNavigate();
 
-  const [project, setProject] = useState(null);
-  const [showLoginDetails, setShowLoginDetails] = useState(false);
+const [project, setProject] = useState(null);
+const [showLoginDetails, setShowLoginDetails] = useState(false);
 
-  // Separate the frontend and backend projects
-  const frontendProject = frontendProjects.find(proj => proj.id === parseInt(id, 10));
-  const backendProject = fullStackProjects.find(proj => proj.id === parseInt(id, 10));
+const projectList = type === 'frontend' ? frontendProjects : fullStackProjects;
+const currentIndex = projectList.findIndex(proj => proj.id === parseInt(id, 10));
+const selectedProject = projectList[currentIndex];
 
-  // Get the correct project based on the type passed in the location state
-  const projectType = location.state?.projectType; // Either 'frontend' or 'backend'
-  const selectedProject = projectType === 'frontend' ? frontendProject : backendProject;
+const isFirst = currentIndex === 0;
+const isLast = currentIndex === projectList.length - 1;
 
-  // Find the current index
-  const projects = projectType === 'frontend' ? frontendProjects : fullStackProjects;
-  const currentIndex = projects.findIndex(proj => proj.id === parseInt(id, 10));
+useEffect(() => {
+  if (selectedProject) {
+    setProject(selectedProject);
+  }
+}, [selectedProject]);
 
-  const isFirst = currentIndex === 0;
-  const isLast = currentIndex === projects.length - 1;
-
-  useEffect(() => {
-    if (selectedProject) {
-      setProject(selectedProject);
-    }
-  }, [selectedProject]);
-
-  const navigateToProject = (newIndex) => {
-    const newProject = projects[newIndex];
-    if (newProject) {
-      navigate(`/project/${newProject.id}`, {
-        state: { projectType, selectedProjectIndex: newIndex },
-      });
-    }
-  };
+const navigateToProject = (newIndex) => {
+  const newProject = projectList[newIndex];
+  if (newProject) {
+    navigate(`/project/${type}/${newProject.id}`);
+  }
+};
 
   const handlers = useSwipeable({
     onSwipedLeft: () => !isLast && navigateToProject(currentIndex + 1),
@@ -64,19 +53,7 @@ const ProjectDetail = () => {
             Back to Projects
           </a>
 
-          <div className="chevron-container">
-            {!isFirst && (
-              <button onClick={() => navigateToProject(currentIndex - 1)} className="chevron-button chevron-button__left">
-                &lt;
-              </button>
-            )}
-            <div className="chevron-content"></div>
-            {!isLast && (
-              <button onClick={() => navigateToProject(currentIndex + 1)} className="chevron-button chevron-button__right">
-                &gt;
-              </button>
-            )}
-          </div>
+
 
           <div className="project-details-container">
             <h1 className="project-header">{project.name}</h1>
@@ -119,6 +96,25 @@ const ProjectDetail = () => {
                 {project.githubButtonText || "View on GitHub"}
               </a>
             </div>
+            
+          <div className="navigation-buttons">
+  {!isFirst && (
+    <button
+      className="nav-button"
+      onClick={() => navigateToProject(currentIndex - 1)}
+    >
+      ← Previous Project
+    </button>
+  )}
+  {!isLast && (
+    <button
+      className="nav-button"
+      onClick={() => navigateToProject(currentIndex + 1)}
+    >
+      Next Project →
+    </button>
+  )}
+</div>
           </div>
 
           <LoginModal

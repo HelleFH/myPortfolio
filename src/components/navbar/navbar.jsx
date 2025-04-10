@@ -151,8 +151,8 @@ const Navbar = () => {
     
 
       <div className="footer__contact">
-        <p>Contact us at:</p>
-        <a href="mailto:info@cloudporteurope.com">info@cloudporteurope.com</a>
+        <p>Contact me at:</p>
+        <a href="mailto:hellefruergaardh@gmail.com">hellefruergaardh@gmail.com</a>
         <p>Skovbrynet 2, 8850 Bjerringbro, Denmark</p>
 
         {/* Social Media Links */}

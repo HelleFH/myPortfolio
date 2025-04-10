@@ -63,7 +63,7 @@ const ContactFormModal = ({ closeModal }) => {
           </button>
         </div>
         <div className="contact-modal__header-title">
-          <h2>Contact Us</h2>
+          <h2>Contact me</h2>
           <p>Please enter your details below</p>
         </div>
 

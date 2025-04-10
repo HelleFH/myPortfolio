@@ -17,6 +17,8 @@ const ProjectsOverview = () => {
     setIsModalOpen(true);
   };
 
+  
+
   const closeModal = () => {
     setIsModalOpen(false);
     setSelectedProjectIndex(null);
@@ -24,7 +26,8 @@ const ProjectsOverview = () => {
   };
 
   const getProjects = () => {
-    return currentProjectType === 'frontend' ? frontendProjects : fullStackProjects;
+    const base = currentProjectType === 'frontend' ? frontendProjects : fullStackProjects;
+    return base.map((p) => ({ ...p, type: currentProjectType }));
   };
 
   const handlePrev = () => {

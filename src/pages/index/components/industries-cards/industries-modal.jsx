@@ -95,10 +95,9 @@ const ProjectModal = ({
             </div>
 
             <div className="links-container">
-              <Link to={`/project/${project.id}`} className="read-more-link">
-                Read More
-              </Link>   
-
+            <Link to={`/project/${project.type}/${project.id}`} className="read-more-link">
+  Read More
+</Link>
               {project.username && (
                 <a onClick={handleShowLoginDetails}>Show Login Details</a>
               )}

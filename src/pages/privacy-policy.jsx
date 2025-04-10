@@ -20,7 +20,7 @@ function PrivacyPolicy() {
       <h2>1. Information We Collect</h2>
       <h3>a. Information You Provide Directly</h3>
       <ul>
-        <li>Name, email address, phone number (if you contact us or fill out a form).</li>
+        <li>Name, email address, phone number (if you Contact me or fill out a form).</li>
         <li>Any other personal data you choose to share with us.</li>
       </ul>
 
@@ -55,7 +55,7 @@ function PrivacyPolicy() {
         <li>Opt-out of marketing emails.</li>
         <li>Restrict processing of your personal data.</li>
       </ul>
-      <p>To exercise your rights, contact us at <strong>info@cloudporteurope.com</strong>.</p>
+      <p>To exercise your rights, Contact me at <strong>hellefruergaardh@gmail.com</strong>.</p>
 
       <h2>5. How We Protect Your Information</h2>
       <p>We implement industry-standard security measures to protect your data. However, no method of transmission over the Internet is 100% secure.</p>
@@ -69,9 +69,9 @@ function PrivacyPolicy() {
       <h2>8. Changes to This Privacy Policy</h2>
       <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with a revised <strong>“Last Updated”</strong> date.</p>
 
-      <h2>9. Contact Us</h2>
-      <p>If you have any questions about this Privacy Policy, please contact us:</p>
-      <p>📧 <strong>Email:</strong> info@cloudporteurope.com</p>
+      <h2>9. Contact me</h2>
+      <p>If you have any questions about this Privacy Policy, please Contact me:</p>
+      <p>📧 <strong>Email:</strong> hellefruergaardh@gmail.com</p>
     </div>
     <Footer />
 
