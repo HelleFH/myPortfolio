@@ -3,17 +3,16 @@
 
 .project-container {
     width: 100%;
-    margin: 2rem 1rem;
     box-sizing: border-box;
     background-color: #f4f4f4;
-    padding-top: 10rem;
+  
+  
 
+.hero {min-height:50vh;padding:var(--padding); text-align: center;
 
-    .hero::before,
-    .hero {
-        display: none;
-    }
-
+&__button-container {display:none;}
+}
+.hero__content  {justify-content: center;text-align: center;align-items: center;margin-top:0;}
     .buttons-container {
         display: flex;
         gap: 1.5em;

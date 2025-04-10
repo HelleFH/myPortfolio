@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import Card from '../../../../components/cards';
-import ProjectModal from './industries-modal';
+import Card from '../cards/cards';
+import ProjectModal from '../project-modal/project-modal';
 import { frontendProjects } from '../../../../frontendprojects';
 import { fullStackProjects } from '../../../../fullstackprojects';
-
-import './industries-cards.scss';
+import './project-overview.scss';
 
 const ProjectsOverview = () => {
   const [selectedProjectIndex, setSelectedProjectIndex] = useState(null);

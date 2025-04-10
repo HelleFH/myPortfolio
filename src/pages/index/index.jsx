@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Layout from '../../components/layout/layout';
 
-import IndustryOverview from './components/industries-cards/industries-cards';
+import ProjectsOverview from './components/project-overview/project-overview';
 
 const Home = () => {
   useEffect(() => {
@@ -13,14 +13,13 @@ const Home = () => {
       heroTitle="Welcome to My Portfolio"
       heroSubtitle="Helle Fruergaard"
       buttons={[
-        { type: 'link', text: 'Our Services', path: '/services' },
-        { type: 'link', text: 'Find out More',  path: '/resources'  }
+        { type: 'link', text: 'About me', path: '/services' },
       ]}
     >
 
       <div className='index-container'>
      
-      <IndustryOverview />
+      <ProjectsOverview />
 
       </div>
 

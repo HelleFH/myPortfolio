@@ -1,47 +1,48 @@
 @import '/src/styles/main';
 
 
-  .hero {
-    @include flex-column;
-    justify-content: center; 
-    align-items: flex-start;  
-    min-height: fit-content;      
-    background-position: center ;
-    background-color: $primary-color;
-    background-image:
-      linear-gradient(to left, rgba(66, 116, 170, 0) 0%, $primary-color 87%);
-    color: var(--white-color);
-    position: relative;
-    min-height: 70vh;
-    padding:0 var(--xl-padding) var(--xl-padding) var(--xl-padding);
+.hero {
+  @include flex-column;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: fit-content;
+  background-position: center;
+  background-color: $primary-color;
+  background-image:
+    linear-gradient(to left, rgba(66, 116, 170, 0) 0%, $primary-color 87%);
+  color: var(--white-color);
+  position: relative;
+  min-height: 70vh;
+  padding: 0 var(--xl-padding) var(--xl-padding) var(--xl-padding);
 
-    .book-meeting-button {
-      margin: 0;
+  .book-meeting-button {
+    margin: 0;
 
-    }
+  }
 
 
-    .hero__video {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: 0;
-    }
-    &::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: var(--mirage);
-      opacity:0.4; // Optional overlay
+  .hero__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
 
-      z-index: 1;
-    }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--mirage);
+    opacity: 0.4; // Optional overlay
+
+    z-index: 1;
+  }
 
   /* Content Container */
   &__content {
@@ -49,12 +50,12 @@
     @include flex-column;
     align-items: flex-start;
     gap: var(--large-gap);
-    width:100%; 
+    width: 100%;
     z-index: 2;
-    margin-top:auto;
-    padding-bottom:var(--xl-padding);
+    margin-top: auto;
+    padding-bottom: var(--xl-padding);
 
-             
+
   }
 
 
@@ -71,7 +72,7 @@
     font-size: 5rem;
     font-weight: 400;
     margin: 0;
-    max-width:1000px;
+    max-width: 1000px;
     font-family: 'roboto';
     letter-spacing: -0.05rem;
   }
@@ -81,12 +82,26 @@
   &__button-container {
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: var(--small-gap);
     margin: 0 auto;
     width: 100%;
     justify-content: flex-start;
+    height:40px;
   }
+  .social-buttons__container {display:flex;gap:var(--small-gap);}
+  .social-button {
+    background: none;
+    color: white; // or whatever fits your theme
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.3s;
 
+
+    &:hover {
+      border-radius: var(--border-radius);
+    }
+  }
 }
 
 
@@ -97,7 +112,7 @@
 
     &__content {
       gap: var(--large-gap);
-      padding:0;
+      padding: 0;
     }
 
     &__title {

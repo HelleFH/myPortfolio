@@ -4,8 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { Modal, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import './industries-modal.scss'; 
-import LoginModal from './LoginModal';
+import './project-modal.scss'; 
+import LoginModal from '../login-modal/LoginModal';
 
 const ProjectModal = ({
   show,
