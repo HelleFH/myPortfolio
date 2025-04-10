@@ -55,6 +55,9 @@
     overflow: hidden;
     margin: 0 auto;
     background-color: white;
+    border-radius:var(--border-radius);
+
+    
   }
   
   .modal-body-custom {
@@ -91,12 +94,12 @@
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.15); // subtle dark overlay
+    background-color: rgba(0, 0, 0, 0.15); 
     border-radius: 50%;
     padding: var(--xs-padding);
     transition: all 0.2s ease-in-out;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    color: rgba(255, 255, 255, 0.8); // white-ish arrow
+    color: rgba(255, 255, 255, 0.8); 
   
     svg {
       width: 20px;
@@ -218,22 +221,42 @@
   
   .close-button {
     position: absolute;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     background: none;
     border: none;
-    color: #333 !important;
-    font-weight: 600;
+    color: white !important;
+    font-weight: 300;
     cursor: pointer;
-    padding: 0;
+    padding: 0;  /* Remove any padding set by var(--xs-padding) */
     right: 15px;
-    margin-top: -6px;
+    top: 15px;  /* Make sure the button is vertically aligned */
     z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.15); 
+    border-radius: 50%;  /* This makes it a circle */
+    width: 25px;  /* Set the width of the button */
+    height: 25px;  /* Set the height of the button */
+    display: flex;
+    align-items: center;
+    justify-content: center;  /* Center the text/icon inside */
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    color: rgba(255, 255, 255, 0.8); 
   
     @media (min-width: 1050px) {
       right: 20px;
       top: 20px;
+      background-color: transparent;
+      box-shadow: none;
+      color: var(--black-color) !important;
+
+
+    }
+    
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.3);
     }
   }
+  
   
   .links-container {
     display: flex;

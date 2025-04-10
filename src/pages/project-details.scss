@@ -7,7 +7,9 @@
     box-sizing: border-box;
     background-color: #f4f4f4;
     padding-top: 10rem;
+  
 
+.hero::before, .hero  {display:none;}
     .buttons-container {
         display: flex;
         gap: 1.5em;
@@ -16,11 +18,11 @@
         justify-content: flex-start;
         margin-top: 2rem;
         padding: 1rem 2rem;
-    
+
         button {
             background-color: var(--gravel) !important;
         }
-    
+
         @media (min-width: 600px) {
             flex-direction: row;
         }
@@ -33,6 +35,7 @@
     color: #222;
     text-align: center;
     width: 100%;
+    padding:var(--padding);
 
 
 }
@@ -92,7 +95,7 @@
     width: 100%;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    max-width: 800px;
+    max-width: 1200px;
 }
 
 .project-details-container:hover {
@@ -191,6 +194,7 @@
     cursor: pointer;
     transition: color 0.3s ease;
     margin-top: 2rem;
+    padding-left:var(--large-padding);
 
     &:hover {
         font-weight: 600;

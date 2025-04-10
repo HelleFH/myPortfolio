@@ -4,11 +4,11 @@ import LoginModal from "./index/components/industries-cards/LoginModal";
 import { useSwipeable } from "react-swipeable";
 import { frontendProjects } from '../frontendprojects';
 import { fullStackProjects } from '../fullstackprojects';
-import './project-details.scss';
-import Navbar from "../components/navbar/navbar";
+import Layout from "../components/layout/layout";
+import './project-details.scss'
 
 const ProjectDetail = () => {
-  const { id } = useParams();
+  const { id } = useParams(); // To fetch the project ID from the URL params
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -56,88 +56,84 @@ const ProjectDetail = () => {
   }
 
   return (
-<div>    
+      <div className="project-container">
+            <Layout>
 
-  <Navbar />
-    <div className="project-container">
-      
-      <div {...handlers}>
-        <a onClick={() => navigate("/")} className="back-button">
-          Back to Projects
-        </a>
-
-        <div className="chevron-container">
-          {!isFirst && (
-            <button onClick={() => navigateToProject(currentIndex - 1)} className="chevron-button chevron-button__left">
-              &lt;
-            </button>
-          )}
-          <div className="chevron-content"></div>
-          {!isLast && (
-            <button onClick={() => navigateToProject(currentIndex + 1)} className="chevron-button chevron-button__right">
-              &gt;
-            </button>
-          )}
-        </div>
-
-        <div className="project-details-container">
-        <h1 className="project-header">{project.name}</h1>
-
-          <div className="image-wrapper">
-            <img src={project.images[0]} alt={project.name} className="project-image" />
-          </div>
-          <div className="project-text">
-            <h4>{project.descriptionHeader}</h4>
-            <p>{project.description}</p>
-            <p>{project.projectDetails}</p>
-
-            <h5>Technologies Used</h5>
-            <ul className="technologies-list">
-              {project.technologiesMore?.map((tech, index) => (
-                <li key={index} className="tech-item">{tech}</li>
-              ))}
-            </ul>
-          </div>
-          <div className="buttons-container">
-          {project.username && (
-            <a className="login-button" onClick={() => setShowLoginDetails(true)}>
-              Show Login Details
-            </a>
-          )}
-          <a
-            href={project.projectLink}
-            className="project-button"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {project.buttonText || "Visit Project"}
+        <div {...handlers}>
+          <a onClick={() => navigate("/")} className="back-button">
+            Back to Projects
           </a>
-          <a
-            href={project.githubLink}
-            className="github-button"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {project.githubButtonText || "View on GitHub"}
-          </a>
+
+          <div className="chevron-container">
+            {!isFirst && (
+              <button onClick={() => navigateToProject(currentIndex - 1)} className="chevron-button chevron-button__left">
+                &lt;
+              </button>
+            )}
+            <div className="chevron-content"></div>
+            {!isLast && (
+              <button onClick={() => navigateToProject(currentIndex + 1)} className="chevron-button chevron-button__right">
+                &gt;
+              </button>
+            )}
+          </div>
+
+          <div className="project-details-container">
+            <h1 className="project-header">{project.name}</h1>
+
+            <div className="image-wrapper">
+              <img src={project.images[0]} alt={project.name} className="project-image" />
+            </div>
+            <div className="project-text">
+              <h4>{project.descriptionHeader}</h4>
+              <p>{project.description}</p>
+              <p>{project.projectDetails}</p>
+
+              <h5>Technologies Used</h5>
+              <ul className="technologies-list">
+                {project.technologiesMore?.map((tech, index) => (
+                  <li key={index} className="tech-item">{tech}</li>
+                ))}
+              </ul>
+            </div>
+            <div className="buttons-container">
+              {project.username && (
+                <a className="login-button" onClick={() => setShowLoginDetails(true)}>
+                  Show Login Details
+                </a>
+              )}
+              <a
+                href={project.projectLink}
+                className="project-button"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {project.buttonText || "Visit Project"}
+              </a>
+              <a
+                href={project.githubLink}
+                className="github-button"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {project.githubButtonText || "View on GitHub"}
+              </a>
+            </div>
+          </div>
+
+          <LoginModal
+            show={showLoginDetails}
+            onHide={() => setShowLoginDetails(false)}
+            project={project}
+            handleCopyToClipboard={(text) => {
+              navigator.clipboard.writeText(text);
+              alert(`${text} copied to clipboard!`);
+            }}
+          />
         </div>
-        </div>
+        </Layout>
 
-
-
-        <LoginModal
-          show={showLoginDetails}
-          onHide={() => setShowLoginDetails(false)}
-          project={project}
-          handleCopyToClipboard={(text) => {
-            navigator.clipboard.writeText(text);
-            alert(`${text} copied to clipboard!`);
-          }}
-        />
       </div>
-    </div>
-    </div>
-
   );
 };
 
