@@ -2,10 +2,10 @@
   export const frontendProjects = [
     {
       id: 1,
-      name: "cloudporteurope.com",
+      name: "CloudPort.com",
       technologies: "React",
       images: ["/images/cloudportscreen.png"],
-      projectLink: "https://cloudporteurope.com",
+      projectLink: "https://coudporteurope.com",
       githubLink: "https://github.com/HelleFH/sentispec",
       buttonText: "View Project",
       githubButtonText: "GitHub",
@@ -16,7 +16,7 @@
     },
     {
       id: 2,
-      name: "sentispec.ai",
+      name: "Sentispec.ai",
       technologies: "React",
       images: ["/images/sentispec-screen.png"],
       projectLink: "https://sentispec.ai/",

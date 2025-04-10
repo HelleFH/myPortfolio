@@ -5,9 +5,12 @@ import { useSwipeable } from "react-swipeable";
 import { frontendProjects } from '../../frontendprojects';
 import { fullStackProjects } from '../../fullstackprojects';
 import Layout from "../../components/layout/layout";
+
 import './project-details.scss';
 
 const ProjectDetail = () => {
+  const scrollPositionRef = React.useRef(0);
+
   const { id, type } = useParams();
   const navigate = useNavigate();
 
@@ -20,20 +23,24 @@ const ProjectDetail = () => {
 
   const isFirst = currentIndex === 0;
   const isLast = currentIndex === projectList.length - 1;
-
   useEffect(() => {
     if (selectedProject) {
       setProject(selectedProject);
+  
+      requestAnimationFrame(() => {
+        window.scrollTo(0, scrollPositionRef.current);
+      });
     }
   }, [selectedProject]);
 
   const navigateToProject = (newIndex) => {
     const newProject = projectList[newIndex];
     if (newProject) {
-      navigate(`/project/${type}/${newProject.id}`);
+      navigate(`/project/${type}/${newProject.id}`, {
+        state: { scrollY: window.scrollY }
+      });
     }
   };
-
   const handlers = useSwipeable({
     onSwipedLeft: () => !isLast && navigateToProject(currentIndex + 1),
     onSwipedRight: () => !isFirst && navigateToProject(currentIndex - 1),
@@ -51,7 +58,7 @@ const ProjectDetail = () => {
         heroTitle={project.name} 
         heroSubtitle={project.descriptionHeader} 
         buttons={[
-          { type: 'link', text: 'About me', path: '/services' },
+          { type: 'link', text: 'About me', path: '/about' },
         ]}
       >
         <div {...handlers}>

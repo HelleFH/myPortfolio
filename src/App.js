@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import { motion, AnimatePresence } from 'framer-motion';
 import Home from './pages/index';
 import ProjectDetail from './pages/project-details/ProjectDetails';
+import AboutMePage from './pages/about-me/about-me-page';
 
 function App() {
   const location = useLocation();
@@ -28,6 +29,22 @@ function App() {
             </motion.div>
           }
         />
+                <Route
+          path="/about"
+          element={
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 50 }}
+              transition={{ duration: 0.5 }}
+            >
+              <AboutMePage />
+            </motion.div>
+          }
+        />
+
+
+        
 
 <Route path="/project/:type/:id" element={<ProjectDetail />} />
 

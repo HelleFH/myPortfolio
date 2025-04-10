@@ -1,14 +1,13 @@
 .footer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   background-color: #f8f8f8;
   padding: var(--xl-padding);
   width: 100%;
   border-top: 1px solid #ddd;
   margin-top: var(--padding);
-  gap: var(--gap);
   font-family: 'roboto';
 
   &__logo-section {
@@ -35,29 +34,12 @@
 
 
     h3 {
-      font-size:var(--large-paragraph-font);
+      font-size: var(--large-paragraph-font);
       margin-bottom: 1rem;
-      color: #333;  
+      color: #333;
 
     }
 
-    nav {
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-
-
-
-      a {
-        text-decoration: none;
-        transition: color 0.3s ease;
-
-
-        &:hover {
-          font-weight: 600;
-        }
-      }
-    }
   }
 
   &__contact {
@@ -69,13 +51,13 @@
       color: #0073b1 !important;
       text-decoration: none;
       transition: color 0.3s ease;
-      font-weight:500;
+      font-weight: 500;
 
-    
-        &:hover {
-          font-weight: 600;
-          color: #0073b1;
-        }
+
+      &:hover {
+        font-weight: 600;
+        color: #0073b1;
+      }
     }
   }
 
@@ -97,5 +79,13 @@
         color: #0073b1;
       }
     }
+  }
+}
+
+@media (max-width: 768px) {
+.footer  {
+
+    gap:var(--gap);
+
   }
 }

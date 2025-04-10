@@ -5,7 +5,7 @@ import ProjectsOverview from './components/project-overview/project-overview';
 
 const Home = () => {
   useEffect(() => {
-    document.title = "CloudPort | Future-Proof your Business. Local. Green";
+    document.title = "Helle Fruergaard | Future-Proof your Business. Local. Green";
     }, []);
 
   return (
@@ -13,7 +13,7 @@ const Home = () => {
       heroTitle="Welcome to My Portfolio"
       heroSubtitle="Helle Fruergaard"
       buttons={[
-        { type: 'link', text: 'About me', path: '/services' },
+        { type: 'link', text: 'About me', path: '/about' },
       ]}
     >
 

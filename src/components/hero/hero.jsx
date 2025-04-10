@@ -54,23 +54,23 @@ const Hero = ({ title, subtitle, buttons, showContactUsButton }) => {
 
           <div className="social-buttons__container"> 
             
-             <button
-            href="https://www.linkedin.com/in/your-profile" // replace with your actual link
+             <a
+            href="https://www.linkedin.com/in/helle-fruergaard-577763112/"
             target="_blank"
             rel="noopener noreferrer"
             className="social-button"
           >
             <FontAwesomeIcon icon={faLinkedin} size="lg" />
-          </button>
+          </a>
 
-            <button
-              href="https://github.com/your-username" // replace with your actual link
+            <a
+              href="https://github.com/HelleFH" 
               target="_blank"
               rel="noopener noreferrer"
               className="social-button"
             >
               <FontAwesomeIcon icon={faGithub} size="lg" />
-            </button>
+            </a>
 
             {isModalOpen && <ContactFormModal closeModal={closeModal} />}
           </div>

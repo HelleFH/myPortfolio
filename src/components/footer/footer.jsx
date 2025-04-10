@@ -13,13 +13,8 @@ const Footer = () => {
 
   return (
     <footer className="footer">
-      {/* Logo Section */}
 
-      {/* Pages Section */}
-      <div className="footer__pages">
-        <h3>Pages</h3>
-      
-      </div>
+
 
       {/* Contact Section */}
       <div className="footer__contact">
@@ -29,20 +24,19 @@ const Footer = () => {
 
         {/* Social Media Links */}
         <div className="footer__social-media">
-          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="footer__social-icon">
+          <a href="https://www.linkedin.com/in/helle-fruergaard-577763112/" target="_blank" rel="noopener noreferrer" className="footer__social-icon">
             <i className="fab fa-linkedin"></i>
           </a>
 
           {/* Email Icon */}
-          <a href="#" onClick={openModal} className="footer__social-icon">
-            <i className="fas fa-envelope"></i>
-          </a>
+          <a href="https://www.github.com/HelleFH" onClick={openModal} className="footer__social-icon">
+          <i className="fab fa-github"></i>          </a>
         </div>
       </div>
 
       <div className="footer__logo-section">
         <img src={Images.FooterLogo} alt="Company Logo" />
-        <p className="footer__copyright">&copy; 2024 <strong>Cloud</strong>Port. All rights reserved.</p>
+        <p className="footer__copyright">&copy; 2025 <strong>Helle Fruergaard </strong >. All rights reserved.</p>
       </div>
 
       {/* Contact Form Modal */}

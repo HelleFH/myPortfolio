@@ -71,6 +71,8 @@ p {
 
 
 /* Base button styles */
+.hero__button-container .social-button, .github-button,
+.project-button,
 button:not(.chevron-button, .close-button, .contact-modal__close-btn, .btn-close, .close-btn, .close-modal) {
   white-space: nowrap;
   display: flex;
@@ -79,8 +81,8 @@ button:not(.chevron-button, .close-button, .contact-modal__close-btn, .btn-close
   align-items: center;
   gap: var(--small-gap);
   place-self: center;
-
-  background-color: var(--coral-reef) opacity(0.8);
+  text-decoration: none !important;
+  background-color: var(--battleship-gray) opacity(0.8);
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
   color: var(--white-color);
@@ -98,8 +100,14 @@ button:not(.chevron-button, .close-button, .contact-modal__close-btn, .btn-close
 
 
 /* General button hover effect, excluding close buttons */
+.hero__button-container .social-button:hover, .github-button:hover,
+.project-button:hover,
 button:hover:not(.chevron-button, .close-button, .contact-modal__close-btn, .btn-close, .close-modal, .close-button.top-right, .close-btn) {
-  background-color: rgb(86, 77, 75, 0.7);
+  background-color: hsla(60, 83%, 91%, 0.3);
+    color: var(--black-color) !important;
+  border: 1px solid transparent;
+  font-weight: 600 !important;
+
 
 }
 

@@ -3,8 +3,8 @@
   /* Colors */
   --background-color: #f8f8f8;
   --lightgray-color: #f3f3f7;
-  --darkgray-color: #333;
-  --text-color: #333;
+  --darkgray-color: var(--black-color);
+  --text-color: var(--black-color);
   --white-color: #fff;
   --border-color: #f3f3f7;
   --hero-color:darken(rgb(92, 92, 92), 6.2%);
