@@ -76,7 +76,7 @@ const ProjectDetail = () => {
               <p>{project.description}</p>
               <p>{project.projectDetails}</p>
 
-              <h5>Technologies Used</h5>
+              <h4>Technologies Used</h4>
               <ul className="technologies-list">
                 {project.technologiesMore?.map((tech, index) => (
                   <li key={index} className="tech-item">{tech}</li>

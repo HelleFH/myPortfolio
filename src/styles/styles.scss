@@ -71,7 +71,7 @@ p {
 
 
 /* Base button styles */
-.hero__button-container .social-button, .github-button,
+ .github-button,
 .project-button,
 button:not(.chevron-button, .close-button, .contact-modal__close-btn, .btn-close, .close-btn, .close-modal) {
   white-space: nowrap;
@@ -100,7 +100,7 @@ button:not(.chevron-button, .close-button, .contact-modal__close-btn, .btn-close
 
 
 /* General button hover effect, excluding close buttons */
-.hero__button-container .social-button:hover, .github-button:hover,
+.github-button:hover,
 .project-button:hover,
 button:hover:not(.chevron-button, .close-button, .contact-modal__close-btn, .btn-close, .close-modal, .close-button.top-right, .close-btn) {
   background-color: hsla(60, 83%, 91%, 0.3);

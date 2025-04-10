@@ -8,7 +8,7 @@
     flex-direction: column;
     max-width: 1200px;
     margin: 0 auto;
-    
+
 
     &__header {
         font-size: 2rem;
@@ -29,7 +29,11 @@
         gap: var(--small-gap);
     }
 
-    &__social-links {display:flex; gap:var(--small-gap);justify-content: center;align-items: center;width:100%;}
+    &__social-links {
+        display: flex;
+        gap: var(--small-gap);
+        width: 100%;
+    }
 
 
     &__subheader {

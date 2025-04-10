@@ -9,7 +9,7 @@ export default function SkillCard({ skill, onClick }) {
         <div className="card-title">{skill.title}</div>
       </strong>
       <div className="card-description">{skill.description}</div>
-      <h5>{skill.listTitle}</h5>
+      <h4>{skill.listTitle}</h4>
       <ul>
         {skill.technologies.map((tech, index) => (
           <li key={index}>{tech}</li>

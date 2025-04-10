@@ -1,9 +1,12 @@
 @import '/src/styles/main';
 
 .skills-section {
-    
 
-    h2 {padding-bottom:2rem;}
+
+    h2 {
+        padding-bottom: 2rem;
+    }
+
     .skills-cards {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -16,6 +19,7 @@
 
         ul {
             list-style: none;
+            padding-top:var(--xs-padding);
         }
 
 
