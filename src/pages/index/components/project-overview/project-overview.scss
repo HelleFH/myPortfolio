@@ -22,3 +22,16 @@
   justify-content: center;
 }
 }
+
+/* Mobile-specific Styles */
+@media (max-width: 768px) {
+  .projects-overview{
+display:flex !important;
+flex-direction: column;
+width:98vw;
+margin: 0;
+
+  }
+
+
+}
