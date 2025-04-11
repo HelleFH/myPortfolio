@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/myPortfolio/static/css/main.c640995d.css",
-    "main.js": "/myPortfolio/static/js/main.f7dc7d35.js",
+    "main.css": "/myPortfolio/static/css/main.00945e16.css",
+    "main.js": "/myPortfolio/static/js/main.bdad460b.js",
     "static/js/488.e1b4d113.chunk.js": "/myPortfolio/static/js/488.e1b4d113.chunk.js",
     "static/media/herovideoHD.mp4": "/myPortfolio/static/media/herovideoHD.96cfc0420c04c0f5a566.mp4",
     "static/media/cloudportscreen.png": "/myPortfolio/static/media/cloudportscreen.c91881d56c532c333a7f.png",
@@ -24,6 +24,7 @@
     "static/media/fa-solid-900.woff2": "/myPortfolio/static/media/fa-solid-900.2463b90d9a316e4e5294.woff2",
     "static/media/IT.png": "/myPortfolio/static/media/IT.18424351baee8962b999.png",
     "static/media/datingapp-screen.png": "/myPortfolio/static/media/datingapp-screen.ac008c409b5f2d59e666.png",
+    "static/media/coding.png": "/myPortfolio/static/media/coding.b8d75bde853428d5bd03.png",
     "static/media/design.png": "/myPortfolio/static/media/design.ed837cc71fc5a40e7326.png",
     "static/media/fa-brands-400.woff2": "/myPortfolio/static/media/fa-brands-400.c210719e60948b211a12.woff2",
     "static/media/fa-regular-400.ttf": "/myPortfolio/static/media/fa-regular-400.914997e1bdfc990d0897.ttf",
@@ -34,12 +35,12 @@
     "static/media/fa-v4compatibility.ttf": "/myPortfolio/static/media/fa-v4compatibility.da94ef451f4969af06e6.ttf",
     "static/media/fa-v4compatibility.woff2": "/myPortfolio/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
     "index.html": "/myPortfolio/index.html",
-    "main.c640995d.css.map": "/myPortfolio/static/css/main.c640995d.css.map",
-    "main.f7dc7d35.js.map": "/myPortfolio/static/js/main.f7dc7d35.js.map",
+    "main.00945e16.css.map": "/myPortfolio/static/css/main.00945e16.css.map",
+    "main.bdad460b.js.map": "/myPortfolio/static/js/main.bdad460b.js.map",
     "488.e1b4d113.chunk.js.map": "/myPortfolio/static/js/488.e1b4d113.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c640995d.css",
-    "static/js/main.f7dc7d35.js"
+    "static/css/main.00945e16.css",
+    "static/js/main.bdad460b.js"
   ]
 }
