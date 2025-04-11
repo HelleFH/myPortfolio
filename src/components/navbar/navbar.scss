@@ -190,6 +190,8 @@
 @media (max-width: 768px) {
   .navbar {
     padding: var(--small-padding);
+    z-index: 9999;
+
 
 
     &.scrolled {
