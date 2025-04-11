@@ -55,8 +55,8 @@ function App() {
 
 export default function AnimatedApp() {
   return (
-    <Router>
-      <App />
+<Router basename="/myPortfolio">
+<App />
     </Router>
   );
 }
