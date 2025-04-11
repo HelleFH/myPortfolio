@@ -228,7 +228,12 @@
       gap: 0;
       width: 50%;
       opacity: 0.97;
-
+      &.scrolled .navbar-links li a:hover {
+        width: 100%;
+        background-color: var(--white-color) !important;
+      }
+      
+  
       &:hover {
         background-color: var(--white-color) !important;
       }
@@ -252,6 +257,7 @@
       width: 100%;
       background-color: var(--white-color) !important;
     }
+    
 
     .social-links-container {
       gap: 0;
