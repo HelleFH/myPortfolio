@@ -231,10 +231,6 @@
 
   }
 
-
-
-
-
   .close-button {
     position: absolute;
     font-size: 1.5rem;
@@ -323,6 +319,25 @@
 
     @media (min-width: 800px) and (max-width: 1000px) {
       justify-content: flex-end;
+    }
+  }
+}
+
+@media (max-width: 699px) {
+  .custom-modal {
+    align-items: flex-start;
+    overflow-y: auto;
+    padding: var(--xs-padding)!important;
+    margin:0 auto;
+
+    .modal-dialog {
+      margin: auto;
+      width: 100%;
+    }
+
+    .modal-content {
+      max-height: none;
+      width: 100%;
     }
   }
 }
