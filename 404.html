@@ -3,12 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>404 Not Found</title>
+    <title>404 - Page Not Found</title>
   </head>
   <body>
     <script>
-      // Redirect all 404 requests to index.html
-      window.location.replace('/myPortfolio/');
+      // Get the current path
+      var path = window.location.pathname;
+
+      // Redirect to index.html, preserving the current path
+      window.location.replace("/myPortfolio" + path);
     </script>
   </body>
 </html>
