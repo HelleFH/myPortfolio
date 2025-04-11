@@ -5,6 +5,7 @@ import { useSwipeable } from "react-swipeable";
 import { frontendProjects } from '../../data/frontendprojects';
 import { fullStackProjects } from '../../data/fullstackprojects';
 import Layout from "../../components/layout/layout";
+import ProjectButtons from "../../components/project-buttons/project-buttons";
 import './project-details.scss';
 
 const ProjectDetail = () => {
@@ -88,6 +89,16 @@ const ProjectDetail = () => {
               ))}
             </ul>
           </div>
+          {project && (
+  <ProjectButtons
+    projectLink={project.projectLink}
+    githubLink={project.githubLink}
+    buttonText={project.buttonText}
+    githubButtonText={project.githubButtonText}
+  />
+)}
+
+
           <div className="navigation-buttons">
               {!isFirst && (
                 <button

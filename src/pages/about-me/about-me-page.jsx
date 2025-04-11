@@ -1,6 +1,6 @@
 import React from 'react';
 import AboutMe from './components/about-me/about-me';
-import SkillsSection from './components/skills-section';
+import SkillsSection from './components/skills-section/skills-section';
 import Layout from '../../components/layout/layout';
 import './about-me-page.scss'; 
 

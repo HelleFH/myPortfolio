@@ -116,7 +116,7 @@ padding:0 !important;
     }
 
     .modal-body {
-        padding: 1rem;
+        padding: var(--small-padding);;
 
 
 
@@ -124,7 +124,7 @@ padding:0 !important;
     }
 
     .modal-footer {
-        padding: 1rem;
+        padding: var(--small-padding);;
         background-color: var(--battleship-gray);
     }
 

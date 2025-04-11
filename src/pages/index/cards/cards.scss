@@ -47,7 +47,7 @@
   &__quote {
     background-color: $highlight-color;
     color: $primary-color;
-    padding: 1rem;
+    padding: var(--small-padding);;
     border-radius: 8px;
     margin-top: 1.5rem;
     display: flex;

@@ -1,6 +1,6 @@
 import React from 'react';
-import { skills } from '../../../data/skills';  
-import SkillCard from './cards/cards';
+import { skills } from '../../../../data/skills';  
+import SkillCard from '../cards/cards';
 import './skills-section.scss';
 
 export default function SkillsSection() {

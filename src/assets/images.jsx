@@ -25,6 +25,7 @@ import ListingScreen from './images/listing-screen.png';
 import MEVNCartScreen from './images/mevncart-screen.png';
 import MontyHallScreen from './images/montyhall-screen.png';
 import NetflixScreen from './images/netflix-screen.png';
+import PortfolioScreen from './images/portfolio-screen.png'
 import NewsSiteScreen from './images/news-screen.png';
 import SentispecScreen from './images/sentispec-screen.png';
 import SnippetsScreen from './images/snippets-screen.png';
@@ -58,6 +59,7 @@ const Images = {
   MontyHallScreen,
   NetflixScreen,
   NewsSiteScreen,
+  PortfolioScreen,
   SentispecScreen,
   SnippetsScreen,
 };

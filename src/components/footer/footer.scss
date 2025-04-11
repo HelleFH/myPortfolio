@@ -10,6 +10,13 @@
   margin-top: var(--padding);
   font-family: 'roboto';
 
+
+
+  .social-link:hover {
+    color: #0073b1 !important;
+  }
+
+
   &__logo-section {
     flex: 1;
     text-align: center;
@@ -23,7 +30,7 @@
 
   &__copyright {
     font-size: 0.9rem;
-    color: #555;
+    color: var(--black-color);
   }
 
   &__pages,
@@ -65,9 +72,9 @@
 }
 
 @media (max-width: 768px) {
-.footer  {
+  .footer {
 
-    gap:var(--gap);
+    gap: var(--gap);
 
   }
 }

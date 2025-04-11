@@ -80,12 +80,11 @@
   }
 
   .modal-image-container {
-    padding: 1em;
+    @include flex-row;
+    padding: var(--small-padding);
     width: 100%;
     max-width: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
   }
 
   .modal-image {
@@ -137,8 +136,7 @@
 
   .modal-content-custom {
     position: relative;
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     gap: var(--large-gap);
     text-align: center;
     max-width: 600px;
@@ -198,48 +196,6 @@
     }
   }
 
-  .github-button {
-    background-color: var(--davys-gray-2) !important;
-    color: var(--white-color) !important;
-  }
-
-  .project-button {
-    background-color: transparent !important;
-    color: var(--black-color) !important;
-
-  
-  }
-
-  .project-button,
-  .github-button {
-    font-family:'lato';
-    display: inline-block;
-    padding: 7px 15px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    transition: background-color 0.4s ease;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    font-size: 1rem;
-    border-radius: 14px;
-
-    &:hover {
-      background-color: var(--battleship-gray) !important;
-
-      color: var(--black-color) !important;
-    }
-
-    @media (min-width: 1050px) {
-      padding: 10px 22px;
-
-      font-size: 1.1rem;
-
-    }
-
-
-  }
 
   .close-button {
     position: absolute;
@@ -284,7 +240,7 @@
     display: flex;
     justify-content: flex-end;
     padding: 0 1em 1em;
-    margin-top: 1em;
+    margin-top: 2em;
 
     a {
       color: #222524;

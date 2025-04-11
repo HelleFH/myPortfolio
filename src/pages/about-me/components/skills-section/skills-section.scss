@@ -1,17 +1,9 @@
 @import '/src/styles/main';
 
 .skills-section {
-    margin: 0 auto;
-    width: 100%;
+    @include flex-column;
+    gap: var(--small-gap) !important;
     max-width: 1000px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    h2 {
-        padding-bottom: 1rem;
-    }
 
     .skills-cards {
         display: grid;
@@ -33,20 +25,12 @@
         .card {
             max-width: 350px;
 
-    
-
         }
     }
 }
 
 @media (max-width: 768px) {
     .skills-cards {
-        display: flex !important;
-        flex-direction: column;
-        width: 98vw;
-
-        
+        @include flex-column;
     }
-
-
 }

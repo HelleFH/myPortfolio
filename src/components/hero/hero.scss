@@ -76,12 +76,8 @@
 
   /* Hero Button Container */
   &__button-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: var(--gap);
-    margin: 0 auto;
-    width: 100%;
+    @include flex-row;
+   
     justify-content: flex-start;
     height: 40px;
   }
@@ -116,5 +112,14 @@
       font-weight: 500;
       text-align: left;
     }
+  }
+}
+
+@media screen and (orientation: landscape) and (max-width: 768px) {
+  .hero__image {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    object-position: center;
   }
 }

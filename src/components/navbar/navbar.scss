@@ -39,7 +39,7 @@
     border-bottom: 1px solid var(--lightgray-color);
 
     .navbar-logo:hover {
-      background-color: rgba(80, 82, 83, 0.3);
+      background-color: rgba(80, 82, 83, 0.3) !important;
     }
 
     .navbar-links li a,
@@ -64,7 +64,7 @@
       border-radius: 50%;
 
       &:hover {
-        background-color: hsla(60, 83%, 91%, 0.4);
+        background-color: var(--button-hover-color);
       }
     }
   }
@@ -94,7 +94,7 @@
         transition: background-color 0.3s, color 0.3s;
 
         &:hover {
-          background-color: hsla(60, 83%, 91%, 0.4);
+          background-color: var(--button-hover-color);
           color: var(--black-color);
         }
       }
@@ -103,6 +103,7 @@
 
   &.scrolled .navbar-links li a:hover {
     background-color: hsla(210, 2%, 32%, 0.2);
+    color:var(--black-color) !important;
   }
 
   .mobile-home-link {
@@ -127,8 +128,8 @@
       display: none;
 
       &.open {
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
+
         position: absolute;
         top: 70px;
         right: var(--padding);
@@ -136,7 +137,7 @@
         background-color: var(--white-color);
         border-radius: var(--small-border-radius);
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        padding: 1rem;
+        padding: var(--small-padding);;
         gap: 0;
         z-index: 10000;
 

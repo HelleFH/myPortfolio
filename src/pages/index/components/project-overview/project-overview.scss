@@ -12,22 +12,18 @@
 
 
 &__container {
+  @include flex-column;
   max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: var(--gap);
   padding:var(--padding);
-  align-items: center;
-  justify-content: center;
+  
 }
 }
 
 /* Mobile-specific Styles */
 @media (max-width: 768px) {
   .projects-overview{
-display:flex !important;
-flex-direction: column;
+@include flex-column;
+
 width:98vw;
 margin: 0;
 

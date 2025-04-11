@@ -44,7 +44,7 @@
       id: 4,
       name: "A Product Portfolio",
       technologies: "React",
-      images: [Images.ListingScreen],
+      images: [Images.PortfolioScreen],
       projectLink: "https://product-page-b2ed.onrender.com/",
       githubLink: "https://github.com/HelleFH/product-page",
       buttonText: "View Project",

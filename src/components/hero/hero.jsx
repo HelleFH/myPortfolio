@@ -42,7 +42,7 @@ const Hero = ({ title, subtitle, buttons, showContactUsButton }) => {
           poster={Images.HeroImage}
           onEnded={(e) => e.target.pause()}
         >
-          <source src={Images.heroVideoHD} type="video/mp4" media="(min-width: 769px)" />
+          <source src={Images.heroVideoHD} type="video/mp4" media="(min-width: 1200px)" />
           <source src={Images.heroVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>

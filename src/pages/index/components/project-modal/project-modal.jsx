@@ -3,8 +3,9 @@ import { useSwipeable } from 'react-swipeable';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { Modal, Button } from 'react-bootstrap';
+import ProjectButtons from '../../../../components/project-buttons/project-buttons';
 import { Link } from 'react-router-dom';
-import './project-modal.scss'; 
+import './project-modal.scss';
 import LoginModal from '../login-modal/LoginModal';
 
 const ProjectModal = ({
@@ -24,7 +25,7 @@ const ProjectModal = ({
     preventDefaultTouchmoveEvent: true,
     trackMouse: true,
   });
-  
+
   const handleShowLoginDetails = () => {
     setShowLoginModal(true);
   };
@@ -79,31 +80,26 @@ const ProjectModal = ({
               </ul>
             </div>
 
-            <div className="buttons-container d-flex gap-2">
-              <button
-                className="project-button"
-                onClick={() => window.open(project.projectLink, '_blank')}
-              >
-                {project.buttonText}
-              </button>
-              <button
-                className="github-button"
-                onClick={() => window.open(project.githubLink, '_blank')}
-              >
-                {project.githubButtonText}
-              </button>
-            </div>
+            {project && (
+  <ProjectButtons
+    projectLink={project.projectLink}
+    githubLink={project.githubLink}
+    buttonText={project.buttonText}
+    githubButtonText={project.githubButtonText}
+  />
+)}
+
 
             <div className="links-container">
-            <Link
-  to={{
-    pathname: `/project/${project.type}/${project.id}`,
-    state: { selectedProjectIndex, projectType: project.type }, // pass the index and project type
-  }}
-  className="read-more-link"
->
-  Read More
-</Link>
+              <Link
+                to={{
+                  pathname: `/project/${project.type}/${project.id}`,
+                  state: { selectedProjectIndex, projectType: project.type }, // pass the index and project type
+                }}
+                className="read-more-link"
+              >
+                Read More
+              </Link>
               {project.username && (
                 <a onClick={handleShowLoginDetails}>Show Login Details</a>
               )}
@@ -122,7 +118,7 @@ const ProjectModal = ({
               }}
             />
           </div>
-       
+
         </Modal.Body>
       </Modal.Dialog>
     </Modal>

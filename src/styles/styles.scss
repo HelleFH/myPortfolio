@@ -70,7 +70,7 @@ p {
 
 
 /* Base button styles */
- .github-button,
+.github-button,
 .project-button,
 button:not(.chevron-button, .close-button, .contact-modal__close-btn, .btn-close, .close-btn, .close-modal) {
   white-space: nowrap;
@@ -102,8 +102,8 @@ button:not(.chevron-button, .close-button, .contact-modal__close-btn, .btn-close
 .github-button:hover,
 .project-button:hover,
 button:hover:not(.chevron-button, .close-button, .contact-modal__close-btn, .btn-close, .close-modal, .close-button.top-right, .close-btn) {
-  background-color: hsla(60, 83%, 91%, 0.3);
-    color: var(--black-color) !important;
+  background-color: var(--button-hover-color);
+  color: var(--black-color) !important;
   border: 1px solid transparent;
 
 
