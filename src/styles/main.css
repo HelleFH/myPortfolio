@@ -144,11 +144,6 @@ a {
   cursor: pointer;
 }
 
-a:visited,
-a:hover {
-  color: inherit;
-}
-
 #hs-overlay-cta-92296409586 {
   display: none !important;
 }
