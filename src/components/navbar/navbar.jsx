@@ -17,11 +17,11 @@ const Navbar = () => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
 
-      // Set scroll state if scroll is more than 100px
+      // Set scroll state if scroll is more than 50px
       setScrolled(currentScrollY > 50);
 
-      // If scrolling down, hide the navbar after inactivity
-      if (currentScrollY > lastScrollY) {
+      // If scrolling down, hide the navbar after inactivity, but not when menu is open
+      if (currentScrollY > lastScrollY && !menuOpen) {
         if (scrollTimeout) {
           clearTimeout(scrollTimeout); // Clear any previous timeout
         }
@@ -50,7 +50,7 @@ const Navbar = () => {
         clearTimeout(scrollTimeout);
       }
     };
-  }, [lastScrollY, scrollTimeout]);
+  }, [lastScrollY, scrollTimeout, menuOpen]); // Add menuOpen to dependencies to prevent hiding navbar when menu is open
 
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''} ${isHidden ? 'hidden' : ''}`}>
