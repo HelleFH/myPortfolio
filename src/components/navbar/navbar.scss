@@ -67,10 +67,7 @@
       }
     }
 
-    .navbar-contact-info,
-    .navbar-links li a {
-      color: var(--black-color) !important;
-    }
+
   }
 
   &.hidden {
@@ -232,7 +229,11 @@
         color: var(--black-color) !important;
       }
     }
-
+    &.scrolled .navbar-links li a:hover {
+      width: 100%;
+      background-color: var(--white-color) !important;
+    }
+  
     .social-links-container {
       gap: 0;
     }
