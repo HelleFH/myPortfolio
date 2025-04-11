@@ -7,9 +7,6 @@
   align-items: flex-start;
   min-height: fit-content;
   background-position: center;
-  background-color: $primary-color;
-  background-image:
-    linear-gradient(to left, rgba(66, 116, 170, 0) 0%, $primary-color 87%);
   color: var(--white-color);
   position: relative;
   min-height: 70vh;
@@ -93,10 +90,16 @@
 
 }
 
-
-
 @media (max-width: 768px) {
   .hero {
+&__image {        width: 100vw;
+  height: 100%;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  background-size: cover;}
     padding: calc(var(--xl-padding)) var(--padding);
 
     &__content {

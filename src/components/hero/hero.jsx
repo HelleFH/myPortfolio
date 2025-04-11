@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from 'react-router-dom';
 import './hero.scss';
 import Images from "../../assets/images";
@@ -6,11 +6,18 @@ import SocialLinks from "../social-links/social-links";
 
 const Hero = ({ title, subtitle, buttons, showContactUsButton }) => {
   const navigate = useNavigate();
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
-  const openModal = () => setIsModalOpen(true);
-  const closeModal = () => setIsModalOpen(false);
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
 
+    checkMobile(); // Initial check
+
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
   const handleButtonClick = (path) => {
     if (path) {
@@ -20,16 +27,26 @@ const Hero = ({ title, subtitle, buttons, showContactUsButton }) => {
 
   return (
     <section className="hero">
-      <video
-        className="hero__video"
-        autoPlay
-        muted
-        playsInline
-        onEnded={(e) => e.target.pause()}
-      >
-        <source src={Images.heroVideo} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      {isMobile ? (
+        <img
+          src={Images.HeroImage}
+          alt="Hero"
+          className="hero__image"
+        />
+      ) : (
+        <video
+          className="hero__video"
+          autoPlay
+          muted
+          playsInline
+          poster={Images.HeroImage}
+          onEnded={(e) => e.target.pause()}
+        >
+          <source src={Images.heroVideoHD} type="video/mp4" media="(min-width: 769px)" />
+          <source src={Images.heroVideo} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      )}
 
       {/* Content Layer */}
       <div className="hero__content">
@@ -49,11 +66,9 @@ const Hero = ({ title, subtitle, buttons, showContactUsButton }) => {
             </React.Fragment>
           ))}
 
-<SocialLinks />
-
+          <SocialLinks />
         </div>
       </div>
-
     </section>
   );
 };
