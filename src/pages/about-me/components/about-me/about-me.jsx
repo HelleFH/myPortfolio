@@ -1,6 +1,7 @@
 import React from 'react';
 import './about-me.scss'; 
 import DownloadSection from '../download-section/download-section';
+import SocialLinks from '../../../../components/social-links/social-links';
 
 const AboutMe = () => {
     return (
@@ -12,24 +13,8 @@ const AboutMe = () => {
                         <h4>Contact Info</h4>
                         <p> hellefruergaardh@gmail.com</p>
                         <p> +45 29664077</p>
-                        <div className="about-me__social-links">
-                            <a 
-                                href="https://www.linkedin.com/in/helle-fruergaard-577763112/" 
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                                className="social-link"
-                            >
-                                <i className="fab fa-linkedin"></i>
-                            </a>
-                            <a 
-                                href="https://github.com/HelleFH/" 
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                                className="social-link"
-                            >
-                                <i className="fab fa-github"></i>
-                            </a>
-                        </div>
+                        <SocialLinks />
+
                         <DownloadSection />
                     </div>
                 </div>

@@ -3,34 +3,36 @@
 
 .btn-close {
     position: absolute;
-    top: -5px;
+    top: 4px;
     right: 10px;
     background: transparent;
     border: none;
-    font-size: 2rem;
-    /* Adjust size */
+    font-size: 1.5rem;
     color: var(--black-color);
     cursor: pointer;
     transition: color 0.3s ease;
-
+    background-color: transparent;
+    box-shadow: none;
+    color: var(--black-color) !important;
     &::before {
         content: "\f00d";
         font-family: 'Font Awesome 5 Free';
         font-weight: 900;
         font-size: 1.5rem;
-        /* Adjust the size of the icon */
     }
+    @media (min-width: 1050px) {
 
-    &:hover {
-        color: #e74c3c;
-        /* Red on hover */
-    }
-
-    /* Optional: Focus/active state */
-    &:focus {
-        outline: none;
-        box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
-    }
+        background-color: transparent;
+        box-shadow: none;
+        color: var(--black-color) !important;
+  
+  
+      }
+  
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+    
 }
 
 .login-modal-backdrop {

@@ -90,23 +90,7 @@
     height: 40px;
   }
 
-  .social-buttons__container {
-    display: flex;
-    gap: var(--small-gap);
-  }
 
-  .social-button {
-    background: none;
-    color: white; // or whatever fits your theme
-    font-size: 1rem;
-    cursor: pointer;
-    transition: color 0.3s;
-
-
-    &:hover {
-      border-radius: var(--border-radius);
-    }
-  }
 }
 
 

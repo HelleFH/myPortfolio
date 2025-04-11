@@ -1,11 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import './hero.scss';
-import ContactFormModal from "../contact-form/contact-form";
 import Images from "../../assets/images";
+import SocialLinks from "../social-links/social-links";
 
 const Hero = ({ title, subtitle, buttons, showContactUsButton }) => {
   const navigate = useNavigate();
@@ -52,28 +49,8 @@ const Hero = ({ title, subtitle, buttons, showContactUsButton }) => {
             </React.Fragment>
           ))}
 
-          <div className="social-buttons__container"> 
-            
-             <a
-            href="https://www.linkedin.com/in/helle-fruergaard-577763112/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-button"
-          >
-            <FontAwesomeIcon icon={faLinkedin} size="lg" />
-          </a>
+<SocialLinks />
 
-            <a
-              href="https://github.com/HelleFH" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="social-button"
-            >
-              <FontAwesomeIcon icon={faGithub} size="lg" />
-            </a>
-
-            {isModalOpen && <ContactFormModal closeModal={closeModal} />}
-          </div>
         </div>
       </div>
 

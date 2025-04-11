@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './navbar.scss';
 import { Link } from 'react-router-dom'; // Import Link component from react-router-dom
 import Images from '../../assets/images';
-
+import SocialLinks from '../social-links/social-links';
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false); // Track if scrolled
   const [isHidden, setIsHidden] = useState(false); // Track if navbar is hidden
@@ -71,24 +71,8 @@ const Navbar = () => {
           </li>
 
           <li>
-            <div className="navbar__social-links">
-              <a 
-                href="https://www.linkedin.com/in/helle-fruergaard-577763112/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="social-link"
-              >
-                <i className="fab fa-linkedin"></i>
-              </a>
-              <a 
-                href="https://github.com/HelleFH/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="social-link"
-              >
-                <i className="fab fa-github"></i>
-              </a>
-            </div>
+          <SocialLinks />
+
           </li>
         </ul>
       </div>

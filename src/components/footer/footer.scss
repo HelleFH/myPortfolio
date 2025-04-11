@@ -61,25 +61,7 @@
     }
   }
 
-  &__social-media {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    margin-top: 1rem;
-    color: var(--black-color) !important;
 
-
-    .footer__social-icon {
-      font-size: 1.5rem;
-      transition: color 0.3s ease;
-      color: var(--black-color) !important;
-
-
-      &:hover {
-        color: #0073b1;
-      }
-    }
-  }
 }
 
 @media (max-width: 768px) {

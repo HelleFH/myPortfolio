@@ -44,10 +44,6 @@
     /* Slide navbar out of view */
   }
 
-  &__social-links {
-    gap: var(--xs-gap);
-  }
-
   &.scrolled {
     background-color: var(--white-color);
     color: var(--black-color) !important;
