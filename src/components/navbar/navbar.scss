@@ -147,9 +147,16 @@
   .navbar {
     .menu-toggle {
       display: block !important;
-      color:var(--black-color);
+      color:var(--white-color);
       border:none;
     }
+
+    &.scrolled 
+      .menu-toggle {
+        display: block !important;
+        color:var(--black-color);
+        border:none;
+      }
 
     .navbar-links {
       display: none; // 🔒 Hidden by default
