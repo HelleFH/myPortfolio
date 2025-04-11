@@ -2,8 +2,9 @@
 
 .skills-section {
 
-    margin: 0 auto;
-
+margin:0 auto;
+width:100%;
+max-width:1000px;
     h2 {
         padding-bottom: 1rem;
     }
@@ -14,14 +15,16 @@
         gap: 0.6rem;
         margin: 0 auto;
         justify-items: center;
-        align-content: center;
+        align-content:center ;
         flex-wrap: wrap;
         width: 100%;
         max-width: 1000px;
 
         ul {
             list-style: none;
-            padding-top: var(--xs-padding);
+            padding-top:var(--xs-padding);
+            text-align: center;
+
         }
 
 
