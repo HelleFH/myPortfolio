@@ -212,6 +212,9 @@
 
 /* Mobile Styles (Below 768px) */
 @media screen and (max-width: 768px) {
+
+    
+.project-container {
     .project-header {
         font-size: 2rem;
         padding: 1rem;
@@ -265,4 +268,5 @@
         gap: 1rem;
         padding: 0 1rem;
     }
+}
 }
