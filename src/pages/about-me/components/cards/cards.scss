@@ -4,68 +4,71 @@ $secondary-color: #88b1db;
 $tertiary-color: #5e7b9b;
 $highlight-color: #adcee8;
 
-.card{
+.card {
 
-    cursor: pointer;
-    border: 1px solid #ddd;
-    padding: var(--padding) 0;
-    background-color: #f9f9f9;
-    border-radius: var(--border-radius);
-    text-align: center;
-    width:100%;
-    min-width:260px;
-  
+  cursor: pointer;
+  border: 1px solid #ddd;
+  padding: var(--padding) 0;
+  background-color: #f9f9f9;
+  border-radius: var(--border-radius);
+  text-align: center;
+  width: 100%;
+  min-width: 260px;
+
+}
+
+.card-image {
+  width: 100%;
+  max-width: 150px;
+  margin: 0 auto;
+
+  margin-bottom: 15px;
+}
+
+.card-title {
+  color: $primary-color;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.card-type {
+  font-size: 0.875rem;
+  color: $tertiary-color;
+}
+
+.card-description {
+  margin-top: 1rem;
+  color: $primary-color;
+  padding: 0 var(--small-padding) var(--small-padding) var(--small-padding);
+}
+
+.card-details {
+  margin-top: 1.5rem;
+  color: #444;
+  list-style: disc inside;
+  text-align: left;
+}
+
+.quote {
+  background-color: $highlight-color;
+  color: $primary-color;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .quote-icon {
+    margin-right: 0.75rem;
   }
-
-  .card-image {
-    width: 100%;
-    max-width:150px;
-    margin:0 auto;
-
-    margin-bottom: 15px;
-  }
-
-  .card-title {
-    color: $primary-color;
-    margin-bottom: 10px;
-    font-size:1.3rem;
-  }
-
-  .card-type {
-    font-size: 0.875rem;
-    color: $tertiary-color;
-  }
-
-  .card-description {
-    margin-top: 1rem;
-    color: $primary-color;
-    padding:0 var(--small-padding) var(--small-padding) var(--small-padding) ;
-  }
-
-  .card-details {
-    margin-top: 1.5rem;
-    color: #444;
-    list-style: disc inside;
-    text-align: left;
-  }
-
-  .quote {
-    background-color: $highlight-color;
-    color: $primary-color;
-    padding: 1rem;
-    border-radius: 8px;
-    margin-top: 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    .quote-icon {
-      margin-right: 0.75rem;
-    }
-  }
+}
 
 .card:hover {
-  transform: translateY(-1px); /* Slight lift effect */
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06); /* Subtle shadow */
-  background-color: #f1f1f1; /* Slight change in background */
+  transform: translateY(-1px);
+  /* Slight lift effect */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  /* Subtle shadow */
+  background-color: #f1f1f1;
+  /* Slight change in background */
 }

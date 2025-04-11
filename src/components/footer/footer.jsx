@@ -3,11 +3,10 @@ import './footer.scss';
 import Images from '../../assets/images';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import SocialLinks from '../social-links/social-links';
-const Footer = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const openModal = () => setIsModalOpen(true);
-  const closeModal = () => setIsModalOpen(false);
+
+const Footer = () => {
+
 
   return (
     <footer className="footer">
