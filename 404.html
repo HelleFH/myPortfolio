@@ -7,11 +7,14 @@
   </head>
   <body>
     <script>
-      // Get the current path
-      var path = window.location.pathname;
-
-      // Redirect to index.html, preserving the current path
-      window.location.replace("/myPortfolio" + path);
+      // Check if you're on a 404 page and handle accordingly
+      if (window.location.pathname.includes("/404")) {
+        // Redirect to the homepage or specific page
+        window.location.replace("/myPortfolio");
+      } else {
+        // Otherwise, just allow the page to reload
+        location.reload();  // This reloads the current page without changing the URL
+      }
     </script>
   </body>
 </html>
