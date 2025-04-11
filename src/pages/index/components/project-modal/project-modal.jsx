@@ -95,7 +95,13 @@ const ProjectModal = ({
             </div>
 
             <div className="links-container">
-            <Link to={`/project/${project.type}/${project.id}`} className="read-more-link">
+            <Link
+  to={{
+    pathname: `/project/${project.type}/${project.id}`,
+    state: { selectedProjectIndex, projectType: project.type }, // pass the index and project type
+  }}
+  className="read-more-link"
+>
   Read More
 </Link>
               {project.username && (

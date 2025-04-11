@@ -5,138 +5,69 @@ import { useSwipeable } from "react-swipeable";
 import { frontendProjects } from '../../data/frontendprojects';
 import { fullStackProjects } from '../../data/fullstackprojects';
 import Layout from "../../components/layout/layout";
-
 import './project-details.scss';
 
 const ProjectDetail = () => {
-  const scrollPositionRef = React.useRef(0);
-
   const { id, type } = useParams();
   const navigate = useNavigate();
-
-  const [project, setProject] = useState(null);
-  const [showLoginDetails, setShowLoginDetails] = useState(false);
 
   const projectList = type === 'frontend' ? frontendProjects : fullStackProjects;
   const currentIndex = projectList.findIndex(proj => proj.id === parseInt(id, 10));
   const selectedProject = projectList[currentIndex];
 
-  const isFirst = currentIndex === 0;
-  const isLast = currentIndex === projectList.length - 1;
+  const [showLoginDetails, setShowLoginDetails] = useState(false);
+
   useEffect(() => {
-    if (selectedProject) {
-      setProject(selectedProject);
-  
-      requestAnimationFrame(() => {
-        window.scrollTo(0, scrollPositionRef.current);
-      });
+    if (!selectedProject) {
+      navigate('/404'); // Handle project not found
     }
-  }, [selectedProject]);
+  }, [selectedProject, navigate]);
 
-  const navigateToProject = (newIndex) => {
-    const newProject = projectList[newIndex];
-    if (newProject) {
-      navigate(`/project/${type}/${newProject.id}`, {
-        state: { scrollY: window.scrollY }
-      });
-    }
+  const handleBackToProjects = () => {
+    // Go back to the projects overview, passing selectedProjectIndex in the state
+    navigate('/', {
+      state: { selectedProjectIndex: currentIndex, projectType: type }
+    });
   };
-  const handlers = useSwipeable({
-    onSwipedLeft: () => !isLast && navigateToProject(currentIndex + 1),
-    onSwipedRight: () => !isFirst && navigateToProject(currentIndex - 1),
-    trackMouse: true,
-  });
 
-  if (!project) {
+  if (!selectedProject) {
     return <p>Loading...</p>;
   }
 
   return (
     <div className="project-container">
-      {/* Pass project name as heroTitle */}
-      <Layout 
-        heroTitle={project.name} 
-        heroSubtitle={project.descriptionHeader} 
-        buttons={[
-          { type: 'link', text: 'About me', path: '/about' },
-        ]}
-      >
-        <div {...handlers}>
-          <a onClick={() => navigate("/")} className="back-button">
-            Back to Projects
-          </a>
+      <Layout heroTitle={selectedProject.name} heroSubtitle={selectedProject.descriptionHeader}>
+        <a onClick={handleBackToProjects} className="back-button">
+          Back to Projects
+        </a>
 
-          <div className="project-details-container">
-
-            <div className="image-wrapper">
-              <img src={project.images[0]} alt={project.name} className="project-image" />
-            </div>
-            <div className="project-text">
-              <h4>{project.descriptionHeader}</h4>
-              <p>{project.description}</p>
-              <p>{project.projectDetails}</p>
-
-              <h4>Technologies Used</h4>
-              <ul className="technologies-list">
-                {project.technologiesMore?.map((tech, index) => (
-                  <li key={index} className="tech-item">{tech}</li>
-                ))}
-              </ul>
-            </div>
-            <div className="buttons-container">
-              {project.username && (
-                <a className="login-button" onClick={() => setShowLoginDetails(true)}>
-                  Show Login Details
-                </a>
-              )}
-              <a
-                href={project.projectLink}
-                className="project-button"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {project.buttonText || "Visit Project"}
-              </a>
-              <a
-                href={project.githubLink}
-                className="github-button"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {project.githubButtonText || "View on GitHub"}
-              </a>
-            </div>
-
-            <div className="navigation-buttons">
-              {!isFirst && (
-                <button
-                  className="nav-button"
-                  onClick={() => navigateToProject(currentIndex - 1)}
-                >
-                  ← Previous Project
-                </button>
-              )}
-              {!isLast && (
-                <button
-                  className="nav-button"
-                  onClick={() => navigateToProject(currentIndex + 1)}
-                >
-                  Next Project →
-                </button>
-              )}
-            </div>
+        <div className="project-details-container">
+          <div className="image-wrapper">
+            <img src={selectedProject.images[0]} alt={selectedProject.name} className="project-image" />
           </div>
+          <div className="project-text">
+            <h4>{selectedProject.descriptionHeader}</h4>
+            <p>{selectedProject.description}</p>
+            <p>{selectedProject.projectDetails}</p>
 
-          <LoginModal
-            show={showLoginDetails}
-            onHide={() => setShowLoginDetails(false)}
-            project={project}
-            handleCopyToClipboard={(text) => {
-              navigator.clipboard.writeText(text);
-              alert(`${text} copied to clipboard!`);
-            }}
-          />
+            <h4>Technologies Used</h4>
+            <ul className="technologies-list">
+              {selectedProject.technologiesMore?.map((tech, index) => (
+                <li key={index} className="tech-item">{tech}</li>
+              ))}
+            </ul>
+          </div>
         </div>
+
+        <LoginModal
+          show={showLoginDetails}
+          onHide={() => setShowLoginDetails(false)}
+          project={selectedProject}
+          handleCopyToClipboard={(text) => {
+            navigator.clipboard.writeText(text);
+            alert(`${text} copied to clipboard!`);
+          }}
+        />
       </Layout>
     </div>
   );
