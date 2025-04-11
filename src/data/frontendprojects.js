@@ -1,5 +1,7 @@
 
-  import Images from '../assets/images'
+  import Images from '../assets/images';
+
+  
   export const frontendProjects = [
     {
       id: 1,
