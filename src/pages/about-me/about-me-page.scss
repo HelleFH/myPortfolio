@@ -1,7 +1,6 @@
 @import '/src/styles/main';
 .about-page  { 
 
-
   .hero__content  {gap:0;}
 &__container {
 
@@ -36,6 +35,8 @@
       gap: 4rem;
       width:100%;
       max-width:1200px;
+      padding:var(--padding);
+
     }
 
   }
