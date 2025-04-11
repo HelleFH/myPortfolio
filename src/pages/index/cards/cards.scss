@@ -1,9 +1,5 @@
 @import '/src/styles/main';
 
-$primary-color: #334453;
-$secondary-color: #88b1db;
-$tertiary-color: #5e7b9b;
-$highlight-color: #adcee8;
 
 .project-card {
   cursor: pointer;
@@ -13,7 +9,7 @@ $highlight-color: #adcee8;
   border-radius: var(--border-radius);
   text-align: center;
   width: 100%;
-  min-width: 260px;
+  min-width: 200px;
   transition: all 0.2s ease;
 
   &:hover {
