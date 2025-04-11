@@ -22,6 +22,10 @@
   overflow: visible;
   min-height: 70px;
 
+  &.hidden {
+    top: -100px;
+  }
+
   a {
     color: var(--white-color)
   }
@@ -60,6 +64,54 @@
     .navbar-contact-info,
     .navbar-links li a {
       color: var(--black-color) !important;
+    }
+  }
+
+  &.hidden {
+    top: -100px;
+  }
+
+  .navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+
+      svg {
+        color: #333;
+      }
+    }
+
+    .navbar-links {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+
+      li {
+        .navbar-link {
+          text-decoration: none;
+          color: #333;
+          font-weight: 500;
+        }
+      }
+
+      &.open {
+        display: flex;
+        position: absolute;
+        gap:var(--small-gap);
+        top: 60px;
+        right: 1rem;
+        background: white;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        padding: var(--padding);
+        border-radius:var(--border-radius);
+      }
     }
   }
 
@@ -133,18 +185,43 @@
 }
 
 @media (max-width: 768px) {
+  .navbar {
+    padding: var(--small-padding);
 
-  .navbar {padding:var(--small-padding);
-  
-    .social-links-container {
-      gap: 0rem;
+    .menu-toggle {
+      display: block !important;
     }
-   .navbar-links {
 
-    gap:0;
+    .navbar-links {
+      display: none; // 👈 Hide by default
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      right: var(--padding);
+      background-color: var(--white-color);
+      border-radius: var(--small-border-radius);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 1rem;
+      z-index: 9999;
+      gap: 0;
+
+      &.open {
+        display: flex; // 👈 Show when open
+      }
+
+      li a {
+        color: var(--black-color) !important;
+      }
+    }
+
+    .social-links-container {
+      gap: 0;
+    }
+
 
   }
-}
 
-
+  .navbar .navbar-content .navbar-links {
+    display: none;
+  }
 }

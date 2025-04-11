@@ -3,11 +3,15 @@ import './navbar.scss';
 import { Link } from 'react-router-dom'; // Import Link component from react-router-dom
 import Images from '../../assets/images';
 import SocialLinks from '../social-links/social-links';
+import { Menu, X } from 'lucide-react';
+
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false); // Track if scrolled
   const [isHidden, setIsHidden] = useState(false); // Track if navbar is hidden
   const [lastScrollY, setLastScrollY] = useState(0); // Track last scroll position
   const [scrollTimeout, setScrollTimeout] = useState(null); // For inactivity timeout
+  const [menuOpen, setMenuOpen] = useState(false);
+
 
   // Scroll detection logic to change navbar style based on scroll
   useEffect(() => {
@@ -63,11 +67,16 @@ const Navbar = () => {
           </Link>
         </div>
 
+               {/* Hamburger Menu Button for Mobile */}
+               <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+          {menuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+
         {/* Navbar Links */}
-        <ul className="navbar-links">
+        <ul className={`navbar-links ${menuOpen ? 'open' : ''}`}>
           {/* About Me Link */}
           <li>
-            <Link to="/about" className="navbar-link">About Me</Link>
+          <Link to="/about" className="navbar-link" onClick={() => setMenuOpen(false)}>About Me</Link>
           </li>
 
           <li>
