@@ -209,7 +209,7 @@
     }
 
     .navbar-links {
-      display: none; // 👈 Hide by default
+      display: none;
       flex-direction: column;
       position: absolute;
       top: 70px;
@@ -225,7 +225,7 @@
 
 
       &.open {
-        display: flex; // 👈 Show when open
+        display: flex; 
       }
 
       li a {
