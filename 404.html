@@ -3,18 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>404 - Page Not Found</title>
+    <title>404 Not Found</title>
   </head>
   <body>
     <script>
-      // Check if you're on a 404 page and handle accordingly
-      if (window.location.pathname.includes("/404")) {
-        // Redirect to the homepage or specific page
-        window.location.replace("/myPortfolio");
-      } else {
-        // Otherwise, just allow the page to reload
-        location.reload();  // This reloads the current page without changing the URL
-      }
+      // Redirect all 404 requests to index.html
+      window.location.replace('/myPortfolio/');
     </script>
   </body>
 </html>
