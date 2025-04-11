@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/myPortfolio/static/css/main.21ca83ce.css",
-    "main.js": "/myPortfolio/static/js/main.77e50985.js",
+    "main.css": "/myPortfolio/static/css/main.c6ccfc6f.css",
+    "main.js": "/myPortfolio/static/js/main.bd326b9f.js",
     "static/js/488.e1b4d113.chunk.js": "/myPortfolio/static/js/488.e1b4d113.chunk.js",
     "static/media/herovideoHD.mp4": "/myPortfolio/static/media/herovideoHD.96cfc0420c04c0f5a566.mp4",
     "static/media/cloudportscreen.png": "/myPortfolio/static/media/cloudportscreen.c91881d56c532c333a7f.png",
@@ -25,6 +25,7 @@
     "static/media/IT.png": "/myPortfolio/static/media/IT.18424351baee8962b999.png",
     "static/media/datingapp-screen.png": "/myPortfolio/static/media/datingapp-screen.ac008c409b5f2d59e666.png",
     "static/media/coding.png": "/myPortfolio/static/media/coding.b8d75bde853428d5bd03.png",
+    "static/media/portfolio-screen.png": "/myPortfolio/static/media/portfolio-screen.6062d6a134ff89e6187e.png",
     "static/media/design.png": "/myPortfolio/static/media/design.ed837cc71fc5a40e7326.png",
     "static/media/fa-brands-400.woff2": "/myPortfolio/static/media/fa-brands-400.c210719e60948b211a12.woff2",
     "static/media/fa-regular-400.ttf": "/myPortfolio/static/media/fa-regular-400.914997e1bdfc990d0897.ttf",
@@ -36,12 +37,12 @@
     "static/media/fa-v4compatibility.ttf": "/myPortfolio/static/media/fa-v4compatibility.da94ef451f4969af06e6.ttf",
     "static/media/fa-v4compatibility.woff2": "/myPortfolio/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
     "index.html": "/myPortfolio/index.html",
-    "main.21ca83ce.css.map": "/myPortfolio/static/css/main.21ca83ce.css.map",
-    "main.77e50985.js.map": "/myPortfolio/static/js/main.77e50985.js.map",
+    "main.c6ccfc6f.css.map": "/myPortfolio/static/css/main.c6ccfc6f.css.map",
+    "main.bd326b9f.js.map": "/myPortfolio/static/js/main.bd326b9f.js.map",
     "488.e1b4d113.chunk.js.map": "/myPortfolio/static/js/488.e1b4d113.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.21ca83ce.css",
-    "static/js/main.77e50985.js"
+    "static/css/main.c6ccfc6f.css",
+    "static/js/main.bd326b9f.js"
   ]
 }
