@@ -5,7 +5,7 @@ import ProjectsOverview from './components/project-overview/project-overview';
 
 const Home = () => {
   useEffect(() => {
-    document.title = "Helle Fruergaard | Future-Proof your Business. Local. Green";
+    document.title = "Helle Fruergaard | Portfolio";
     }, []);
 
   return (
