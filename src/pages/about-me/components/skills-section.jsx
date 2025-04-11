@@ -1,5 +1,5 @@
 import React from 'react';
-import { skills } from '../../../skills';  
+import { skills } from '../../../data/skills';  
 import SkillCard from './cards/cards';
 import './skills-section.scss';
 

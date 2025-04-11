@@ -23,8 +23,8 @@ import './social-links.scss';
 
 // Assets
 import Images from './assets/images';
-import { frontendProjects } from './frontendprojects';
-import { fullStackProjects } from './fullstackprojects';
+import { frontendProjects } from './data/frontendprojects';
+import { fullStackProjects } from './data/fullstackprojects';
 export {
     React,
     useState,

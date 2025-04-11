@@ -1,4 +1,4 @@
-import Images from './assets/images'
+import Images from '../assets/images'
 
 export const fullStackProjects = [
   {
@@ -115,7 +115,7 @@ export const fullStackProjects = [
     id: 5,
     name: "MERN Plant Calendar",
     technologies: "MongoDB, Express, React, Node.js",
-    images: [Images.DesignIcon], // ← I didn’t find calendar-screen.png in your imports — change this if needed
+    images: [Images.CalendarScreen], // ← I didn’t find calendar-screen.png in your imports — change this if needed
     projectLink: "https://plant-calendar-1-zhbz.onrender.com",
     githubLink: "https://github.com/HelleFH/Plant-calendar",
     buttonText: "View Project",

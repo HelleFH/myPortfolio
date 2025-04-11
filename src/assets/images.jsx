@@ -12,6 +12,7 @@ import NavbarLogo from './images/navbarlogo-white.png';
 import NavbarLogoScrolled from './images/navbarlogo.png';
 
 import AiImagesScreen from './images/aiimages-screen.png';
+import CalendarScreen from './images/calendar-screen.png'
 import ClothesStoreScreen from './images/clothes-store-screen.png';
 import CloudPortScreen from './images/cloudportscreen.png';
 import CodingIcon from './images/coding.png';
@@ -43,6 +44,7 @@ const Images = {
 
 
   AiImagesScreen,
+  CalendarScreen,
   ClothesStoreScreen,
   CloudPortScreen,
   DatingAppScreen,

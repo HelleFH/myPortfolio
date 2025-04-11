@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import LoginModal from "../index/components/login-modal/LoginModal";
 import { useSwipeable } from "react-swipeable";
-import { frontendProjects } from '../../frontendprojects';
-import { fullStackProjects } from '../../fullstackprojects';
+import { frontendProjects } from '../../data/frontendprojects';
+import { fullStackProjects } from '../../data/fullstackprojects';
 import Layout from "../../components/layout/layout";
 
 import './project-details.scss';

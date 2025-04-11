@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Card from '../../cards/cards';
 import ProjectModal from '../project-modal/project-modal';
-import { frontendProjects } from '../../../../frontendprojects';
-import { fullStackProjects } from '../../../../fullstackprojects';
+import { frontendProjects } from '../../../../data/frontendprojects';
+import { fullStackProjects } from '../../../../data/fullstackprojects';
 import './project-overview.scss';
 
 const ProjectsOverview = () => {
