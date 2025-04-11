@@ -174,11 +174,11 @@
         }
 
         &:first-child::before {
-            content: '';
+            content: '' !important;
         }
 
         &:last-child::after {
-            content: '';
+            content: '' !important;
         }
     }
 }
@@ -256,6 +256,18 @@
     .technologies-list {
         gap: 0.8rem;
         font-size: 0.9rem;
+
+        .tech-item {
+ 
+    
+            &::after {
+                content: '•';
+                margin-left: 0.5rem;
+                font-size: 1.5rem;
+            }
+
+
+        }
     }
 
     .back-button {
