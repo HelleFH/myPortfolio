@@ -1,9 +1,11 @@
+import Images from './assets/images'
+
 export const fullStackProjects = [
   {
     id: 1,
     name: "React Store",
     technologies: "Firebase, React",
-    images: ["/images/clothes-store-screen.png"],
+    images: [Images.ClothesStoreScreen],
     projectLink: "https://react-clothes-store.onrender.com/",
     githubLink: "https://github.com/HelleFH/react-clothes-store",
     buttonText: "View Project",
@@ -27,7 +29,7 @@ export const fullStackProjects = [
     id: 2,
     name: "MERN Listings",
     technologies: "MongoDB, Express, React, Node.js",
-    images: ["/images/listing-screen.png"],
+    images: [Images.ListingScreen],
     projectLink: "https://react-listings-1.onrender.com/",
     githubLink: "https://github.com/HelleFH/react-listings",
     buttonText: "View Project",
@@ -53,7 +55,7 @@ export const fullStackProjects = [
     id: 3,
     name: "Cloudinary Upload/Delete",
     technologies: "MongoDB, Express, Vue, Node.js",
-    images: ["/images/aiimages-screen.png"],
+    images: [Images.AiImagesScreen],
     projectLink: "https://cloudinary-upload-delete-1.onrender.com/",
     githubLink: "https://github.com/HelleFH/cloudinary-upload-delete",
     buttonText: "View Project",
@@ -77,7 +79,7 @@ export const fullStackProjects = [
     id: 4,
     name: "MEVN Cart",
     technologies: "MongoDB, Express, Vue, Node.js",
-    images: ["/images/mevncart-screen.png"],
+    images: [Images.MEVNCartScreen],
     projectLink: "https://shopping-cart-master-1-5ylu.onrender.com/",
     githubLink: "https://github.com/hellefh/shopping-cart",
     buttonText: "View Project",
@@ -113,7 +115,7 @@ export const fullStackProjects = [
     id: 5,
     name: "MERN Plant Calendar",
     technologies: "MongoDB, Express, React, Node.js",
-    images: ["/images/calendar-screen.png"],
+    images: [Images.DesignIcon], // ← I didn’t find calendar-screen.png in your imports — change this if needed
     projectLink: "https://plant-calendar-1-zhbz.onrender.com",
     githubLink: "https://github.com/HelleFH/Plant-calendar",
     buttonText: "View Project",
@@ -153,7 +155,7 @@ export const fullStackProjects = [
     id: 6,
     name: "The Monty Hall Problem",
     technologies: "JQuery, Python, Chart.js",
-    images: ["/images/montyhall-screen.png"],
+    images: [Images.MontyHallScreen],
     projectLink: "https://monty-hall-explained.onrender.com/",
     githubLink: "https://github.com/HelleFH/product-page",
     buttonText: "View Project",

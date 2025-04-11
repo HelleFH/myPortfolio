@@ -55,7 +55,7 @@ function App() {
 
 export default function AnimatedApp() {
   return (
-<Router basename="/myPortfolio">
+<Router basename={process.env.NODE_ENV === 'production' ? '/myPortfolio' : ''}>
 <App />
     </Router>
   );
