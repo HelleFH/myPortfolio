@@ -12,7 +12,6 @@ const Navbar = () => {
   const [scrollTimeout, setScrollTimeout] = useState(null); // For inactivity timeout
   const [menuOpen, setMenuOpen] = useState(false);
 
-
   // Scroll detection logic to change navbar style based on scroll
   useEffect(() => {
     const handleScroll = () => {
@@ -67,21 +66,29 @@ const Navbar = () => {
           </Link>
         </div>
 
-               {/* Hamburger Menu Button for Mobile */}
-               <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+        {/* Hamburger Menu Button for Mobile */}
+        <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
 
         {/* Navbar Links */}
         <ul className={`navbar-links ${menuOpen ? 'open' : ''}`}>
-          {/* About Me Link */}
-          <li>
-          <Link to="/about" className="navbar-link" onClick={() => setMenuOpen(false)}>About Me</Link>
+          {/* Home Link visible only in mobile view */}
+          <li className="mobile-home-link">
+            <Link to="/" className="navbar-link" onClick={() => setMenuOpen(false)}>Home</Link>
           </li>
 
-          <li>
-          <SocialLinks />
+          <div className="divider"></div> {/* Divider between links */}
 
+          {/* About Me Link */}
+          <li>
+            <Link to="/about" className="navbar-link" onClick={() => setMenuOpen(false)}>About Me</Link>
+          </li>
+
+          <div className="divider"></div> {/* Divider between links */}
+
+          <li>
+            <SocialLinks />
           </li>
         </ul>
       </div>
