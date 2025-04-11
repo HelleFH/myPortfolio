@@ -212,7 +212,7 @@
   .github-button {
     font-family:'lato';
     display: inline-block;
-    padding: 10px 22px;
+    padding: 7px 15px;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
@@ -220,7 +220,7 @@
     position: relative;
     overflow: hidden;
     z-index: 1;
-    font-size: 1.1rem;
+    font-size: 1rem;
     border-radius: 14px;
 
     &:hover {
@@ -228,6 +228,14 @@
 
       color: var(--black-color) !important;
     }
+
+    @media (min-width: 1050px) {
+      padding: 10px 22px;
+
+      font-size: 1.1rem;
+
+    }
+
 
   }
 

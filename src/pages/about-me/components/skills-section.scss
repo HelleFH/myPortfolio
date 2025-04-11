@@ -2,24 +2,26 @@
 
 .skills-section {
 
+    margin: 0 auto;
 
     h2 {
-        padding-bottom: 2rem;
+        padding-bottom: 1rem;
     }
 
     .skills-cards {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 0.6rem;
         margin: 0 auto;
         justify-items: center;
+        align-content: center;
         flex-wrap: wrap;
         width: 100%;
-        max-width: 1200px;
+        max-width: 1000px;
 
         ul {
             list-style: none;
-            padding-top:var(--xs-padding);
+            padding-top: var(--xs-padding);
         }
 
 

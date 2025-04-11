@@ -14,6 +14,7 @@ import NavbarLogoScrolled from './images/navbarlogo.png';
 import AiImagesScreen from './images/aiimages-screen.png';
 import ClothesStoreScreen from './images/clothes-store-screen.png';
 import CloudPortScreen from './images/cloudportscreen.png';
+import CodingIcon from './images/coding.png';
 import DatingAppScreen from './images/datingapp-screen.png';
 import DesignIcon from './images/design.png';
 import DinosaursScreen from './images/dinosaurs-screen.png';
@@ -48,6 +49,7 @@ const Images = {
   DesignIcon,
   DinosaursScreen,
   ITIcon,
+  CodingIcon,
   LegeKrogenScreen,
   ListingScreen,
   MEVNCartScreen,

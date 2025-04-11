@@ -133,11 +133,18 @@
 }
 
 @media (max-width: 768px) {
-  .navbar .navbar-links {
 
-    gap: var(--xs-gap);
+  .navbar {padding:var(--small-padding);
+  
+    .social-links-container {
+      gap: 0rem;
+    }
+   .navbar-links {
 
-
+    gap:0;
 
   }
+}
+
+
 }
