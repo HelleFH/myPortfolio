@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/myPortfolio/static/css/main.c6ccfc6f.css",
-    "main.js": "/myPortfolio/static/js/main.bd326b9f.js",
+    "main.css": "/myPortfolio/static/css/main.dc3f2c07.css",
+    "main.js": "/myPortfolio/static/js/main.3dd33171.js",
     "static/js/488.e1b4d113.chunk.js": "/myPortfolio/static/js/488.e1b4d113.chunk.js",
     "static/media/herovideoHD.mp4": "/myPortfolio/static/media/herovideoHD.96cfc0420c04c0f5a566.mp4",
-    "static/media/cloudportscreen.png": "/myPortfolio/static/media/cloudportscreen.c91881d56c532c333a7f.png",
+    "static/media/cloud-port-screen.png": "/myPortfolio/static/media/cloud-port-screen.fe27ea437d309c917c7c.png",
     "static/media/snippets-screen.png": "/myPortfolio/static/media/snippets-screen.10586faa8496f5ac58ca.png",
     "static/media/dinosaurs-screen.png": "/myPortfolio/static/media/dinosaurs-screen.a1d5896be04ebee47587.png",
     "static/media/herovideoMobile.mp4": "/myPortfolio/static/media/herovideoMobile.b9afccb5d11c61a90e86.mp4",
@@ -37,12 +37,12 @@
     "static/media/fa-v4compatibility.ttf": "/myPortfolio/static/media/fa-v4compatibility.da94ef451f4969af06e6.ttf",
     "static/media/fa-v4compatibility.woff2": "/myPortfolio/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
     "index.html": "/myPortfolio/index.html",
-    "main.c6ccfc6f.css.map": "/myPortfolio/static/css/main.c6ccfc6f.css.map",
-    "main.bd326b9f.js.map": "/myPortfolio/static/js/main.bd326b9f.js.map",
+    "main.dc3f2c07.css.map": "/myPortfolio/static/css/main.dc3f2c07.css.map",
+    "main.3dd33171.js.map": "/myPortfolio/static/js/main.3dd33171.js.map",
     "488.e1b4d113.chunk.js.map": "/myPortfolio/static/js/488.e1b4d113.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c6ccfc6f.css",
-    "static/js/main.bd326b9f.js"
+    "static/css/main.dc3f2c07.css",
+    "static/js/main.3dd33171.js"
   ]
 }
