@@ -1,5 +1,26 @@
 @import '/src/styles/main';
 
+
+.project-details-list {
+    padding-left: 0;
+    list-style: none;
+  
+    li {
+      position: relative;
+      padding-left: 1.5rem;
+      margin-bottom: 0.75rem;
+      line-height: 1.5;
+  
+      &::before {
+        content: '▹'; // or '➤', '✦', '✔', etc.
+        position: absolute;
+        left: 0;
+        color: $primary-color; // match your theme
+        font-size: 1rem;
+      }
+    }
+  }
+  
 .project-container {
     width: 100%;
     box-sizing: border-box;
@@ -32,6 +53,8 @@
         align-items: center;
         margin-top: 0;
     }
+
+    
 
     .buttons-container {
         @include flex-row;

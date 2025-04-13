@@ -20,6 +20,8 @@
   z-index: 9997;
   overflow: visible;
 
+  .social-links-container {gap:var(--xs-gap )!important;}
+
   a {
     color: var(--white-color);
 
@@ -80,7 +82,7 @@
     list-style: none;
     display: flex;
     align-items: center;
-    gap: var(--gap);
+    gap: var(--xs-gap);
     transition: max-height 0.3s ease, opacity 0.3s ease;
 
     li {
@@ -110,9 +112,7 @@
     display: none;
   }
 
-  &__social-links {
-    gap: var(--xs-gap);
-  }
+
 }
 
 /* Mobile styles */

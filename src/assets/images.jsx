@@ -14,7 +14,7 @@ import NavbarLogoScrolled from './images/navbarlogo.png';
 import AiImagesScreen from './images/aiimages-screen.png';
 import CalendarScreen from './images/calendar-screen.png'
 import ClothesStoreScreen from './images/clothes-store-screen.png';
-import CloudPortScreen from './images/cloudportscreen.png';
+import CloudPortScreen from './images/cloud-port-screen.png';
 import CodingIcon from './images/coding.png';
 import DatingAppScreen from './images/datingapp-screen.png';
 import DesignIcon from './images/design.png';

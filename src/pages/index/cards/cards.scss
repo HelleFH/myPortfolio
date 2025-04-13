@@ -1,6 +1,5 @@
 @import '/src/styles/main';
 
-
 .project-card {
   cursor: pointer;
   border: 1px solid #ddd;
@@ -38,24 +37,37 @@
   }
 
   &__details {
-    margin-top: 1.5rem;
-    color: #444;
+    margin-top: 1.5rem;;
     list-style: disc inside;
     text-align: left;
   }
 
-  &__quote {
-    background-color: $highlight-color;
-    color: $primary-color;
-    padding: var(--small-padding);;
-    border-radius: 8px;
-    margin-top: 1.5rem;
+  // ✅ Move this outside the &__quote block!
+  &__technologies-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0 0 0.5em;
     display: flex;
-    align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.4em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    width: 100%;
+  }
 
-    &-icon {
-      margin-right: 0.75rem;
+  &__tech-item {
+    font-size: 1em;
+    font-weight: 400;
+    position: relative;
+
+    &::before {
+      content: '•';
+      margin-right: 0.5rem;
+    }
+
+    &:first-child::before {
+      content: '';
     }
   }
 }

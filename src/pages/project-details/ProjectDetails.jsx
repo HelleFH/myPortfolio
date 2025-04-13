@@ -80,7 +80,16 @@ const ProjectDetail = () => {
           <div className="project-text">
             <h4>{selectedProject.descriptionHeader}</h4>
             <p>{selectedProject.description}</p>
-            <p>{selectedProject.projectDetails}</p>
+            {selectedProject.projectDetails && (
+  <>
+    <h4>Project Features</h4>
+    <ul className="project-details-list">
+      {selectedProject.projectDetails.map((detail, index) => (
+        <li key={index}>{detail}</li>
+      ))}
+    </ul>
+  </>
+)}
 
             <h4>Technologies Used</h4>
             <ul className="technologies-list">

@@ -7,7 +7,13 @@ export default function Card({ project, onClick }) {
     <div className="project-card" onClick={onClick}>
       <img className="project-card__image" src={project.images[0]} alt={project.name} />
       <strong className="project-card__title">{project.name}</strong>
-      <div className="project-card__description">{project.description}</div>
+
+      <ul className="project-card__technologies-list">
+        {project.technologiesMore.map((tech, index) => (
+          <li className='project-card__tech-item' key={index}>{tech}</li>
+        ))}
+      </ul>
     </div>
   );
 }
+

@@ -5,7 +5,7 @@
   export const frontendProjects = [
     {
       id: 1,
-      name: "CloudPort.com",
+      name: "Cloudporteurope.com",
       technologies: "React",
       images: [Images.CloudPortScreen],
       projectLink: "https://cloudporteurope.com",
@@ -13,7 +13,7 @@
       buttonText: "View Project",
       githubButtonText: "GitHub",
       descriptionHeader: "A Company Website",
-      description: "This is a React-based static website for a company...",
+      description: "This is a React-based static website for a company.",
       technologiesMore: ["React", "Google integration", "Bassin integration"]
     },
     {
@@ -26,7 +26,7 @@
       buttonText: "View Project",
       githubButtonText: "GitHub",
       descriptionHeader: "A Company Website",
-      description: "This is a React-based static website for a company...",
+      description: "This is a React-based static website for a company.",
       technologiesMore: ["React", "HubSpot APIs", "YouTube integration", "Outlook integration"]
     },
     {
@@ -39,7 +39,7 @@
       buttonText: "View Project",
       githubButtonText: "GitHub",
       descriptionHeader: "Various React components",
-      description: "React snippets with a navbar, lightbox gallery, a download button and Tinder-like swipe cards...",
+      description: "React snippets with a navbar, lightbox gallery, a download button and Tinder-like swipe cards.",
       technologiesMore: ["JavaScript"]
     },
     {
@@ -52,7 +52,7 @@
       buttonText: "View Project",
       githubButtonText: "GitHub",
       descriptionHeader: "React Product Grid with Modal",
-      description: "A dynamic React portfolio page showcasing a visually appealing image grid with a sleek overlay...",
+      description: "A dynamic React portfolio page showcasing a visually appealing image grid with a sleek overlay.",
       technologiesMore: ["React", "Bootstrap", "Styled Components", "React Swipable"]
     },
     {
@@ -65,7 +65,7 @@
       buttonText: "View Project",
       githubButtonText: "GitHub",
       descriptionHeader: "Frontend for React-based Dating Application",
-      description: "This project is a frontend for a tinder-like dating app developed using React...",
+      description: "This project is a frontend for a tinder-like dating app developed using React.",
       technologiesMore: ["React", "Axios", "Bootstrap", "Cloudinary", "Multer", "Babel"]
     },
     {
@@ -78,7 +78,7 @@
       buttonText: "View Project",
       githubButtonText: "GitHub",
       descriptionHeader: "Made with Vanilla JS",
-      description: "A news website for Copenhagen, built with vanilla JavaScript...",
+      description: "A news website for Copenhagen, built with vanilla JavaScript.",
       technologiesMore: ["JavaScript"]
     },
     {
@@ -91,7 +91,7 @@
       buttonText: "View Project",
       githubButtonText: "GitHub",
       descriptionHeader: "Netflix-like streaming platform clone",
-      description: "Netflix Clone is a web application that replicates the user interface and functionalities of Netflix...",
+      description: "Netflix Clone is a web application that replicates the user interface and functionalities of Netflix.",
       technologiesMore: ["JavaScript"]
     },
     {
@@ -104,7 +104,7 @@
       buttonText: "View Project",
       githubButtonText: "GitHub",
       descriptionHeader: "Interactive image gallery with JQuery",
-      description: "A simple site that showcases an interactive image gallery using JQuery showing AI images of dinosaurs...",
+      description: "A simple site that showcases an interactive image gallery using JQuery showing AI images of dinosaurs.",
       technologiesMore: ["JQuery"]
     },
     {
@@ -117,7 +117,7 @@
       buttonText: "View Project",
       githubButtonText: "GitHub",
       descriptionHeader: "Simple front page for Web Shop using HTML and CSS",
-      description: "CSS and HTML for a webshop. It showcases a basic online shop layout with product listings...",
+      description: "CSS and HTML for a webshop. It showcases a basic online shop layout with product listings.",
       technologiesMore: ["HTML", "CSS"]
     }
   ];
