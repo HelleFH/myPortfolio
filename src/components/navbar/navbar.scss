@@ -17,7 +17,7 @@
   letter-spacing: -0.35px;
   box-sizing: border-box;
   transition: transform 0.3s, background-color 0.3s, color 0.3s;
-  z-index: 9997;
+  z-index: 9995;
   overflow: visible;
 
   .social-links-container {gap:var(--xs-gap )!important;}
@@ -139,7 +139,7 @@
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         padding: var(--small-padding);;
         gap: 0;
-        z-index: 10000;
+        z-index: 9996;
 
         li a {
           color: var(--black-color) !important;
