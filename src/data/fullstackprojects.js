@@ -179,7 +179,7 @@ export const fullStackProjects = [
 
 {
   "id": 6,
-  "name": "Monty Hall Simulator & Game",
+  "name": "Monty Hall",
   "technologies": "Flask, JavaScript, HTML, CSS, p5.js",
   "images": [Images.MontyHallScreen],
   "projectLink": "https://your-live-project-link.com/",
