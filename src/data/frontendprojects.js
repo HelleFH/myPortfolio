@@ -55,19 +55,8 @@
       description: "A dynamic React portfolio page showcasing a visually appealing image grid with a sleek overlay.",
       technologiesMore: ["React", "Bootstrap", "Styled Components", "React Swipable"]
     },
-    {
-      id: 5,
-      name: "React Dating App",
-      technologies: "React",
-      images: [Images.DatingAppScreen],
-      projectLink: "https://hellefh.github.io/react-app/#findmatches",
-      githubLink: "https://github.com/hellefh/react-app",
-      buttonText: "View Project",
-      githubButtonText: "GitHub",
-      descriptionHeader: "Frontend for React-based Dating Application",
-      description: "This project is a frontend for a tinder-like dating app developed using React.",
-      technologiesMore: ["React", "Axios", "Bootstrap", "Cloudinary", "Multer", "Babel"]
-    },
+ 
+
     {
       id: 6,
       name: "News Site",
