@@ -182,7 +182,7 @@ export const fullStackProjects = [
   "name": "Monty Hall",
   "technologies": "Flask, JavaScript, HTML, CSS, p5.js",
   "images": [Images.MontyHallScreen],
-  "projectLink": "https://hellefh.github.io/Monty-Hall-Explained/",
+  "projectLink": "https://monty-hall-explained.onrender.com",
   "githubLink": "https://github.com/HelleFH/monty-hall-simulator",
   "buttonText": "Play Game",
   "githubButtonText": "GitHub",
