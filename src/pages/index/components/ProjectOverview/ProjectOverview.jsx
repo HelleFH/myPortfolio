@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import Card from '../../cards/cards';
-import ProjectModal from '../project-modal/project-modal';
+import Card from '../Cards/Cards'
+import ProjectModal from '../ProjectModal/ProjectModal'
 import { frontendProjects } from '../../../../data/frontendprojects';
 import { fullStackProjects } from '../../../../data/fullstackprojects';
-import './project-overview.scss';
+import './ProjectOverview.scss';
 import { useLocation } from 'react-router-dom';
 
 const ProjectsOverview = () => {

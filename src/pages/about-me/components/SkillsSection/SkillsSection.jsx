@@ -1,7 +1,7 @@
 import React from 'react';
 import { skills } from '../../../../data/skills';  
-import SkillCard from '../cards/cards';
-import './skills-section.scss';
+import SkillCard from '../cards/Cards';
+import './SkillsSection.scss';
 
 export default function SkillsSection() {
   const handleCardClick = () => {

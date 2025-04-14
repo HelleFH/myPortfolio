@@ -24,6 +24,7 @@
 
     &__bio {
         @include flex-column;
+        flex:1;
 
         gap: var(--small-gap);
     }
@@ -52,6 +53,8 @@
         @media (min-width: 768px) {
             flex-direction: row;
             align-items: flex-start;
+            max-width:1000px;
+            margin:0 auto;
         }
     }
 

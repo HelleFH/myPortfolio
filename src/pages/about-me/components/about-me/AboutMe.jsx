@@ -1,7 +1,7 @@
 import React from 'react';
-import './about-me.scss'; 
-import DownloadSection from '../download-section/download-section';
-import SocialLinks from '../../../../components/social-links/social-links';
+import './AboutMe.scss'; 
+import DownloadSection from '../download-section/DownloadSection';
+import SocialLinks from '../../../../components/SocialLinks/SocialLinks'
 
 const AboutMe = () => {
     return (

@@ -1,8 +1,8 @@
 import React from 'react';
-import Hero from '../hero/hero';
-import Navbar from '../navbar/navbar';
-import Footer from '../footer/footer';
-import './layout.scss';
+import Hero from '../Hero/Hero';
+import Navbar from '../Navbar/Navbar';
+import Footer from '../Footer/Footer'
+import './Layout.scss';
 
 const Layout = ({ heroTitle, heroSubtitle, buttons, showContactUsButton, children }) => {
   return (
@@ -21,5 +21,5 @@ const Layout = ({ heroTitle, heroSubtitle, buttons, showContactUsButton, childre
     </div>
   );
 };
-
+  
 export default Layout;

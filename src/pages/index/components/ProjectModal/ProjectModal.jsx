@@ -3,10 +3,10 @@ import { useSwipeable } from 'react-swipeable';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { Modal, Button } from 'react-bootstrap';
-import ProjectButtons from '../../../../components/project-buttons/project-buttons';
+import ProjectButtons from '../../../../components/ProjectButtons/ProjectButtons';
 import { Link } from 'react-router-dom';
-import './project-modal.scss';
-import LoginModal from '../login-modal/LoginModal';
+import './ProjectModal.scss';
+import LoginModal from '../../../../components/LoginModal/LoginModal';
 
 const ProjectModal = ({
   show,

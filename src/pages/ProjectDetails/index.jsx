@@ -1,12 +1,12 @@
 import React, { useEffect, useState, useRef } from "react";
 import { useParams, useNavigate, } from "react-router-dom";
-import LoginModal from "../index/components/login-modal/LoginModal";
+import LoginModal from "../../components/LoginModal/LoginModal";
 import { useSwipeable } from "react-swipeable";
 import { frontendProjects } from '../../data/frontendprojects';
 import { fullStackProjects } from '../../data/fullstackprojects';
-import Layout from "../../components/layout/layout";
-import ProjectButtons from "../../components/project-buttons/project-buttons";
-import './project-details.scss';
+import Layout from "../../components/Layout/Layout";
+import ProjectButtons from "../../components/ProjectButtons/ProjectButtons";
+import './index.scss';
 
 const ProjectDetail = () => {
   const { id, type } = useParams();

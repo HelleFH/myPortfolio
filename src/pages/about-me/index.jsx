@@ -1,8 +1,8 @@
 import React from 'react';
-import AboutMe from './components/about-me/about-me';
-import SkillsSection from './components/skills-section/skills-section';
-import Layout from '../../components/layout/layout';
-import './about-me-page.scss'; 
+import AboutMe from './components/about-me/AboutMe';
+import SkillsSection from './components/SkillsSection/SkillsSection'
+import Layout from '../../components/Layout/Layout';
+import './index.scss'; 
 
 const AboutMePage = () => {
   return (

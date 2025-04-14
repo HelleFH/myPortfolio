@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import Home from './pages/index';
-import ProjectDetail from './pages/project-details/ProjectDetails';
-import AboutMePage from './pages/about-me/about-me-page';
+import ProjectDetail from './pages/ProjectDetails';
+import AboutMePage from './pages/about-me';
 
 function App() {
   const location = useLocation();

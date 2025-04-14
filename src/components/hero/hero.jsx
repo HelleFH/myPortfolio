@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from 'react-router-dom';
-import './hero.scss';
+import './Hero.scss';
 import Images from "../../assets/images";
-import SocialLinks from "../social-links/social-links";
+import SocialLinks from "../SocialLinks/SocialLinks";
 
 const Hero = ({ title, subtitle, buttons, showContactUsButton }) => {
   const navigate = useNavigate();

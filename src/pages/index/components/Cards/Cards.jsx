@@ -1,6 +1,6 @@
 // Card.jsx
 import React from 'react';
-import './cards.scss';
+import './Cards.scss';
 
 export default function Card({ project, onClick }) {
   return (

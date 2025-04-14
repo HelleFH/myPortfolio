@@ -1,5 +1,5 @@
 import React from 'react';
-import './project-buttons.scss';
+import './ProjectButtons.scss';
 
 const ProjectButtons = ({ projectLink, githubLink, buttonText, githubButtonText }) => {
   return (

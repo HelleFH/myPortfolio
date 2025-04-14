@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import './footer.scss';
+import './Footer.scss';
 import Images from '../../assets/images';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import SocialLinks from '../social-links/social-links';
+import SocialLinks from '../SocialLinks/SocialLinks';
 
 
 const Footer = () => {

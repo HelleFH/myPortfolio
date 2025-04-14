@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import './navbar.scss';
+import './Navbar.scss';
 import { Link } from 'react-router-dom'; // Import Link component from react-router-dom
 import Images from '../../assets/images';
-import SocialLinks from '../social-links/social-links';
+import SocialLinks from '../SocialLinks/SocialLinks'
 import { Menu, X } from 'lucide-react';
 
 const Navbar = () => {

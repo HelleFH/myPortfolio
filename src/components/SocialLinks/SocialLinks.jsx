@@ -2,7 +2,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
-import './social-links.scss';
+import './SocialLinks.scss';
 const SocialLinks = ({ onClick }) => {
   return (
     <div className="social-links-container">

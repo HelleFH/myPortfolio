@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react';
-import Layout from '../../components/layout/layout';
+import Layout from '../../components/Layout/Layout';
 
-import ProjectsOverview from './components/project-overview/project-overview';
-
+import ProjectsOverview from './components/ProjectOverview/ProjectOverview'
 const Home = () => {
   useEffect(() => {
     document.title = "Helle Fruergaard | Portfolio";
