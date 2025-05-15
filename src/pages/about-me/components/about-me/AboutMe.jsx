@@ -15,7 +15,6 @@ const AboutMe = () => {
                         <p> +45 29664077</p>
                         <SocialLinks />
 
-                        <DownloadSection />
                     </div>
                 </div>
 
