@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight, faCopy } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'; 
 import { Modal, Button } from 'react-bootstrap';
-import Layout from './components/Layout/Layout';
+import Layout from './components/layout/Layout';
 import ProjectsOverview from './pages/index/components/project-overview/project-overview';
 import LoginModal from './pages/index/components/login-modal/LoginModal';
 import SocialLinks from './components/social-links/social-links';
