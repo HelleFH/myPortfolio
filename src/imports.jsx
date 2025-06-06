@@ -11,7 +11,7 @@ import ProjectsOverview from './pages/index/components/project-overview/project-
 import LoginModal from './pages/index/components/login-modal/LoginModal';
 import SocialLinks from './components/social-links/social-links';
 import Hero from './components/Hero/Hero';
-import Navbar from './components/navbar/navbar';
+import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 
 // Assets

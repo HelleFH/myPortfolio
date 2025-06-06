@@ -1,6 +1,5 @@
 import React from 'react';
 import './AboutMe.scss'; 
-import DownloadSection from '../download-section/DownloadSection';
 import SocialLinks from '../../../../components/SocialLinks/SocialLinks'
 
 const AboutMe = () => {
@@ -15,7 +14,6 @@ const AboutMe = () => {
                         <p> +45 29664077</p>
                         <SocialLinks />
 
-                        <DownloadSection />
                     </div>
                 </div>
 

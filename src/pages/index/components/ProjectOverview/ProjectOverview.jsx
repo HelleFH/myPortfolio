@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Card from '../Cards/Cards'
+import Card from '../Cards/Cards';
 import ProjectModal from '../ProjectModal/ProjectModal'
 import { frontendProjects } from '../../../../data/frontendprojects';
 import { fullStackProjects } from '../../../../data/fullstackprojects';
