@@ -30,6 +30,8 @@ import NewsSiteScreen from './images/news-screen.png';
 import SentispecScreen from './images/sentispec-screen.png';
 import SnippetsScreen from './images/snippets-screen.png';
 
+import LandingPagesScreen from './images/landingpages-screen.png'
+
 const Images = {
   FooterLogo,
   LogoBlue,
@@ -62,6 +64,8 @@ const Images = {
   PortfolioScreen,
   SentispecScreen,
   SnippetsScreen,
+
+  LandingPagesScreen,
 };
 
 export default Images;

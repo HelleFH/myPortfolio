@@ -5,7 +5,7 @@ import { frontendProjects } from '../../../../data/frontendprojects';
 import { fullStackProjects } from '../../../../data/fullstackprojects';
 import './ProjectOverview.scss';
 import { useLocation } from 'react-router-dom';
-
+import AnimatedSection from '../../../../components/AnimatedSection';
 const ProjectsOverview = () => {
   const [selectedProjectIndex, setSelectedProjectIndex] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -57,7 +57,7 @@ const ProjectsOverview = () => {
 
   return (
     <div className="projects-overview__container">
-      <h2>Frontend Projects</h2>
+      <h2>React Projects</h2>
       <div className="projects-overview">
         {frontendProjects.map((project, index) => (
           <Card
@@ -67,8 +67,8 @@ const ProjectsOverview = () => {
           />
         ))}
       </div>
-
-      <h2>Fullstack Projects</h2>
+      <h2>Other Projects</h2>
+    
       <div className="projects-overview">
         {fullStackProjects.map((project, index) => (
           <Card
@@ -78,7 +78,6 @@ const ProjectsOverview = () => {
           />
         ))}
       </div>
-
       {isModalOpen && selectedProjectIndex !== null && (
         <ProjectModal
           show={isModalOpen}

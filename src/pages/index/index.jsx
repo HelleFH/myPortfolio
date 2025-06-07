@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 import Layout from '../../components/Layout/Layout';
+import DesignEmbeds from '../design-embeds/components/DesignEmbeds/DesignEmbeds';
+import AnimatedSection from '../../components/AnimatedSection';
 
 import ProjectsOverview from './components/ProjectOverview/ProjectOverview'
 const Home = () => {
@@ -17,8 +19,11 @@ const Home = () => {
     >
 
       <div className='index-container'>
-     
       <ProjectsOverview />
+<AnimatedSection>
+
+      <DesignEmbeds />
+</AnimatedSection>
 
       </div>
 

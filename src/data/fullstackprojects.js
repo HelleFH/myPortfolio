@@ -1,73 +1,11 @@
 import Images from '../assets/images';
 
 export const fullStackProjects = [
-  {
-    "id": 1,
-    "name": "React Store",
-    "technologies": "Firebase, React",
-    "images": [Images.ClothesStoreScreen],
-    "projectLink": "https://react-clothes-store.onrender.com/",
-    "githubLink": "https://github.com/HelleFH/react-clothes-store",
-    "buttonText": "View Project",
-    "githubButtonText": "GitHub",
-    "descriptionHeader": "Full-Stack E-Commerce App with Firebase Backend and Admin Panel",
-    "description": "A full-stack e-commerce application built with React and Firebase. It includes user authentication, real-time Firestore database integration, and a secure admin panel for managing products. Users can register, log in, edit their profiles, and browse the product catalog. Admins have full CRUD access for store inventory.",
-    "technologiesMore": [
-      "Vite",
-      "Formik",
-      "Moment",
-      "Yup",
-      "Redux",
-      "Enzyme"
-    ],
-    "username": "duser7707@gmail.com",
-    "password": "Demopassword123",
-    "adminUsername": "dmndmuser@gmail.com",
-    "adminPassword": "Demopassword123",
-    "projectDetails": [
-      "Admin panel with full CRUD operations (products, inventory)",
-      "Firebase authentication with email/password and provider support",
-      "Real-time Firestore database integration",
-      "Form validation using Formik and Yup",
-      "Global state management with Redux",
-      "Responsive design"
-    ]
-  },
 
-  {
-    "id": 2,
-    "name": "MERN Listings",
-    "technologies": "MongoDB, Express, React, Node.js",
-    "images": [Images.ListingScreen],
-    "projectLink": "https://react-listings-1.onrender.com/",
-    "githubLink": "https://github.com/HelleFH/react-listings",
-    "buttonText": "View Project",
-    "githubButtonText": "GitHub",
-    "descriptionHeader": "Holiday Home Listings App using the MERN Stack",
-    "description": "A full-stack listings application built with the MERN stack. Users can create, update, and delete listings including image uploads, titles, descriptions, and location information. The app uses React for the frontend with Bootstrap styling, and a Node.js/Express backend connected to a MongoDB database.",
-    "technologiesMore": [
-      "Vite",
-      "Bootstrap",
-      "Nodemon",
-      "MongoDB",
-      "Express",
-      "React",
-      "Node.js",
-      "RESTful API",
-      "Cloudinary"
-    ],
-    "projectDetails": [
-      "Users can upload, edit, and delete holiday home listings in real time",
-      "Integrated with Cloudinary for image upload and hosting",
-      "Responsive frontend built with React and styled using Bootstrap",
-      "Backend API built with Express and MongoDB for data persistence",
-      "RESTful architecture with secure routes and error handling",
-      "Modular and scalable codebase using environment variables and middleware"
-    ]
-  },
+  
   
   {
-    "id": 3,
+    "id": 1,
     "name": "Cloudinary Upload/Delete",
     "technologies": "MongoDB, Express, Vue, Node.js",
     "images": [Images.AiImagesScreen],
@@ -101,7 +39,7 @@ export const fullStackProjects = [
 ,
 
 {
-  "id": 4,
+  "id": 2,
   "name": "MEVN Cart",
   "technologies": "MongoDB, Express, Vue, Node.js",
   "images": [Images.MEVNCartScreen],
@@ -138,53 +76,15 @@ export const fullStackProjects = [
   ]
 }
 ,
-{
-  "id": 5,
-  "name": "MERN Plant Calendar",
-  "technologies": "MongoDB, Express, React, Node.js",
-  "images": [Images.CalendarScreen], 
-  "projectLink": "https://plant-calendar-1-zhbz.onrender.com",
-  "githubLink": "https://github.com/HelleFH/Plant-calendar",
-  "buttonText": "View Project",
-  "githubButtonText": "GitHub",
-  "descriptionHeader": "Plant Calendar and Reminder System with MERN Stack",
-  "description": "Work in progress! This app helps users manage plant collections by adding, tracking, and updating plant care tasks. Users can also search for plants via external API.",
-  "username": "Hellefruergaard@plantcalendar.com",
-  "password": "fruergaard",
-  "technologiesMore": [
-    "MongoDB",
-    "Express",
-    "React",
-    "Node.js",
-    "Axios",
-    "RESTful API",
-    "Bcryptjs",
-    "Cloudinary",
-    "Multer",
-    "Vite",
-    "Moment"
-  ],
-  "projectDetails": [
-    "User authentication: Sign up, login, logout",
-    "Secure password hashing with Bcryptjs",
-    "Add new plants with name, species, acquisition date, and photos",
-    "Search plants using an external API",
-    "View, edit, or delete plants from collection",
-    "Add and manage care reminders with type, frequency, and due date",
-    "Log and track plant growth updates with notes and photos",
-    "View timeline of updates per plant for historical tracking",
-    "Built with Vite and styled using MUI and custom SCSS"
-  ]
-},
 
 {
-  "id": 6,
+  "id": 3,
   "name": "Monty Hall",
   "technologies": "Flask, JavaScript, HTML, CSS, p5.js",
   "images": [Images.MontyHallScreen],
   "projectLink": "https://monty-hall-explained.onrender.com",
   "githubLink": "https://github.com/HelleFH/monty-hall-simulator",
-  "buttonText": "Play Game",
+  "buttonText": "View Project",
   "githubButtonText": "GitHub",
   "descriptionHeader": "Interactive Monty Hall Simulation and Game",
   "description": "A dual-experience app where users can simulate the Monty Hall problem statistically using Python and experience it interactively through a JavaScript-based game. Great for exploring probability theory and decision-making under uncertainty.",
@@ -211,4 +111,57 @@ export const fullStackProjects = [
   ]
 }
 ,
+
+    {
+      id: 4,
+      name: "News Site",
+      technologies: "HTML, CSS, JS",
+      images: [Images.NewsSiteScreen],
+      projectLink: "https://helle-avis-site.onrender.com/",
+      githubLink: "https://github.com/HelleFH/Helle-avis-site/tree/main",
+      buttonText: "View Project",
+      githubButtonText: "GitHub",
+      descriptionHeader: "Made with Vanilla JS",
+      description: "A news website for Copenhagen, built with vanilla JavaScript.",
+      technologiesMore: ["JavaScript"]
+    },
+    {
+      id: 5,
+      name: "Netflix Clone",
+      technologies: "JavaScript",
+      images: [Images.NetflixScreen],
+      projectLink: "https://hellefh.github.io/Netflix-clone-main/",
+      githubLink: "https://github.com/HelleFH/Netflix-clone-main",
+      buttonText: "View Project",
+      githubButtonText: "GitHub",
+      descriptionHeader: "Netflix-like streaming platform clone",
+      description: "Netflix Clone is a web application that replicates the user interface and functionalities of Netflix.",
+      technologiesMore: ["JavaScript"]
+    },
+    {
+      id: 6,
+      name: "Lightbox Gallery",
+      technologies: "JQuery",
+      images: [Images.DinosaursScreen],
+      projectLink: "https://hellefh.github.io/Lightbox-gallery/",
+      githubLink: "https://github.com/hellefh/Lightbox-gallery",
+      buttonText: "View Project",
+      githubButtonText: "GitHub",
+      descriptionHeader: "Interactive image gallery with JQuery",
+      description: "A simple site that showcases an interactive image gallery using JQuery showing AI images of dinosaurs.",
+      technologiesMore: ["JQuery"]
+    },
+    {
+      id: 7,
+      name: "Front Page",
+      technologies: "HTML, CSS",
+      images: [Images.LegeKrogenScreen],
+      projectLink: "https://hellefh.github.io/Legekrogen/",
+      githubLink: "https://github.com/hellefh/legekrogen",
+      buttonText: "View Project",
+      githubButtonText: "GitHub",
+      descriptionHeader: "Simple front page for Web Shop using HTML and CSS",
+      description: "CSS and HTML for a webshop. It showcases a basic online shop layout with product listings.",
+      technologiesMore: ["HTML", "CSS"]
+    },
 ];

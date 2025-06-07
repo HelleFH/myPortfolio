@@ -11,21 +11,21 @@
   max-width: 1200px;
 
 
-&__container {
-  @include flex-column;
-  max-width: 1200px;
-  padding:var(--padding);
-  
-}
+  &__container {
+    @include flex-column;
+    max-width: 1200px;
+    padding: var(--padding);
+
+  }
 }
 
 /* Mobile-specific Styles */
 @media (max-width: 768px) {
-  .projects-overview{
-@include flex-column;
+  .projects-overview {
+    @include flex-column;
 
 
-margin: 0;
+    margin: 0;
 
   }
 
