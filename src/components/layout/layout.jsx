@@ -3,6 +3,7 @@ import Hero from '../Hero/Hero'
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer'
 import './Layout.scss';
+import AnimatedSection from '../AnimatedSection';
 
 const Layout = ({ heroTitle, heroSubtitle, buttons, showContactUsButton, children }) => {
   return (
@@ -17,9 +18,12 @@ const Layout = ({ heroTitle, heroSubtitle, buttons, showContactUsButton, childre
       <div className="layout__main-content">
         {children}
       </div>
-      <Footer />
+      <AnimatedSection>
+        <Footer />
+      </AnimatedSection>
+
     </div>
   );
 };
-  
+
 export default Layout;

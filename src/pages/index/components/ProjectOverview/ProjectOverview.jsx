@@ -57,7 +57,7 @@ const ProjectsOverview = () => {
 
   return (
     <div className="projects-overview__container">
-      <h2>React Projects</h2>
+      <h1>React Projects</h1>
       <div className="projects-overview">
         {frontendProjects.map((project, index) => (
           <Card
@@ -67,7 +67,7 @@ const ProjectsOverview = () => {
           />
         ))}
       </div>
-      <h2>Other Projects</h2>
+      <h1>Other Projects</h1>
     
       <div className="projects-overview">
         {fullStackProjects.map((project, index) => (

@@ -53,7 +53,7 @@ const embeds = [
 const DesignEmbeds = () => {
   return (
     <div className="design-embeds__container">
-      <h2>Visual Projects</h2>
+      <h1>Visual Projects</h1>
       <div className="design-embeds">
         {embeds.map((embed) => (
           <EmbedCard

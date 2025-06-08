@@ -20,3 +20,15 @@
     }
 }
 }
+
+
+@media (max-width: 768px) {
+ .design-embeds {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+}
