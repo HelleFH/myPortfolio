@@ -25,10 +25,11 @@
 @media (max-width: 768px) {
  .design-embeds {
 
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width:100%;
 
 }
 }
