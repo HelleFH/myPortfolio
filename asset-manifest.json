@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/myPortfolio/static/css/main.380a650f.css",
-    "main.js": "/myPortfolio/static/js/main.6a4d7dac.js",
+    "main.js": "/myPortfolio/static/js/main.7aa0938b.js",
     "static/js/488.e1b4d113.chunk.js": "/myPortfolio/static/js/488.e1b4d113.chunk.js",
     "static/media/herovideoHD.mp4": "/myPortfolio/static/media/herovideoHD.96cfc0420c04c0f5a566.mp4",
     "static/media/cloud-port-screen.png": "/myPortfolio/static/media/cloud-port-screen.fe27ea437d309c917c7c.png",
@@ -20,8 +20,8 @@
     "static/media/herovideo.webm": "/myPortfolio/static/media/herovideo.4959163ba91bdce145ca.webm",
     "static/media/heroimage.png": "/myPortfolio/static/media/heroimage.9236923ca4d744652d28.png",
     "static/media/clothes-store-screen.png": "/myPortfolio/static/media/clothes-store-screen.e6b7cba8099e24f14c11.png",
+    "static/media/sentispec-screen.png": "/myPortfolio/static/media/sentispec-screen.40feeb7fdcb20a76f8f9.png",
     "static/media/fa-brands-400.ttf": "/myPortfolio/static/media/fa-brands-400.1815e00441357e01619e.ttf",
-    "static/media/sentispec-screen.png": "/myPortfolio/static/media/sentispec-screen.cad67ec5619645254ddc.png",
     "static/media/fa-solid-900.woff2": "/myPortfolio/static/media/fa-solid-900.2463b90d9a316e4e5294.woff2",
     "static/media/IT.png": "/myPortfolio/static/media/IT.18424351baee8962b999.png",
     "static/media/datingapp-screen.png": "/myPortfolio/static/media/datingapp-screen.ac008c409b5f2d59e666.png",
@@ -39,11 +39,11 @@
     "static/media/fa-v4compatibility.woff2": "/myPortfolio/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
     "index.html": "/myPortfolio/index.html",
     "main.380a650f.css.map": "/myPortfolio/static/css/main.380a650f.css.map",
-    "main.6a4d7dac.js.map": "/myPortfolio/static/js/main.6a4d7dac.js.map",
+    "main.7aa0938b.js.map": "/myPortfolio/static/js/main.7aa0938b.js.map",
     "488.e1b4d113.chunk.js.map": "/myPortfolio/static/js/488.e1b4d113.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.380a650f.css",
-    "static/js/main.6a4d7dac.js"
+    "static/js/main.7aa0938b.js"
   ]
 }
