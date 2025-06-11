@@ -67,7 +67,7 @@
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
   .hero {
     padding: var(--padding);
 
@@ -86,8 +86,16 @@
       padding: 0;
       margin-top: 0;
       justify-content: space-between;
-            margin-top: 50%;
     }
+
+      &__button-container {
+  bottom:0;
+  }
+  &__title-container {
+  margin-top:40%;
+  position: relative;
+  }
+
 
     &__title {
       font-size: var(--large-title-font);
