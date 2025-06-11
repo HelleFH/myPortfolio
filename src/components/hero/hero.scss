@@ -61,9 +61,16 @@ max-width:60%;
     margin: 0;
   }
 
-  &__image {
-    display: none; // default to hidden, override in mobile
-  }
+    &__image {
+      display: block;
+      background-position: center;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background-size: contain;
+      height: 80%;
+      margin-top: 2rem;
+    }
 }
 
 @media (max-width: 767px) {
@@ -111,6 +118,12 @@ max-width:60%;
     font-family: 'PangramSans-Medium';
 
   }
+  }
+}
+
+@media   (min-width: 768px) and (max-width: 1000px) {
+  .hero {
+    padding:12rem 5rem;
   }
 }
 
