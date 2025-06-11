@@ -11,7 +11,6 @@ export default function SkillsSection() {
 
   return (
     <div className="skills-section">
-      <h2>{skills[0].title}</h2>
       <h5>{skills[0].subtitle}</h5>
       <div className="skills-cards">
         {skills[0].sections.map((section, index) => (

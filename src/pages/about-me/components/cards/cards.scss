@@ -6,13 +6,15 @@
   cursor: pointer;
   border: 1px solid #ddd;
   padding: var(--padding) 0;
-  background-color: #f9f9f9;
+  background-color: white;
   border-radius: var(--border-radius);
   text-align: center;
   width: 100%;
   min-width: 260px;
   transition: all 0.2s ease;
   margin:0 auto;
+  max-width:96vw;
+  
 
 
   &__image {
