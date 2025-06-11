@@ -1,6 +1,5 @@
 @import '/src/styles/main';
 
-
 .hero {
   @include flex-column;
   justify-content: center;
@@ -10,13 +9,7 @@
   background-color: white;
   padding: 15rem 10rem;
 
-  .book-meeting-button {
-    margin: 0;
-
-  }
-
-
-  .hero__video {
+  &__video {
     position: absolute;
     right: 0;
     width: 50%;
@@ -25,7 +18,6 @@
     z-index: 0;
   }
 
-  /* Content Container */
   &__content {
     position: relative;
     @include flex-column;
@@ -33,44 +25,55 @@
     gap: var(--large-gap);
     width: 100%;
     z-index: 2;
-
-
   }
 
+  &__title-container {
+    @include flex-column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap:0;
+  }
 
   &__subtitle {
-    font-family: 'prompt';
+    font-family: 'PangramSans-Light';
     position: relative;
     font-weight: 200;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     width: 100%;
+    line-height: 0;
+    letter-spacing: -0.04rem;
   }
 
-  /* Hero Title */
   &__title {
     font-size: 4rem;
     font-weight: 400;
     margin: 0;
     font-family: 'PangramSans-Medium';
     letter-spacing: -0.05rem;
-    max-width:800px;
+    max-width: 800px;
   }
 
-
-  /* Hero Button Container */
   &__button-container {
     @include flex-row;
-
     justify-content: flex-start;
     height: 40px;
   }
 
+  &__button {
+    margin: 0;
+  }
 
+  &__image {
+    display: none; // default to hidden, override in mobile
+  }
 }
 
 @media (max-width: 768px) {
   .hero {
+    padding: var(--padding);
+
     &__image {
+      display: block;
       background-position: center;
       position: absolute;
       right: 0;
@@ -78,10 +81,7 @@
       background-size: contain;
       height: 80%;
       margin-top: 2rem;
-
     }
-
-    padding: var(--padding);
 
     &__content {
       padding: 0;
@@ -95,7 +95,6 @@
       text-align: left;
       max-width: 100%;
       margin-top: 50%;
-      
     }
   }
 }

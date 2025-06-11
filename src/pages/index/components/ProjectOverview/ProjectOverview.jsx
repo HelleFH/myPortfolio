@@ -59,7 +59,7 @@ const ProjectsOverview = () => {
     <div className="projects-overview__container">
 
       <div  className="projects-overview__intro">
-      <h1 >React Projects</h1>
+      <h2 >React Projects</h2>
       <p>Here's some work that I've done in React. I'm comfortable building responsive apps from the ground up, and I have a strong focus on state management and component architecture.
          I work with both JSX and TypeScript, including React Native.</p>
          </div>
@@ -74,8 +74,8 @@ const ProjectsOverview = () => {
       </div>
 
   <div  className="projects-overview__intro">
-      <h1 >Other Web Development Projects</h1>
-      <p>Here's some sample of my school, practice and hobby work done with mainly with JQuery and JavaScript</p>
+      <h2 >Other Web Development Projects</h2>
+      <p>Here's some sample of my school, practice and hobby work done mainly with JQuery and JavaScript</p>
          </div>   
          <AnimatedSection>
 

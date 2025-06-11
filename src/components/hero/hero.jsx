@@ -29,7 +29,7 @@ const Hero = ({ title, subtitle, buttons, showContactUsButton }) => {
     <section className="hero">
       {isMobile ? (
         <img
-          src={Images.HeroImageMobile}
+          src={Images.HeroImage}
           alt="Hero"
           className="hero__image"
         />
@@ -49,26 +49,30 @@ const Hero = ({ title, subtitle, buttons, showContactUsButton }) => {
       )}
 
       {/* Content Layer */}
-      <div className="hero__content">
-        <div className="hero-title__container">
-          <h1 className="hero__title">{title}</h1>
-          <p className="hero__subtitle">{subtitle}</p>
-        </div>
+    <div className="hero__content">
+  <div className="hero__title-container">
+    <p className="hero__subtitle">{subtitle}</p>
+    <h1 className="hero__title">{title}</h1>
+  </div>
 
-        <div className="hero__button-container">
-          {buttons && buttons.map((button, index) => (
-            <React.Fragment key={index}>
-              {button.type === 'link' && button.text && (
-                <button onClick={() => handleButtonClick(button.path)} className="default">
-                  {button.text}
-                </button>
-              )}
-            </React.Fragment>
-          ))}
+  <div className="hero__button-container">
+    {buttons && buttons.map((button, index) => (
+      <React.Fragment key={index}>
+        {button.type === 'link' && button.text && (
+          <button 
+            onClick={() => handleButtonClick(button.path)} 
+            className="hero__button"
+          >
+            {button.text}
+          </button>
+        )}
+      </React.Fragment>
+    ))}
 
-          <SocialLinks />
-        </div>
-      </div>
+    <SocialLinks />
+  </div>
+</div>
+
     </section>
   );
 };
