@@ -5,6 +5,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+@font-face {
+  font-family: 'PangramSans-Regular';
+  src: url('../assets/fonts/PPPangramSans-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'PangramSans-Medium';
+  src: url('../assets/fonts/PPPangramSans-Medium.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  
+}
+
+@font-face {
+  font-family: 'PangramSans-Light';
+  src: url('../assets/fonts/PPPangramSans-Light.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 $primary-color: var(--mirage);
 
 $highlight-color: var(--battleship-gray);
@@ -15,13 +41,13 @@ $highlight-color: var(--battleship-gray);
 
 body {
   margin: 0 !important;
-  font-family: -apple-system, BlinkMacSystemFont, 'Exo', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Atkinson Hyperlegible', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
   color: var(--black-color);
   scroll-behavior: smooth;
-
+  background-color: #f9f9f9;
 
 }
 
@@ -38,7 +64,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Atkinson Hyperlegible'
+  font-family: 'PangramSans-Medium'
 }
 
 h1:not(.hero__title),
@@ -66,7 +92,7 @@ h1 {
 }
 
 p {
-  font-family: 'lato';
+  font-family: 'Atkinson Hyperlegible';
 }
 
 
@@ -82,20 +108,19 @@ button:not(.chevron-button, .close-button, .contact-modal__close-btn, .btn-close
   gap: var(--small-gap);
   place-self: center;
   text-decoration: none !important;
-  background-color: var(--battleship-gray) opacity(0.8);
+  background-color: #005a34;
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
-  color: var(--white-color);
+  color: var(--white-color) !important;
   fill: var(--white-color);
-  font-size: 0.9rem;
-  font-family: 'inter';
-  font-weight: 400;
+  font-size: 1rem;
+  font-family: 'Atkinson Hyperlegible';
+  font-weight: 500;
   padding: 7px 16px 9px;
   transition: background-color .2s ease;
   height: fit-content;
   width: fit-content;
   cursor: pointer;
-  letter-spacing: -0.03rem;
 }
 
 
@@ -103,7 +128,7 @@ button:not(.chevron-button, .close-button, .contact-modal__close-btn, .btn-close
 .github-button:hover,
 .project-button:hover,
 button:hover:not(.chevron-button, .close-button, .contact-modal__close-btn, .btn-close, .close-modal, .close-button.top-right, .close-btn) {
-  background-color: var(--button-hover-color);
+  background-color: #c6c6c6;
   color: var(--black-color) !important;
   border: 1px solid transparent;
 

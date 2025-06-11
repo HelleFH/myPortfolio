@@ -28,7 +28,7 @@
     border-radius: 20px !important;
 
     &:hover {
-      background-color: var(--battleship-gray) !important;
+      background-color: #f2ecff !important;
       color: var(--black-color) !important;
     }
 
@@ -39,7 +39,6 @@
 
     &--project {
       background-color: transparent;
-      color: var(--black-color) !important;
     }
 
     &--github {

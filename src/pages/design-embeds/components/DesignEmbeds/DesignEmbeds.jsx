@@ -53,7 +53,13 @@ const embeds = [
 const DesignEmbeds = () => {
   return (
     <div className="design-embeds__container">
-      <h1>Visual Projects</h1>
+      
+      <div className="design-embeds__intro">
+      <h1>Design Examples</h1>
+      <p>I've worked on a range of creative projects and built several sites and apps from scratch, and I'm confident using Canva, Figma, Photoshop and other tools. 
+        Here are some examples of my visual work</p>
+            </div>
+
       <div className="design-embeds">
         {embeds.map((embed) => (
           <EmbedCard

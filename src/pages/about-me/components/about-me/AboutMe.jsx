@@ -18,6 +18,15 @@ const AboutMe = () => {
                 </div>
 
                 <div className="about-me__bio">
+
+
+<div className="about-me__intro">       
+    <h1 className="about-me__title">About Me</h1>
+        <p >
+          Here’s a little bit about who I am and what I do
+        </p>
+</div> 
+
                     <p>
                         I’m a web developer who works across the full stack, building everything from user interfaces to server-side logic and data handling.
                     </p>

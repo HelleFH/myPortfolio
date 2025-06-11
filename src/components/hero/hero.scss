@@ -5,12 +5,10 @@
   @include flex-column;
   justify-content: center;
   align-items: flex-start;
-  min-height: fit-content;
   background-position: center;
-  color: var(--white-color);
   position: relative;
-  min-height: 70vh;
-  padding: 0 var(--xl-padding) var(--xl-padding) var(--xl-padding);
+  background-color: white;
+  padding: 15rem 10rem;
 
   .book-meeting-button {
     margin: 0;
@@ -20,25 +18,11 @@
 
   .hero__video {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    right: 0;
+    width: 50%;
+    height: 70%;
+    object-fit: contain;
     z-index: 0;
-  }
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--mirage);
-    opacity: 0.4; 
-
-    z-index: 1;
   }
 
   /* Content Container */
@@ -49,8 +33,7 @@
     gap: var(--large-gap);
     width: 100%;
     z-index: 2;
-    margin-top: 20%;
-    padding-bottom: var(--xl-padding);
+
 
   }
 
@@ -65,11 +48,10 @@
 
   /* Hero Title */
   &__title {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 400;
     margin: 0;
-    max-width: 50%;
-    font-family: 'roboto';
+    font-family: 'PangramSans-Medium';
     letter-spacing: -0.05rem;
   }
 
@@ -77,7 +59,7 @@
   /* Hero Button Container */
   &__button-container {
     @include flex-row;
-   
+
     justify-content: flex-start;
     height: 40px;
   }
@@ -88,23 +70,23 @@
 @media (max-width: 768px) {
   .hero {
     &__image {
-      width: 100vw;
-      height: 100%;
       background-position: center;
       position: absolute;
       left: 0;
       bottom: 0;
       top: 0;
-      background-size: cover;
+      background-size: contain;
+      height: 90%;
     }
 
-    padding: calc(var(--xl-padding)) var(--padding);
+    padding: calc(var(--xl-padding)) var(--padding) var(--padding);
 
     &__content {
-      gap: var(--large-gap);
+      gap: 9rem;
       padding: 0;
       margin-top: 0;
-      min-height: 60vh;
+      min-height: 40vh;
+      justify-content: flex-end;
     }
 
     &__title {
@@ -112,6 +94,7 @@
       font-weight: 500;
       text-align: left;
       max-width: 100%;
+      margin-top:3rem;
     }
   }
 }

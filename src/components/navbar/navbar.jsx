@@ -60,7 +60,7 @@ const Navbar = () => {
           <Link to="/"> {/* Add Link component to redirect to home */}
             <img
               className="navbar-logo"
-              src={scrolled ? Images.FooterLogo : Images.LogoWhite} // Change logo based on scroll
+              src={scrolled ? Images.FooterLogo : Images.FooterLogo} // Change logo based on scroll
               alt="Logo"
             />
           </Link>

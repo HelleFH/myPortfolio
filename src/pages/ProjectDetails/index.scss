@@ -38,21 +38,12 @@
     
 
     .hero {
-        min-height: 60vh;
-        padding: var(--padding);
-        text-align: center;
-
+ padding:10rem;
         &__button-container {
             display: none;
         }
     }
 
-    .hero__content {
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-        margin-top: 0;
-    }
 
     
 

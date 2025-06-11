@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import { useParams, useNavigate, } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import LoginModal from "../../components/LoginModal/LoginModal";
 import { useSwipeable } from "react-swipeable";
 import { frontendProjects } from '../../data/frontendprojects';
@@ -15,9 +15,8 @@ const ProjectDetail = () => {
   const projectList = type === 'frontend' ? frontendProjects : fullStackProjects;
   const currentIndex = projectList.findIndex(proj => proj.id === parseInt(id, 10));
   const selectedProject = projectList[currentIndex];
-  const [project, setProject] = useState(null); 
 
-
+  const [project, setProject] = useState(null);
   const [showLoginDetails, setShowLoginDetails] = useState(false);
   const scrollPositionRef = useRef(0);
 
@@ -27,14 +26,9 @@ const ProjectDetail = () => {
     }
   }, [selectedProject, navigate]);
 
-
-
-  const isFirst = currentIndex === 0;
-  const isLast = currentIndex === projectList.length - 1;
   useEffect(() => {
     if (selectedProject) {
       setProject(selectedProject);
-  
       requestAnimationFrame(() => {
         window.scrollTo(0, scrollPositionRef.current);
       });
@@ -42,21 +36,22 @@ const ProjectDetail = () => {
   }, [selectedProject]);
 
   const navigateToProject = (newIndex) => {
-    const newProject = projectList[newIndex];
-    if (newProject) {
-      navigate(`/project/${type}/${newProject.id}`, {
-        state: { scrollY: window.scrollY }
-      });
-    }
+    const total = projectList.length;
+    const wrappedIndex = (newIndex + total) % total;
+    const newProject = projectList[wrappedIndex];
+
+    navigate(`/project/${type}/${newProject.id}`, {
+      state: { scrollY: window.scrollY }
+    });
   };
+
   const handlers = useSwipeable({
-    onSwipedLeft: () => !isLast && navigateToProject(currentIndex + 1),
-    onSwipedRight: () => !isFirst && navigateToProject(currentIndex - 1),
+    onSwipedLeft: () => navigateToProject(currentIndex + 1),
+    onSwipedRight: () => navigateToProject(currentIndex - 1),
     trackMouse: true,
   });
 
   const handleBackToProjects = () => {
-    // Go back to the projects overview, passing selectedProjectIndex in the state
     navigate('/', {
       state: { selectedProjectIndex: currentIndex, projectType: type }
     });
@@ -67,7 +62,7 @@ const ProjectDetail = () => {
   }
 
   return (
-    <div className="project-container">
+    <div className="project-container" {...handlers}>
       <Layout heroTitle={selectedProject.name} heroSubtitle={selectedProject.descriptionHeader}>
         <a onClick={handleBackToProjects} className="back-button">
           Back to Projects
@@ -75,21 +70,27 @@ const ProjectDetail = () => {
 
         <div className="project-details-container">
           <div className="image-wrapper">
-            <img src={selectedProject.images[0]} alt={selectedProject.name} className="project-image" />
+            <img
+              src={selectedProject.images[0]}
+              alt={selectedProject.name}
+              className="project-image"
+            />
           </div>
+
           <div className="project-text">
             <h4>{selectedProject.descriptionHeader}</h4>
             <p>{selectedProject.description}</p>
+
             {selectedProject.projectDetails && (
-  <>
-    <h4>Project Features</h4>
-    <ul className="project-details-list">
-      {selectedProject.projectDetails.map((detail, index) => (
-        <li key={index}>{detail}</li>
-      ))}
-    </ul>
-  </>
-)}
+              <>
+                <h4>Project Features</h4>
+                <ul className="project-details-list">
+                  {selectedProject.projectDetails.map((detail, index) => (
+                    <li key={index}>{detail}</li>
+                  ))}
+                </ul>
+              </>
+            )}
 
             <h4>Technologies Used</h4>
             <ul className="technologies-list">
@@ -98,34 +99,30 @@ const ProjectDetail = () => {
               ))}
             </ul>
           </div>
-          {project && (
-  <ProjectButtons
-    projectLink={project.projectLink}
-    githubLink={project.githubLink}
-    buttonText={project.buttonText}
-    githubButtonText={project.githubButtonText}
-  />
-)}
 
+          {project && (
+            <ProjectButtons
+              projectLink={project.projectLink}
+              githubLink={project.githubLink}
+              buttonText={project.buttonText}
+              githubButtonText={project.githubButtonText}
+            />
+          )}
 
           <div className="navigation-buttons">
-              {!isFirst && (
-                <button
-                  className="nav-button"
-                  onClick={() => navigateToProject(currentIndex - 1)}
-                >
-                  ← Previous Project
-                </button>
-              )}
-              {!isLast && (
-                <button
-                  className="nav-button"
-                  onClick={() => navigateToProject(currentIndex + 1)}
-                >
-                  Next Project →
-                </button>
-              )}
-            </div>
+            <button
+              className="nav-button nav-button--prev"
+              onClick={() => navigateToProject(currentIndex - 1)}
+            >
+              ‹
+            </button>
+            <button
+              className="nav-button nav-button--next"
+              onClick={() => navigateToProject(currentIndex + 1)}
+            >
+              ›
+            </button>
+          </div>
         </div>
 
         <LoginModal

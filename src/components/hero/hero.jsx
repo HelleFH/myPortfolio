@@ -29,7 +29,7 @@ const Hero = ({ title, subtitle, buttons, showContactUsButton }) => {
     <section className="hero">
       {isMobile ? (
         <img
-          src={Images.HeroImage}
+          src={Images.HeroImageMobile}
           alt="Hero"
           className="hero__image"
         />

@@ -57,7 +57,12 @@ const ProjectsOverview = () => {
 
   return (
     <div className="projects-overview__container">
-      <h1>React Projects</h1>
+
+      <div  className="projects-overview__intro">
+      <h1 >React Projects</h1>
+      <p>Here's some work that I've done in React. I'm confortable building responsive apps from the ground up, and I have a strong focus on state management and component architecture.
+         I work with both JSX and TypeScript, including React Native.</p>
+         </div>
       <div className="projects-overview">
         {frontendProjects.map((project, index) => (
           <Card
@@ -67,7 +72,14 @@ const ProjectsOverview = () => {
           />
         ))}
       </div>
-      <h1>Other Projects</h1>
+
+  <div  className="projects-overview__intro">
+      <h1 >Other Web Development Projects</h1>
+      <p>Here's some sample of my school, practice and hobby work done with mainly with JQuery and JavaScript</p>
+         </div>   
+         <AnimatedSection>
+
+          <div className="projects-overview__container">
     
       <div className="projects-overview">
         {fullStackProjects.map((project, index) => (
@@ -78,6 +90,9 @@ const ProjectsOverview = () => {
           />
         ))}
       </div>
+      
+      </div>
+      </AnimatedSection>
       {isModalOpen && selectedProjectIndex !== null && (
         <ProjectModal
           show={isModalOpen}

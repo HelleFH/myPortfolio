@@ -4,7 +4,6 @@
     @include flex-column;
     padding: 2rem;
     display: flex;
-  
     max-width: 1200px;
     margin: 0 auto;
 
@@ -22,10 +21,24 @@
         align-items: flex-start;
     }
 
+    &__intro {
+        @include flex-column;
+        align-items: flex-start;
+        gap: var(--small-gap);
+        font-weight: 600;
+        p {
+        font-size: 1.2rem !important;
+    }
+    }
+
+    &__title {
+        width: 100%
+    }
+
     &__bio {
         @include flex-column;
-        flex:1;
-
+        align-items: flex-start;
+        flex: 1;
         gap: var(--small-gap);
     }
 
@@ -53,8 +66,8 @@
         @media (min-width: 768px) {
             flex-direction: row;
             align-items: flex-start;
-            max-width:1000px;
-            margin:0 auto;
+            max-width: 1000px;
+            margin: 0 auto;
         }
     }
 
@@ -69,7 +82,8 @@
         flex: 1;
         display: flex;
         justify-content: center;
-        padding: var(--small-padding);;
+        padding: var(--small-padding);
+        ;
     }
 
     &__image {
