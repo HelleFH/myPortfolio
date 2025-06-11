@@ -99,7 +99,7 @@ p {
 /* Base button styles */
 .github-button,
 .project-button,
-button:not(.chevron-button, .close-button, .contact-modal__close-btn, .btn-close, .close-btn, .close-modal) {
+button:not(.chevron-button, .close-button, .contact-modal__close-btn, .btn-close, .close-btn, .close-modal, .nav-button) {
   white-space: nowrap;
   display: flex;
   flex-direction: row;

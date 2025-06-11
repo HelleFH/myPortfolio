@@ -39,6 +39,13 @@
 
     .hero {
  padding:10rem;
+
+     &__title {
+
+      margin-top: 0%;
+      
+    }
+  
         &__button-container {
             display: none;
         }
@@ -82,10 +89,10 @@
 .nav-button {
     background: none !important;
     border: none !important;
-    color: var(--davys-gray) !important;
-    font-size: 1rem !important;
+    color: black !important;
+    font-size: 3rem !important;
     font-weight: 500 !important;
-    text-decoration: underline !important;
+    text-decoration: none !important;
     padding: 0;
     margin: 0;
     cursor: pointer;
@@ -113,9 +120,11 @@
 .navigation-buttons {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
     gap: 1.5rem;
     margin-top: 2rem;
     padding: 0 2rem;
+    width:100%;
 }
 
 .project-details-container {
@@ -284,7 +293,7 @@
         }
 
         .navigation-buttons {
-            @include flex-column;
+   
 
             padding: 0 1rem;
         }

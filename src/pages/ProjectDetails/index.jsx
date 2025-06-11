@@ -109,18 +109,21 @@ const ProjectDetail = () => {
             />
           )}
 
+          {/* Navigation chevrons */}
           <div className="navigation-buttons">
             <button
               className="nav-button nav-button--prev"
               onClick={() => navigateToProject(currentIndex - 1)}
+              aria-label="Previous Project"
             >
-              ‹
+              &#x2039; {/* Unicode for ‹ */}
             </button>
             <button
               className="nav-button nav-button--next"
               onClick={() => navigateToProject(currentIndex + 1)}
+              aria-label="Next Project"
             >
-              ›
+              &#x203A; {/* Unicode for › */}
             </button>
           </div>
         </div>
