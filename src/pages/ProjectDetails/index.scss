@@ -39,7 +39,7 @@
 
     .hero {
  padding:10rem 5rem;
-   &__content {max-width: 500px;margin:0;} 
+   &__content {margin:0;} 
 
      &__title {
 
@@ -50,7 +50,6 @@
     }
     &__title-container
     {
-              max-width:500px !important;
              text-align:left;
              margin:0;
             

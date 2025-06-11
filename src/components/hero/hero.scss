@@ -40,7 +40,6 @@
     font-weight: 200;
     font-size: 1.3rem;
     width: 100%;
-    line-height: 0;
     letter-spacing: -0.04rem;
   }
 
@@ -48,8 +47,8 @@
     font-size: 4rem;
     font-weight: 400;
     margin: 0;
+max-width:60%;
     font-family: 'PangramSans-Medium';
-    max-width: 500px;
   }
 
   &__button-container {
@@ -106,8 +105,10 @@
     }
       &__subtitle {
 
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     line-height: 1.1rem;
+    max-width:250px;
+    font-family: 'PangramSans-Medium';
 
   }
   }
