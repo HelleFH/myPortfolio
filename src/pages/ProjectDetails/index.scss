@@ -4,23 +4,23 @@
 .project-details-list {
     padding-left: 0;
     list-style: none;
-  
+
     li {
-      position: relative;
-      padding-left: 1.5rem;
-      margin-bottom: 0.75rem;
-      line-height: 1.5;
-  
-      &::before {
-        content: '▹'; // or '➤', '✦', '✔', etc.
-        position: absolute;
-        left: 0;
-        color: $primary-color; // match your theme
-        font-size: 1rem;
-      }
+        position: relative;
+        padding-left: 1.5rem;
+        margin-bottom: 0.75rem;
+        line-height: 1.5;
+
+        &::before {
+            content: '▹'; // or '➤', '✦', '✔', etc.
+            position: absolute;
+            left: 0;
+            color: $primary-color; // match your theme
+            font-size: 1rem;
+        }
     }
-  }
-  
+}
+
 .project-container {
     width: 100%;
     box-sizing: border-box;
@@ -33,35 +33,39 @@
         margin: 0;
         font-size: 1rem;
         font-weight: 500;
-       
+
     }
-    
+
 
     .hero {
- padding:10rem 5rem;
-   &__content {margin:0;} 
+        padding: 10rem 5rem;
 
-     &__title {
+        &__content {
+            margin: 0;
+        }
 
-      margin-top: 0%;
-              max-width:500px !important;
+        &__title {
 
-      
-    }
-    &__title-container
-    {
-             text-align:left;
-             margin:0;
-            
-    }
-  
+            margin-top: 0%;
+            max-width: 500px !important;
+        }
+
+        &__links {
+            display: none;
+        }
+
+        &__title-container {
+            text-align: left;
+            margin: 0;
+        }
+
         &__button-container {
             display: none;
         }
     }
 
 
-    
+
 
     .buttons-container {
         @include flex-row;
@@ -133,7 +137,7 @@
     gap: 1.5rem;
     margin-top: 2rem;
     padding: 0 2rem;
-    width:100%;
+    width: 100%;
 }
 
 .project-details-container {
@@ -174,7 +178,8 @@
     @include flex-column;
 
     gap: 1.5em;
-    padding: var(--small-padding);;
+    padding: var(--small-padding);
+    ;
     color: #444;
 
     h4 {
@@ -245,17 +250,20 @@
     .project-container {
         .project-header {
             font-size: 2rem;
-            padding: var(--small-padding);;
+            padding: var(--small-padding);
+            ;
         }
 
         .hero {
-            padding: var(--small-padding);;
+            padding: var(--small-padding);
+            ;
             min-height: 40vh;
         }
 
         .buttons-container {
             @include flex-column;
-            padding: var(--small-padding);;
+            padding: var(--small-padding);
+            ;
         }
 
         .project-button,
@@ -265,7 +273,8 @@
         }
 
         .project-details-container {
-            padding: var(--small-padding);;
+            padding: var(--small-padding);
+            ;
             margin-top: 1rem;
             gap: 1.5rem;
         }
@@ -275,7 +284,8 @@
         }
 
         .project-text {
-            padding: var(--small-padding);;
+            padding: var(--small-padding);
+            ;
             gap: 1rem;
         }
 
@@ -302,7 +312,7 @@
         }
 
         .navigation-buttons {
-   
+
 
             padding: 0 1rem;
         }

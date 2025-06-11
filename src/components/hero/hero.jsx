@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom'; 
 import './Hero.scss';
 import Images from "../../assets/images";
 import SocialLinks from "../SocialLinks/SocialLinks";
@@ -13,7 +13,7 @@ const Hero = ({ title, subtitle, buttons, showContactUsButton }) => {
       setIsMobile(window.innerWidth <= 1200);
     };
 
-    checkMobile(); // Initial check
+    checkMobile(); 
 
     window.addEventListener("resize", checkMobile);
     return () => window.removeEventListener("resize", checkMobile);
@@ -24,11 +24,15 @@ const Hero = ({ title, subtitle, buttons, showContactUsButton }) => {
       navigate(path);
     }
   };
-
-  const scrollToId = (id) => {
-  const el = document.getElementById(id);
-  if (el) {
-    el.scrollIntoView({ behavior: 'smooth' });
+const location = useLocation();
+const scrollOrNavigate = (id) => {
+  if (location.pathname === "/") {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  } else {
+    navigate("/", { state: { scrollTo: id } });
   }
 };
 
@@ -81,10 +85,10 @@ const Hero = ({ title, subtitle, buttons, showContactUsButton }) => {
     <SocialLinks />
  
   </div>
-   <ul className="hero__links">
-  <li><a onClick={() => scrollToId("react-projects")}>React Projects</a></li>
-  <li><a onClick={() => scrollToId("other-projects")}>Other Development Projects</a></li>
-  <li><a onClick={() => scrollToId("design-media")}>Design/Media</a></li>
+<ul className="hero__links">
+  <li><a onClick={() => scrollOrNavigate("react-projects")}>React Projects</a></li>
+  <li><a onClick={() => scrollOrNavigate("other-projects")}>Other Development Projects</a></li>
+  <li><a onClick={() => scrollOrNavigate("design-media")}>Design/Media</a></li>
 </ul>
 </div>
 

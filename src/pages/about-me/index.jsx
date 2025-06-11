@@ -11,7 +11,7 @@ const AboutMePage = () => {
    <Layout
     heroTitle="About Me"
        buttons={[
-        { type: 'link', text: 'Projects', path: '/' },
+        { type: 'link', text: 'Home', path: '/' },
       ]}
   >
 
