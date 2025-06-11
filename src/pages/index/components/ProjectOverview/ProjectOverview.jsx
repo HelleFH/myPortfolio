@@ -60,7 +60,7 @@ const ProjectsOverview = () => {
 
       <div  className="projects-overview__intro">
       <h1 >React Projects</h1>
-      <p>Here's some work that I've done in React. I'm confortable building responsive apps from the ground up, and I have a strong focus on state management and component architecture.
+      <p>Here's some work that I've done in React. I'm comfortable building responsive apps from the ground up, and I have a strong focus on state management and component architecture.
          I work with both JSX and TypeScript, including React Native.</p>
          </div>
       <div className="projects-overview">
