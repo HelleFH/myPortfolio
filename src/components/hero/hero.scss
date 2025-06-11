@@ -20,7 +20,7 @@
     position: absolute;
     right: 0;
     width: 50%;
-    height: 90%;
+    height: 80%;
     object-fit: contain;
     z-index: 0;
   }
@@ -53,6 +53,7 @@
     margin: 0;
     font-family: 'PangramSans-Medium';
     letter-spacing: -0.05rem;
+    max-width:800px;
   }
 
 
