@@ -144,6 +144,7 @@
 
     &__button-container {
       bottom: 0;
+      gap:var(--small-gap);
     }
 
     &__title-container {
