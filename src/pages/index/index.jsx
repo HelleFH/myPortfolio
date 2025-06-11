@@ -20,10 +20,8 @@ const Home = () => {
 
       <div className='index-container'>
       <ProjectsOverview />
-<AnimatedSection>
 
       <DesignEmbeds />
-</AnimatedSection>
 
       </div>
 

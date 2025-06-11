@@ -2,6 +2,7 @@ import React from "react";
 import "./DesignEmbeds.scss";
 import EmbedCard from "../EmbedCard/EmbedCard";
 import Images from "../../../../assets/images";
+import AnimatedSection from "../../../../components/AnimatedSection";
 
 const embeds = [
   {
@@ -59,8 +60,7 @@ const DesignEmbeds = () => {
       <p>I've worked on a range of creative projects and built several sites and apps from scratch, and I'm confident using Canva, Figma, Photoshop and other tools. 
         Here are some examples of my visual work</p>
             </div>
-
-      <div className="design-embeds">
+<AnimatedSection>      <div className="design-embeds">
         {embeds.map((embed) => (
           <EmbedCard
             key={embed.id}
@@ -71,6 +71,8 @@ const DesignEmbeds = () => {
           />
         ))}
       </div>
+      </AnimatedSection>
+
     </div>
   );
 };
