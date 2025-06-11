@@ -1,5 +1,5 @@
 import React from 'react';
-import './AboutMe.scss'; 
+import './AboutMe.scss';
 import SocialLinks from '../../../../components/SocialLinks/SocialLinks'
 
 const AboutMe = () => {
@@ -20,12 +20,11 @@ const AboutMe = () => {
                 <div className="about-me__bio">
 
 
-<div className="about-me__intro">       
-    <h1 className="about-me__title">About Me</h1>
-        <p >
-          Here’s a little bit about who I am and what I do
-        </p>
-</div> 
+                    <div className="about-me__intro">
+                        <p >
+                            Here’s a little bit about who I am and what I do
+                        </p>
+                    </div>
 
                     <p>
                         I’m a web developer who works across the full stack, building everything from user interfaces to server-side logic and data handling.
@@ -34,7 +33,7 @@ const AboutMe = () => {
                         Typically, I work with React and front-end tools, but I’m comfortable with the full process of building web applications. I’ve worked on many different kinds of projects and I enjoy figuring things out, improving as I go, and learning new approaches.
                     </p>
                     <p>
-                       In addition to my degree in Biology and Chemistry from the University of Southern Denmark, I’ve completed a course in web development.
+                        In addition to my degree in Biology and Chemistry from the University of Southern Denmark, I’ve completed a course in web development.
                     </p>
 
                     <p>
