@@ -2,7 +2,7 @@ import FooterLogo from './images/logo.png';
 import LogoWhite from './images/logo-white.png';
 import LogoBlue from './images/logo-blue.png';
 import HeroLogo from './images/logo-white.png';
-import heroVideo from './images/herovideo.mp4';
+import heroVideo from './images/hero-video.mp4';
 import heroVideoHD from './images/herovideo.mp4';
 import heroVideoMobile from './images/herovideo.mp4';
 import HeroImage from './images/heroimage.png';
