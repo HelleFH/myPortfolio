@@ -58,9 +58,7 @@
 
   &__tech-item {
     font-size: 1em;
-    font-weight: 400;
     position: relative;
-    color: #005a34;
     &::before {
       content: '•';
       margin-right: 0.5rem;

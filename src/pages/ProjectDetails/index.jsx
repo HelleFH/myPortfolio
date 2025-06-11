@@ -4,7 +4,7 @@ import LoginModal from "../../components/LoginModal/LoginModal";
 import { useSwipeable } from "react-swipeable";
 import { frontendProjects } from '../../data/frontendprojects';
 import { fullStackProjects } from '../../data/fullstackprojects';
-import Layout from "../../components/Layout/Layout";
+import Layout from '../../components/Layout/Layout'
 import ProjectButtons from "../../components/ProjectButtons/ProjectButtons";
 import './index.scss';
 

@@ -58,7 +58,7 @@ const ProjectsOverview = () => {
   return (
     <div className="projects-overview__container">
 
-      <div  className="projects-overview__intro">
+      <div   id="react-projects"  className="projects-overview__intro">
       <h2 >React Projects</h2>
       <p>Here's some work that I've done in React. I'm comfortable building responsive apps from the ground up, and I have a strong focus on state management and component architecture.
          I work with both JSX and TypeScript, including React Native.</p>
@@ -73,7 +73,7 @@ const ProjectsOverview = () => {
         ))}
       </div>
 
-  <div  className="projects-overview__intro">
+  <div id="other-projects"   className="projects-overview__intro">
       <h2 >Other Web Development Projects</h2>
       <p>Here's some samples of my school, practice and hobby work done mainly with JQuery and JavaScript</p>
          </div>   

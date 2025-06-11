@@ -20,10 +20,18 @@
   z-index: 9995;
   overflow: visible;
 
-  .social-links-container {gap:var(--xs-gap )!important;}
+  .social-links-container {
+    gap: var(--xs-gap) !important;
+  }
 
   a {
-    color: var(--white-color);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 6px 10px;
+    border-radius: var(--small-border-radius);
+    transition: background-color 0.3s, color 0.3s;
+    font-family: 'Libre Franklin';
+    white-space: nowrap;
 
     &:visited,
     &:active {
@@ -60,6 +68,8 @@
   .navbar-logo-container {
     display: flex;
     align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
 
     .navbar-logo {
       max-width: 40px;
@@ -68,6 +78,7 @@
       &:hover {
         background-color: #c6c6c6;
       }
+
     }
   }
 
@@ -84,6 +95,12 @@
     align-items: center;
     gap: var(--xs-gap);
     transition: max-height 0.3s ease, opacity 0.3s ease;
+
+    .navbar-link__mobile {
+      display: none
+    }
+
+    ;
 
     li {
       padding: var(--small-padding) 0;
@@ -105,7 +122,7 @@
 
   &.scrolled .navbar-links li a:hover {
     background-color: hsla(210, 2%, 32%, 0.2);
-    color:var(--black-color) !important;
+    color: var(--black-color) !important;
   }
 
   .mobile-home-link {
@@ -122,7 +139,7 @@
 
     .menu-toggle {
       display: block;
-      color:var(--black-color) !important;
+      color: var(--black-color) !important;
     }
 
     .navbar-links {
@@ -138,7 +155,8 @@
         background-color: var(--white-color);
         border-radius: var(--small-border-radius);
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        padding: var(--small-padding);;
+        padding: var(--small-padding);
+        ;
         gap: 0;
         z-index: 9996;
 
@@ -152,6 +170,13 @@
             color: var(--black-color);
           }
         }
+
+        .navbar-link__mobile {
+          display: block
+        }
+
+        ;
+
 
         .mobile-home-link {
           display: block;

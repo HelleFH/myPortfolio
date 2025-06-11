@@ -51,19 +51,27 @@ const Navbar = () => {
       }
     };
   }, [lastScrollY, scrollTimeout, menuOpen]); // Add menuOpen to dependencies to prevent hiding navbar when menu is open
-
+  const scrollToId = (id) => {
+  const el = document.getElementById(id);
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth' });
+  }
+};
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''} ${isHidden ? 'hidden' : ''}`}>
       <div className="navbar-content">
         {/* Logo Section - Wrap the logo with a Link to '/' */}
-        <div className="navbar-logo-container">
-          <Link to="/"> {/* Add Link component to redirect to home */}
+        <div >
+          <Link className="navbar-logo-container" to="/"> {/* Add Link component to redirect to home */}
             <img
               className="navbar-logo"
               src={scrolled ? Images.FooterLogo : Images.FooterLogo} // Change logo based on scroll
               alt="Logo"
-            />
+            />                  
+                <a>Helle Fruergaard</a>
+
           </Link>
+
         </div>
 
         {/* Hamburger Menu Button for Mobile */}
@@ -84,6 +92,21 @@ const Navbar = () => {
           <li>
             <Link to="/about" className="navbar-link" onClick={() => setMenuOpen(false)}>About Me</Link>
           </li>
+<li className="navbar-link__mobile">
+  <Link to="/" state={{ scrollTo: "react-projects" }} onClick={() => setMenuOpen(false)}>
+    React Projects
+  </Link>
+</li>
+<li className="navbar-link__mobile">
+  <Link to="/" state={{ scrollTo: "other-projects" }} onClick={() => setMenuOpen(false)}>
+    More Web Projects
+  </Link>
+</li>
+<li className="navbar-link__mobile">
+  <Link to="/" state={{ scrollTo: "design-media" }} onClick={() => setMenuOpen(false)}>
+    Design/Media
+  </Link>
+</li>
 
           <div className="divider"></div> {/* Divider between links */}
 

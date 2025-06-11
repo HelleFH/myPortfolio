@@ -10,7 +10,7 @@ const Hero = ({ title, subtitle, buttons, showContactUsButton }) => {
 
   useEffect(() => {
     const checkMobile = () => {
-      setIsMobile(window.innerWidth <= 768);
+      setIsMobile(window.innerWidth <= 1200);
     };
 
     checkMobile(); // Initial check
@@ -24,6 +24,13 @@ const Hero = ({ title, subtitle, buttons, showContactUsButton }) => {
       navigate(path);
     }
   };
+
+  const scrollToId = (id) => {
+  const el = document.getElementById(id);
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth' });
+  }
+};
 
   return (
     <section className="hero">
@@ -67,9 +74,18 @@ const Hero = ({ title, subtitle, buttons, showContactUsButton }) => {
         )}
       </React.Fragment>
     ))}
+<div>
 
+
+</div>
     <SocialLinks />
+ 
   </div>
+   <ul className="hero__links">
+  <li><a onClick={() => scrollToId("react-projects")}>React Projects</a></li>
+  <li><a onClick={() => scrollToId("other-projects")}>Other Development Projects</a></li>
+  <li><a onClick={() => scrollToId("design-media")}>Design/Media</a></li>
+</ul>
 </div>
 
     </section>

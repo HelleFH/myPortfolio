@@ -1,5 +1,5 @@
 import React from 'react';
-import './cards.scss';
+import './Cards.scss';
 
 export default function SkillCard({ skill, onClick }) {
   return (
