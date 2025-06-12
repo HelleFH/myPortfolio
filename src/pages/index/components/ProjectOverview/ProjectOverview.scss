@@ -31,16 +31,3 @@ border-radius: var(--border-radius);
 
   }
 }
-
-/* Mobile-specific Styles */
-@media (max-width: 768px) {
-  .projects-overview {
-    @include flex-column;
-
-
-    margin: 0;
-
-  }
-
-
-}

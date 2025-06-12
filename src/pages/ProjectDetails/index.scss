@@ -213,7 +213,8 @@
         &::after {
             content: '•';
             margin-left: 2rem;
-            font-size: 2rem;
+            font-size: 1.2rem;
+            color:#005a34;
         }
 
         &:first-child::before {
