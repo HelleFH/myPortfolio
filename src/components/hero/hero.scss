@@ -3,19 +3,29 @@
 .hero {
   @include flex-column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   background-position: center;
   position: relative;
   background-color: white;
   padding: 15rem 10rem;
+  width:100vw;
+
+    &__video-container {
+    position: absolute;
+    right: 0px;
+    width:50%;
+    height: 80%;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
 
   &__video {
-    position: absolute;
-    right: 0;
-    width: 50%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
-    z-index: 0;
   }
 
   &__content {
@@ -115,11 +125,11 @@
     display: block;
     background-position: center;
     position: absolute;
-    right: 0;
-    bottom: 0;
+ 
     background-size: contain;
-    height: 80%;
-    margin-top: 2rem;
+    width:50%;
+    height:50%;
+    object-fit: contain;
   }
 }
 
@@ -132,10 +142,9 @@
       background-position: center;
       position: absolute;
       right: 0;
-      bottom: 0;
       background-size: contain;
-      height: 80%;
-      margin-top: 2rem;
+      margin-top: 4rem;
+      height:80%;
     }
 
     &__content {
@@ -152,6 +161,7 @@
     &__title-container {
       margin-top: 40%;
       position: relative;
+      max-width:350px;
     }
 
 

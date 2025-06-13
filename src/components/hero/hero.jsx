@@ -45,17 +45,19 @@ const scrollOrNavigate = (id) => {
           className="hero__image"
         />
       ) : (
-        <video
-          className="hero__video"
-          autoPlay
-          muted
-          playsInline
-          onEnded={(e) => e.target.pause()}
-        >
-          <source src={Images.heroVideoHD} type="video/mp4" media="(min-width: 1200px)" />
-          <source src={Images.heroVideo} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+     <div className="hero__video-container">
+  <video
+    className="hero__video"
+    autoPlay
+    muted
+    playsInline
+    onEnded={(e) => e.target.pause()}
+  >
+    <source src={Images.heroVideoHD} type="video/mp4" media="(min-width: 1200px)" />
+    <source src={Images.heroVideo} type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
       )}
 
       {/* Content Layer */}
