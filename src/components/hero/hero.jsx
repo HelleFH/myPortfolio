@@ -4,13 +4,13 @@ import './Hero.scss';
 import Images from "../../assets/images";
 import SocialLinks from "../SocialLinks/SocialLinks";
 
-const Hero = ({ title, subtitle, buttons, showContactUsButton }) => {
+const Hero = ({ title, subtitle, buttons }) => {
   const navigate = useNavigate();
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const checkMobile = () => {
-      setIsMobile(window.innerWidth <= 1200);
+      setIsMobile(window.innerWidth <= 768);
     };
 
     checkMobile(); 

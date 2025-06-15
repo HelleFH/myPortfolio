@@ -14,31 +14,29 @@ const Navbar = () => {
 
   // Scroll detection logic to change navbar style based on scroll
   useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
+  const handleScroll = () => {
+  const currentScrollY = window.scrollY;
 
-      // Set scroll state if scroll is more than 50px
-      setScrolled(currentScrollY > 50);
+  // Set scroll state if scroll is more than 50px
+  setScrolled(currentScrollY > 50);
 
-      // If scrolling down, hide the navbar after inactivity, but not when menu is open
-      if (currentScrollY > lastScrollY && !menuOpen) {
-        if (scrollTimeout) {
-          clearTimeout(scrollTimeout); // Clear any previous timeout
-        }
+  // Only hide if scrolled more than 7vh from top
+  if (currentScrollY > lastScrollY && !menuOpen && currentScrollY > window.innerHeight * 0.07) {
+    if (scrollTimeout) {
+      clearTimeout(scrollTimeout);
+    }
 
-        // Set a timeout to hide the navbar after 2 seconds of inactivity
-        const timeoutId = setTimeout(() => {
-          setIsHidden(true); // Hide navbar after inactivity
-        }, 2000);
-        setScrollTimeout(timeoutId);
-      } else {
-        // If scrolling up, immediately show the navbar
-        setIsHidden(false);
-      }
+    const timeoutId = setTimeout(() => {
+      setIsHidden(true);
+    }, 2000);
 
-      // Update the last scroll position
-      setLastScrollY(currentScrollY);
-    };
+    setScrollTimeout(timeoutId);
+  } else {
+    setIsHidden(false);
+  }
+
+  setLastScrollY(currentScrollY);
+};
 
     // Add event listener for scroll event
     window.addEventListener('scroll', handleScroll);
@@ -60,12 +58,12 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''} ${isHidden ? 'hidden' : ''}`}>
       <div className="navbar-content">
-        {/* Logo Section - Wrap the logo with a Link to '/' */}
+  
         <div >
-          <Link className="navbar-logo-container" to="/"> {/* Add Link component to redirect to home */}
+          <Link className="navbar-logo-container" to="/"> 
             <img
               className="navbar-logo"
-              src={scrolled ? Images.FooterLogo : Images.FooterLogo} // Change logo based on scroll
+              src={scrolled ? Images.FooterLogo : Images.FooterLogo}
               alt="Logo"
             />                  
                 <a>Helle Fruergaard</a>
