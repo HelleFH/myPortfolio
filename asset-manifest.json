@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/myPortfolio/static/css/main.c1e34544.css",
-    "main.js": "/myPortfolio/static/js/main.2722d7fb.js",
+    "main.css": "/myPortfolio/static/css/main.b7d0cc8b.css",
+    "main.js": "/myPortfolio/static/js/main.1f194ba8.js",
     "static/js/488.e1b4d113.chunk.js": "/myPortfolio/static/js/488.e1b4d113.chunk.js",
     "static/media/cloud-port-screen.png": "/myPortfolio/static/media/cloud-port-screen.fe27ea437d309c917c7c.png",
     "static/media/snippets-screen.png": "/myPortfolio/static/media/snippets-screen.10586faa8496f5ac58ca.png",
@@ -13,10 +13,10 @@
     "static/media/fa-solid-900.ttf": "/myPortfolio/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
     "static/media/aiimages-screen.png": "/myPortfolio/static/media/aiimages-screen.7d7ed29b6ce8161997b6.png",
     "static/media/netflix-screen.png": "/myPortfolio/static/media/netflix-screen.1f7a8d9aaa86fa1e12cc.png",
+    "static/media/hero-video1.mp4": "/myPortfolio/static/media/hero-video1.52493bc661e6a3a08406.mp4",
     "static/media/mevncart-screen.png": "/myPortfolio/static/media/mevncart-screen.dac0a0a064d77c8f5890.png",
     "static/media/heroimage.png": "/myPortfolio/static/media/heroimage.3150ea322633f3e10a7d.png",
     "static/media/montyhall-screen.png": "/myPortfolio/static/media/montyhall-screen.784da05cfd598a068e81.png",
-    "static/media/hero-video1.mp4": "/myPortfolio/static/media/hero-video1.89ce138ee2c7ca1ada62.mp4",
     "static/media/heroimage-mobile.png": "/myPortfolio/static/media/heroimage-mobile.cfa96f8d2f2293706fcc.png",
     "static/media/clothes-store-screen.png": "/myPortfolio/static/media/clothes-store-screen.e6b7cba8099e24f14c11.png",
     "static/media/herovideo.mp4": "/myPortfolio/static/media/herovideo.ab3273a02b117329c154.mp4",
@@ -42,12 +42,12 @@
     "static/media/fa-v4compatibility.ttf": "/myPortfolio/static/media/fa-v4compatibility.da94ef451f4969af06e6.ttf",
     "static/media/fa-v4compatibility.woff2": "/myPortfolio/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
     "index.html": "/myPortfolio/index.html",
-    "main.c1e34544.css.map": "/myPortfolio/static/css/main.c1e34544.css.map",
-    "main.2722d7fb.js.map": "/myPortfolio/static/js/main.2722d7fb.js.map",
+    "main.b7d0cc8b.css.map": "/myPortfolio/static/css/main.b7d0cc8b.css.map",
+    "main.1f194ba8.js.map": "/myPortfolio/static/js/main.1f194ba8.js.map",
     "488.e1b4d113.chunk.js.map": "/myPortfolio/static/js/488.e1b4d113.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c1e34544.css",
-    "static/js/main.2722d7fb.js"
+    "static/css/main.b7d0cc8b.css",
+    "static/js/main.1f194ba8.js"
   ]
 }
