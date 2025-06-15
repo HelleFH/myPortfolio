@@ -43,6 +43,7 @@
     font-weight: 400;
     margin: 0;
     font-family: 'PangramSans-Medium';
+    letter-spacing:-0.25rem;
   }
 
   &__button-container {
@@ -124,6 +125,8 @@
     &__title {
       max-width: 80%;
       font-size: 3.5rem;
+          letter-spacing:-0.1rem;
+
     }
 
     &__links {
