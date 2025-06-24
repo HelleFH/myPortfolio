@@ -1,0 +1,162 @@
+/* Google Fonts import for Exo, Lato, and Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+@font-face {
+  font-family: 'PangramSans-Regular';
+  src: url('../assets/fonts/PPPangramSans-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'PangramSans-Medium';
+  src: url('../assets/fonts/PPPangramSans-Medium.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  
+}
+
+@font-face {
+  font-family: 'PangramSans-Light';
+  src: url('../assets/fonts/PPPangramSans-Light.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$primary-color: var(--mirage);
+
+$highlight-color: var(--battleship-gray);
+
+.main-content {
+  max-width: 95vw;
+}
+
+body {
+  margin: 0 !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Atkinson Hyperlegible', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  color: var(--black-color);
+  scroll-behavior: smooth;
+  background-color: #f9f9f9;
+
+}
+
+
+
+a:visited,
+a:hover {
+  color: inherit !important;
+  ;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'PangramSans-Medium'
+}
+
+h1:not(.hero__title),
+h2,
+h3 {
+  color: $primary-color;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+h2,
+h3,
+h1 {
+  font-weight: 600;
+}
+
+p {
+  font-family: 'Atkinson Hyperlegible';
+}
+
+
+/* Base button styles */
+.github-button,
+.project-button,
+button:not(.chevron-button, .close-button, .contact-modal__close-btn, .btn-close, .close-btn, .close-modal, .nav-button) {
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: var(--small-gap);
+  place-self: center;
+  text-decoration: none !important;
+  background-color: #005a34;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  color: var(--white-color) !important;
+  fill: var(--white-color);
+  font-size: 1rem;
+  font-family: 'Atkinson Hyperlegible';
+  font-weight: 500;
+  padding: 7px 16px 9px;
+  transition: background-color .2s ease;
+  height: fit-content;
+  width: fit-content;
+  cursor: pointer;
+}
+
+
+/* General button hover effect, excluding close buttons */
+.github-button:hover,
+.project-button:hover,
+button:hover:not(.chevron-button, .close-button, .contact-modal__close-btn, .btn-close, .close-modal, .close-button.top-right, .close-btn) {
+  background-color: #c6c6c6;
+  color: var(--black-color) !important;
+  border: 1px solid transparent;
+
+
+}
+
+
+
+/* Active effect */
+button:active {
+  transform: translateY(0);
+  opacity: 0.9;
+}
+
+/* Styling for links */
+a {
+  cursor: pointer;
+}
+
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+}
+
+#hs-overlay-cta-92296409586 {
+  display: none !important;
+}
+
+/* Mobile styles for buttons on smaller screens */
+@media (max-width: 1000px) {}

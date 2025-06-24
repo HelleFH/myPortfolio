@@ -1,0 +1,33 @@
+@import '/src/styles/main';
+
+.projects-overview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 0.6rem;
+  margin: 0 auto;
+  justify-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+
+  background-color:#c6c6c6 ;
+ padding:var(--padding); 
+  margin-bottom:4rem;
+
+  &__container {
+    @include flex-column;
+  border-radius:8px;
+  }
+    &__intro {
+background-color: #f2ecff;
+max-width:1200px;
+width:100%;
+padding:var(--padding);
+border-radius: var(--border-radius);
+
+ p {font-size:1.2rem; line-height: 2rem;
+ padding:var(--xs-padding) 0;}
+
+
+  }
+}

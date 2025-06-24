@@ -1,0 +1,49 @@
+.project-buttons {
+  margin-top: 2em;
+  display: flex;
+  gap: 0.5em;
+  align-self: center;
+  padding-right: 2em;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  @media (min-width: 1000px) {
+    margin-top: 0;
+    align-self: flex-end;
+    padding-right: 1em;
+    padding-top: 1em;
+    width: 100%;
+  }
+
+  @media (min-width: 800px) and (max-width: 1000px) {
+    justify-content: flex-end;
+  }
+
+  &__button {
+    font-family: 'Lato', sans-serif !important;
+    display: inline-block !important;
+    padding: 7px 15px 9px !important;
+    z-index: 1 !important;
+    font-size: 1rem !important;
+    border-radius: 20px !important;
+
+    &:hover {
+      background-color: #f2ecff !important;
+      color: var(--black-color) !important;
+    }
+
+    @media (min-width: 1050px) {
+      padding: 11px 22px 14px !important;
+      font-size: 1.1rem !important;
+    }
+
+    &--project {
+      background-color: transparent;
+    }
+
+    &--github {
+      background-color: var(--davys-gray-2) !important;
+      color: var(--white-color) !important;
+    }
+  }
+}
