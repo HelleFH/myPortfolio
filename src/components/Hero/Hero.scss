@@ -1,19 +1,37 @@
 @import '/src/styles/main';
 
 .hero {
-  @include flex-column;
+  display: grid;
+  grid-template-rows: 0.5fr 2fr 0.5fr;
   background-position: center;
-  justify-content: flex-start;
+  justify-items: center;
+  justify-content: center;
   position: relative;
   background-color: white;
-  min-height: 60vh;
   width: 100vw;
+  max-height:60vh;
+  top: 7vh;
+  margin-bottom:7vh;
+
+
+  button {
+    background-color: transparent !important;
+    border: #003049 1px solid;
+    color: #003049 !important;
+
+    &:hover {
+      border: #003049 1px solid !important;
+      background-color: #003049 !important;
+      color: white !important;
+    }
+  }
 
   &__video-container {
-    position: absolute;
+    position: relative;
     width: 100%;
-    height: 37%;
+    max-width: 600px;
     bottom: 0;
+    grid-row:3;
   }
 
   &__video {
@@ -25,44 +43,38 @@
   &__content {
     position: relative;
     @include flex-column;
-    justify-content: flex-start;
-    align-items: center;
-    width: 70%;
-    z-index: 2;
-    padding: 8rem;
-  }
-
-  &__title-container {
-    position: relative;
-    @include flex-column;
-    justify-content: flex-start;
     align-items: flex-start;
+    width: 100%;
+    z-index: 2;
+    grid-row:2;
+    width:100%;
+        max-width: 100%;
 
-    gap: 0;
-    width: fit-content;
-    max-width: 600px;
   }
+
+
 
   &__title {
-    font-size: 3.4rem;
+    font-size: 3.2rem;
     font-weight: 400;
     margin: 0;
     font-family: 'PangramSans-Medium';
-    letter-spacing: -0.25rem;
+    letter-spacing: -0.1rem;
     color: #003049;
     margin-left: -0.2rem;
   }
 
   &__subtitle {
-
     font-family: 'GlacialIndifference-Regular';
+    font-size: 1.2rem;
 
   }
 
   &__button-container {
     @include flex-row;
-    justify-content: center;
+    justify-content: flex-start;
     height: 40px;
+
   }
 
   &__button {
@@ -137,7 +149,6 @@
 
 
   .hero {
-    padding: 5rem;
     min-height: 40vh;
     justify-content: center;
 
@@ -177,7 +188,6 @@
 
 @media (max-width: 767px) {
   .hero {
-    padding: var(--xl-padding) var(--padding);
 
     &__content {
       padding: var(--padding) 0;
