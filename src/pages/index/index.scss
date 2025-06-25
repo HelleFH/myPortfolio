@@ -2,9 +2,6 @@
 
 .index-container {
   @include page-container;
-  padding:var(--padding);
-text-align: center;
+  padding: var(--padding);
+  text-align: center;
 }
-
-
-

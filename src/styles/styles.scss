@@ -30,7 +30,18 @@
   font-weight: normal;
   font-style: normal;
 }
-
+@font-face {
+  font-family: 'GlacialIndifference-Regular';
+  src: url('../assets/fonts/GlacialIndifference-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GlacialIndifference-Bold';
+  src: url('../assets/fonts/GlacialIndifference-Bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 $primary-color: var(--mirage);
 
 $highlight-color: var(--battleship-gray);
@@ -108,7 +119,7 @@ button:not(.chevron-button, .close-button, .contact-modal__close-btn, .btn-close
   gap: var(--small-gap);
   place-self: center;
   text-decoration: none !important;
-  background-color: #005a34;
+  background-color: #2a4756;
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
   color: var(--white-color) !important;

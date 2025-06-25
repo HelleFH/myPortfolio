@@ -50,7 +50,7 @@
     max-width: 100%;
   }
 
-  
+
 
 
   .modal-content {
@@ -84,7 +84,7 @@
     padding: var(--small-padding);
     width: 100%;
     max-width: 500px;
-    
+
   }
 
   .modal-image {
@@ -293,18 +293,18 @@
   .custom-modal {
     align-items: flex-start;
     overflow-y: auto;
-    padding: var(--xs-padding)!important;
-    margin:0 auto;
+    padding: var(--xs-padding) !important;
+    margin: 0 auto;
 
     .modal-dialog {
       margin: auto;
       width: 100%;
     }
 
-    
-  .technologies-list {
-    justify-content: center;
-  }
+
+    .technologies-list {
+      justify-content: center;
+    }
 
     .modal-content {
       max-height: none;

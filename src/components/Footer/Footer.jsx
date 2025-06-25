@@ -1,18 +1,12 @@
-import React, { useState } from 'react';
 import './Footer.scss';
 import Images from '../../assets/images';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import SocialLinks from '../SocialLinks/SocialLinks';
 
-
 const Footer = () => {
-
 
   return (
     <footer className="footer">
-
-
-
       {/* Contact Section */}
       <div className="footer__contact">
         <p>Contact me at:</p>

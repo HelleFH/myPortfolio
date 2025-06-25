@@ -1,5 +1,4 @@
 // SocialLinks.js
-import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import './SocialLinks.scss';
@@ -20,7 +19,7 @@ const SocialLinks = ({ onClick }) => {
         target="_blank"
         rel="noopener noreferrer"
         className="social-link"
-        onClick={onClick} // Optional: For triggering modal or other logic
+        onClick={onClick}
       >
         <FontAwesomeIcon icon={faGithub} size="lg" />
       </a>

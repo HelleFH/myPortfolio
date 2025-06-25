@@ -11,14 +11,14 @@ const ProjectsOverview = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentProjectType, setCurrentProjectType] = useState(null);
 
-  const location = useLocation();  // Use useLocation to get the passed state
-  const { selectedProjectIndex: passedIndex, projectType: passedType } = location.state || {}; // Get state if available
+  const location = useLocation(); 
+  const { selectedProjectIndex: passedIndex, projectType: passedType } = location.state || {}; 
 
   useEffect(() => {
     if (passedIndex !== undefined && passedType) {
       setSelectedProjectIndex(passedIndex);
       setCurrentProjectType(passedType);
-      setIsModalOpen(true);  // Open the modal with the passed project
+      setIsModalOpen(true); 
     }
   }, [passedIndex, passedType]);
 
@@ -56,6 +56,7 @@ const ProjectsOverview = () => {
   const currentProjects = getProjects();
 
   return (
+    
     <div className="projects-overview__container">
 
       <div   id="react-projects"  className="projects-overview__intro">

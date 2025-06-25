@@ -1,5 +1,5 @@
 import React from 'react';
-import './Download.section.scss'; // Assuming you have the SCSS file
+import './Download.section.scss'; 
 
 const DownloadSection = () => {
   return (

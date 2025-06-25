@@ -1,54 +1,67 @@
 @import '/src/styles/main';
 
 .hero {
-  @include flex-row;
-  justify-content: center;
-  align-items: center;
+  @include flex-column;
   background-position: center;
+  justify-content: flex-start;
   position: relative;
   background-color: white;
-  padding: 10rem 8rem;
+  min-height: 60vh;
   width: 100vw;
-  margin-top: 7vh;
 
   &__video-container {
     position: absolute;
-    right: 0px;
     width: 100%;
-    height: 100%;
-    z-index: 0;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-
+    height: 37%;
+    bottom: 0;
   }
 
   &__video {
-    width: 50%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
   }
 
   &__content {
     position: relative;
     @include flex-column;
-    align-items: flex-start;
-    gap: var(--large-gap);
-    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    width: 70%;
     z-index: 2;
+    padding: 8rem;
+  }
+
+  &__title-container {
+    position: relative;
+    @include flex-column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    gap: 0;
+    width: fit-content;
+    max-width: 600px;
   }
 
   &__title {
-    font-size: 4rem;
+    font-size: 3.4rem;
     font-weight: 400;
     margin: 0;
     font-family: 'PangramSans-Medium';
-    letter-spacing:-0.25rem;
+    letter-spacing: -0.25rem;
+    color: #003049;
+    margin-left: -0.2rem;
+  }
+
+  &__subtitle {
+
+    font-family: 'GlacialIndifference-Regular';
+
   }
 
   &__button-container {
     @include flex-row;
-    justify-content: flex-start;
+    justify-content: center;
     height: 40px;
   }
 
@@ -58,7 +71,7 @@
 
   &__links {
     list-style: none;
-    display: flex;
+    display: none;
     flex-direction: row;
     gap: var(--small-gap);
 
@@ -112,21 +125,31 @@
     position: absolute;
     right: 0;
     background-size: contain;
-    width: 50%;
-    height: 70%;
+    width: 100%;
     object-fit: contain;
+    bottom: 0;
+    padding: 0 2rem;
+    margin: 0 auto;
   }
 }
 
 @media (max-width: 1200px) {
   .hero {
     padding: 5rem;
+    min-height: 40vh;
 
     &__title {
-      max-width: 300px;
-      font-size: 3.5rem;
-          letter-spacing:-0.1rem;
+      font-size: 3rem;
+      letter-spacing: -0.1rem;
 
+    }
+
+    &__content {
+      padding: 0rem;
+    }
+
+    &__image {
+      max-height: 30%;
     }
 
     &__links {
@@ -162,11 +185,6 @@
     &__button-container {
       bottom: 0;
       gap: var(--small-gap);
-    }
-
-
-    &__title-container {
-      position: relative;
     }
 
 

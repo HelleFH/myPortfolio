@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import './Navbar.scss';
-import { Link } from 'react-router-dom'; // Import Link component from react-router-dom
+import { Link } from 'react-router-dom'; 
 import Images from '../../assets/images';
 import SocialLinks from '../SocialLinks/SocialLinks'
 import { Menu, X } from 'lucide-react';
 
 const Navbar = () => {
-  const [scrolled, setScrolled] = useState(false); // Track if scrolled
-  const [isHidden, setIsHidden] = useState(false); // Track if navbar is hidden
-  const [lastScrollY, setLastScrollY] = useState(0); // Track last scroll position
-  const [scrollTimeout, setScrollTimeout] = useState(null); // For inactivity timeout
+  const [scrolled, setScrolled] = useState(false); 
+  const [isHidden, setIsHidden] = useState(false); 
+  const [lastScrollY, setLastScrollY] = useState(0); 
+  const [scrollTimeout, setScrollTimeout] = useState(null); 
   const [menuOpen, setMenuOpen] = useState(false);
 
   // Scroll detection logic to change navbar style based on scroll
@@ -38,23 +38,16 @@ const Navbar = () => {
   setLastScrollY(currentScrollY);
 };
 
-    // Add event listener for scroll event
     window.addEventListener('scroll', handleScroll);
 
-    // Clean up the event listener when component unmounts
     return () => {
       window.removeEventListener('scroll', handleScroll);
       if (scrollTimeout) {
         clearTimeout(scrollTimeout);
       }
     };
-  }, [lastScrollY, scrollTimeout, menuOpen]); // Add menuOpen to dependencies to prevent hiding navbar when menu is open
-  const scrollToId = (id) => {
-  const el = document.getElementById(id);
-  if (el) {
-    el.scrollIntoView({ behavior: 'smooth' });
-  }
-};
+  }, [lastScrollY, scrollTimeout, menuOpen]); 
+
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''} ${isHidden ? 'hidden' : ''}`}>
       <div className="navbar-content">
@@ -84,7 +77,7 @@ const Navbar = () => {
             <Link to="/" className="navbar-link" onClick={() => setMenuOpen(false)}>Home</Link>
           </li>
 
-          <div className="divider"></div> {/* Divider between links */}
+          <div className="divider"></div> 
 
           {/* About Me Link */}
           <li>
@@ -106,7 +99,7 @@ const Navbar = () => {
   </Link>
 </li>
 
-          <div className="divider"></div> {/* Divider between links */}
+          <div className="divider"></div> 
 
           <li>
             <SocialLinks />

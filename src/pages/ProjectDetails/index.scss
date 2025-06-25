@@ -15,7 +15,7 @@
             content: '▹'; // or '➤', '✦', '✔', etc.
             position: absolute;
             left: 0;
-            color: $primary-color; // match your theme
+            color: $primary-color;
             font-size: 1rem;
         }
     }
@@ -38,30 +38,18 @@
 
 
     .hero {
-        padding: 8rem 5rem 10rem;
+        max-height: 45vh;
+        min-height: 45vh;
+          &__video-container {
+                position: absolute;
+                width: 100%;
+                height: 40%;
+                bottom: 0;
+                display:flex;
+                justify-content: flex-end;
+            }
 
-        &__content {
-            margin: 0;
-        }
-
-        &__title {
-
-            margin-top: 0%;
-            max-width: 500px !important;
-        }
-
-        &__links {
-            display: none;
-        }
-
-        &__title-container {
-            text-align: left;
-            margin: 0;
-        }
-
-        &__button-container {
-            display: none;
-        }
+            &__video {width:40%;}
     }
 
 
@@ -214,7 +202,7 @@
             content: '•';
             margin-left: 2rem;
             font-size: 1.2rem;
-            color:#005a34;
+            color: #2a4756;
         }
 
         &:first-child::before {
@@ -237,11 +225,6 @@
     transition: color 0.3s ease;
     margin-top: 2rem;
     padding-left: var(--large-padding);
-
-    &:hover {
-        font-weight: 600;
-        color: #005f8a;
-    }
 }
 
 /* Mobile Styles (Below 768px) */
@@ -257,8 +240,16 @@
 
         .hero {
             padding: var(--small-padding);
-            ;
             min-height: 40vh;
+
+            &__video-container {
+                position: absolute;
+                width: 100%;
+                height: 40%;
+                bottom: 0;
+                display:flex;
+                justify-content: flex-end;
+            }
         }
 
         .buttons-container {
@@ -295,15 +286,11 @@
             font-size: 0.9rem;
 
             .tech-item {
-
-
                 &::after {
                     content: '•';
                     margin-left: 0.5rem;
                     font-size: 1.5rem;
                 }
-
-
             }
         }
 
@@ -313,8 +300,6 @@
         }
 
         .navigation-buttons {
-
-
             padding: 0 1rem;
         }
     }

@@ -1,8 +1,7 @@
 import FooterLogo from './images/logo.png';
 import LogoWhite from './images/logo-white.png';
-import LogoBlue from './images/logo-blue.png';
 import HeroLogo from './images/logo-white.png';
-import heroVideo from './images/hero-video.mp4';
+import heroVideo from './images/hero-video1.mp4';
 import heroVideoHD from './images/hero-video1.mp4';
 import heroVideoMobile from './images/herovideo.mp4';
 import HeroImage from './images/heroimage.png';
@@ -35,14 +34,12 @@ import LandingPagesScreen from './images/landingpages-screen.png'
 
 const Images = {
   FooterLogo,
-  LogoBlue,
   LogoWhite,
   HeroLogo,
   heroVideo,
   HeroImage,
   heroVideoMobile,
   heroVideoHD,
-  heroVideo,
   NavbarLogo,
   NavbarLogoScrolled,
 HeroImageMobile,

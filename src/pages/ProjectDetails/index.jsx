@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import  { useEffect, useState, useRef } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import LoginModal from "../../components/LoginModal/LoginModal";
 import { useSwipeable } from "react-swipeable";
@@ -22,7 +22,7 @@ const ProjectDetail = () => {
 
   useEffect(() => {
     if (!selectedProject) {
-      navigate('/404'); // Handle project not found
+      navigate('/404'); 
     }
   }, [selectedProject, navigate]);
 

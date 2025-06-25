@@ -67,26 +67,6 @@ const scrollOrNavigate = (id) => {
     <h1 className="hero__title">{title}</h1>
   </div>
 
-  <div className="hero__button-container">
-    {buttons && buttons.map((button, index) => (
-      <React.Fragment key={index}>
-        {button.type === 'link' && button.text && (
-          <button 
-            onClick={() => handleButtonClick(button.path)} 
-            className="hero__button"
-          >
-            {button.text}
-          </button>
-        )}
-      </React.Fragment>
-    ))}
-<div>
-
-
-</div>
-    <SocialLinks />
- 
-  </div>
 <ul className="hero__links">
   <li><a onClick={() => scrollOrNavigate("react-projects")}>React Projects</a></li>
   <li><a onClick={() => scrollOrNavigate("other-projects")}>Other Development Projects</a></li>

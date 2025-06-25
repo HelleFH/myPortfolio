@@ -1,10 +1,9 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-
 import Layout from '../../components/Layout/Layout';
 import DesignEmbeds from '../design-embeds/components/DesignEmbeds/DesignEmbeds';
-import AnimatedSection from '../../components/AnimatedSection';
-import ProjectsOverview from './components/ProjectOverview/ProjectOverview'
+import ProjectsOverview from './components/ProjectOverview/ProjectOverview';
+
 const Home = () => {
 
   const location = useLocation();
@@ -31,15 +30,16 @@ const Home = () => {
   }, [location, navigate]);
   return (
     <Layout
-      heroTitle="Welcome to My Portfolio"
+      heroTitle="Hi, I'm Helle. This is where I share my work."
+      heroSubtitle="Welcome to my portfolio"
       buttons={[
         { type: 'link', text: 'About me', path: '/about' },
       ]}
     >
       <div className='index-container'>
         <ProjectsOverview />
-        <div  id="design-media">     
-           <DesignEmbeds />
+        <div id="design-media">
+          <DesignEmbeds />
         </div>
 
       </div>

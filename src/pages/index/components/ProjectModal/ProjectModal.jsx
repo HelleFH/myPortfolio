@@ -94,7 +94,7 @@ const ProjectModal = ({
               <Link
                 to={{
                   pathname: `/project/${project.type}/${project.id}`,
-                  state: { selectedProjectIndex, projectType: project.type }, // pass the index and project type
+                  state: { selectedProjectIndex, projectType: project.type }, 
                 }}
                 className="read-more-link"
               >

@@ -14,8 +14,6 @@ const AboutMePage = () => {
         { type: 'link', text: 'Home', path: '/' },
       ]}
   >
-
-
         <AboutMe />
         <SkillsSection />
 

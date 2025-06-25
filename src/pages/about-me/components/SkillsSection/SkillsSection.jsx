@@ -5,7 +5,6 @@ import './SkillsSection.scss';
 
 export default function SkillsSection() {
   const handleCardClick = () => {
-    // Logic for what should happen on card click (e.g., navigate to details, etc.)
     console.log('Card clicked!');
   };
 
@@ -16,8 +15,8 @@ export default function SkillsSection() {
         {skills[0].sections.map((section, index) => (
           <SkillCard
             key={index}
-            skill={section}  // Pass each section data to the Card component
-            onClick={handleCardClick}  // Handle card clicks
+            skill={section} 
+            onClick={handleCardClick} 
           />
         ))}
       </div>

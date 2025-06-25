@@ -1,4 +1,3 @@
-import React from 'react';
 import './ProjectButtons.scss';
 
 const ProjectButtons = ({ projectLink, githubLink, buttonText, githubButtonText }) => {
