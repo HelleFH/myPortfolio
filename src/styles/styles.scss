@@ -135,18 +135,6 @@ button:not(.chevron-button, .close-button, .contact-modal__close-btn, .btn-close
 }
 
 
-/* General button hover effect, excluding close buttons */
-.github-button:hover,
-.project-button:hover,
-button:hover:not(.chevron-button, .close-button, .contact-modal__close-btn, .btn-close, .close-modal, .close-button.top-right, .close-btn) {
-  background-color: #c6c6c6;
-  color: var(--black-color) ;
-  border: 1px solid transparent;
-
-
-}
-
-
 
 /* Active effect */
 button:active {
