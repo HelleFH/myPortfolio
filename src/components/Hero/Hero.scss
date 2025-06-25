@@ -56,8 +56,6 @@
 
   }
 
-
-
   &__title {
     font-size: 3.2rem;
     font-weight: 400;
@@ -96,7 +94,7 @@
     font-family: 'GlacialIndifference-Bold';
     color: #003049;
     grid-column: 3;
-    white-space:nowrap;
+    white-space: nowrap;
   }
 
   &__line {
@@ -118,11 +116,11 @@
     cursor: pointer;
     transition: color 0.3s;
     right: 0;
-    padding:1rem;
+    padding: 1rem;
 
     &:hover {
       color: #003049;
-      transform:scale(1.02);
+      transform: scale(1.02);
     }
   }
 
@@ -138,41 +136,10 @@
     bottom: 0;
     padding: 0 2rem;
     margin: 0 auto;
+    max-width: 500px;
   }
 }
 
-@media (max-width: 1200px) {
-
-
-  .hero {
-    min-height: 40vh;
-    justify-content: center;
-    grid-template-columns: 1fr;
-
-
-    &__title {
-      font-size: 3rem;
-      letter-spacing: -0.1rem;
-
-    }
-
-    &__content {
-      padding: 0rem;
-      width: 90%
-    }
-
-    &__image {
-      max-height: 25%;
-    }
-
-    &__links {
-
-      a {
-        font-size: 1rem !important;
-      }
-    }
-  }
-}
 
 @media (max-width: 1000px) {
   .hero {
@@ -183,27 +150,24 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
   .hero {
+    min-height: 50vh;
+    top: 0;
 
     &__content {
-      padding: var(--padding) 0;
-      margin-top: 0;
-      justify-content: space-between;
+
+      grid-column: 1/span all;
+      padding:var(--padding);
     }
 
     &__button-container {
       display: none;
-      bottom: 0;
-      gap: var(--small-gap);
     }
 
 
     &__title {
       font-size: 1.75rem;
-      font-weight: 500;
-      text-align: left;
-      width: 100%;
 
     }
 
@@ -213,13 +177,3 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1000px) {
-  .hero {
-
-    &__subtitle {
-
-      max-width: 500px;
-
-    }
-  }
-}
