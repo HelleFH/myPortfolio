@@ -102,3 +102,26 @@
     }
 
 }
+
+.tech-stack {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  padding: 1rem 0;
+}
+
+.tech-stack__section {
+  h4 {
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+
+  ul {
+    list-style: disc inside;
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+  }
+}

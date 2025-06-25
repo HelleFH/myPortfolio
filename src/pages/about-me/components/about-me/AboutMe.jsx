@@ -27,14 +27,13 @@ const AboutMe = () => {
                     </div>
 
                     <p>
-                        I’m a web developer who works across the full stack, building everything from user interfaces to server-side logic and data handling.
+
                     </p>
                     <p>
-                        Typically, I work with React and front-end tools, but I’m comfortable with the full process of building web applications. I’ve worked on many different kinds of projects and I enjoy figuring things out, improving as I go, and learning new approaches.
+                        I’ve worked independently and collaborated on many different kinds of projects mainly with React. I’m comfortable with the full process of development . 
                     </p>
                     <p>
-                        In addition to my degree in Biology and Chemistry from the University of Southern Denmark, I’ve completed a course in web development.
-                    </p>
+I studied web development at NEXT in Copenhagen, where I received thorough training in HTML, JavaScript, and CSS. I have experience with various frameworks, but my main focus has been React. I’m comfortable working across the full stack and adapting to new technologies as needed. Additionally, I hold a degree in Biology and Chemistry from the University of Southern Denmark, which has provided me with a strong background in sustainability, climate, and related fields.                    </p>
 
                     <p>
                         I have several years of experience in copywriting and translation/localization, where I’ve worked on adapting content for different languages and cultures.

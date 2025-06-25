@@ -10,6 +10,8 @@ const AboutMePage = () => {
   
    <Layout
     heroTitle="About Me"
+          heroSubtitle="Welcome to my portfolio"
+
        buttons={[
         { type: 'link', text: 'Home', path: '/' },
       ]}
