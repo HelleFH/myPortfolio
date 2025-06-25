@@ -100,7 +100,6 @@ const ProjectsOverview = () => {
           handleClose={closeModal}
           selectedProjectIndex={selectedProjectIndex}
           projects={currentProjects}
-          overlayColor="#fff"
           handlePrev={handlePrev}
           handleNext={handleNext}
           handleShowLoginDetails={() => console.log('Show login')}

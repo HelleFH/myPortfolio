@@ -11,7 +11,6 @@ import LoginModal from '../../../../components/LoginModal/LoginModal';
 const ProjectModal = ({
   show,
   handleClose,
-  overlayColor,
   selectedProjectIndex,
   projects,
   handlePrev,
@@ -58,7 +57,6 @@ const ProjectModal = ({
               className="modal-image"
               src={project.images[0]}
               alt={project.name}
-              style={{ backgroundColor: overlayColor }}
             />
           </div>
 
@@ -109,7 +107,6 @@ const ProjectModal = ({
               show={showLoginModal}
               onHide={handleHideLoginDetails}
               project={project}
-              overlayColor={overlayColor}
               backdropClassName="login-modal-backdrop"
               dialogClassName="project-login-modal"
               handleCopyToClipboard={(text) => {

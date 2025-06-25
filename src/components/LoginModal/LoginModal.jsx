@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCopy } from '@fortawesome/free-solid-svg-icons';
 import './LoginModal.scss'; // global SCSS, not CSS modules
 
-const LoginModal = ({ show, onHide, project, overlayColor = '#ccc' }) => {
+const LoginModal = ({ show, onHide, project }) => {
 
   const [copiedField, setCopiedField] = React.useState(null);
 
@@ -19,7 +19,7 @@ const handleCopy = (text, field) => {
 
   return (
     <Modal show={show} onHide={onHide} centered backdrop="static" className="login-modal">
-      <Modal.Header closeButton style={{ backgroundColor: overlayColor }}>
+      <Modal.Header >
         <Modal.Title>Login Details</Modal.Title>
       </Modal.Header>
 <Modal.Body>

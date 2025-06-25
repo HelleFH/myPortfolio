@@ -1,28 +1,38 @@
-import  { useEffect, useState, useRef } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useEffect, useState, useRef } from "react";
+import { useParams, useNavigate, Link, useLocation } from "react-router-dom";
 import LoginModal from "../../components/LoginModal/LoginModal";
 import { useSwipeable } from "react-swipeable";
 import { frontendProjects } from '../../data/frontendprojects';
 import { fullStackProjects } from '../../data/fullstackprojects';
-import Layout from '../../components/Layout/Layout'
+import Layout from '../../components/Layout/Layout';
 import ProjectButtons from "../../components/ProjectButtons/ProjectButtons";
 import './index.scss';
 
 const ProjectDetail = () => {
   const { id, type } = useParams();
   const navigate = useNavigate();
+  const location = useLocation();
 
+  // Get passed index from router state (if available)
+  const { selectedProjectIndex: passedIndex, projectType } = location.state || {};
+
+  // Determine the project list based on the type
   const projectList = type === 'frontend' ? frontendProjects : fullStackProjects;
-  const currentIndex = projectList.findIndex(proj => proj.id === parseInt(id, 10));
+
+  // Find index from URL param
+  const indexFromId = projectList.findIndex(proj => proj.id === parseInt(id, 10));
+
+  // Use passed index if available, otherwise use index from URL
+  const currentIndex = passedIndex !== undefined ? passedIndex : indexFromId;
   const selectedProject = projectList[currentIndex];
 
   const [project, setProject] = useState(null);
-  const [showLoginDetails, setShowLoginDetails] = useState(false);
+  const [showLoginModal, setShowLoginModal] = useState(false);
   const scrollPositionRef = useRef(0);
 
   useEffect(() => {
     if (!selectedProject) {
-      navigate('/404'); 
+      navigate('/404');
     }
   }, [selectedProject, navigate]);
 
@@ -45,6 +55,9 @@ const ProjectDetail = () => {
     });
   };
 
+  const handleHideLoginDetails = () => setShowLoginModal(false);
+  const handleShowLoginDetails = () => setShowLoginModal(true);
+
   const handlers = useSwipeable({
     onSwipedLeft: () => navigateToProject(currentIndex + 1),
     onSwipedRight: () => navigateToProject(currentIndex - 1),
@@ -63,7 +76,10 @@ const ProjectDetail = () => {
 
   return (
     <div className="project-container" {...handlers}>
-      <Layout heroTitle={selectedProject.name} heroSubtitle={selectedProject.descriptionHeader}>
+      <Layout
+        heroTitle={selectedProject.name}
+        heroSubtitle={selectedProject.descriptionHeader}
+      >
         <a onClick={handleBackToProjects} className="back-button">
           Back to Projects
         </a>
@@ -108,7 +124,14 @@ const ProjectDetail = () => {
               githubButtonText={project.githubButtonText}
             />
           )}
+  {project && (
+  <div className="links-container">
 
+    {project.username && (
+      <a onClick={handleShowLoginDetails}>Show Login Details</a>
+    )}
+  </div>
+)}
           {/* Navigation chevrons */}
           <div className="navigation-buttons">
             <button
@@ -116,25 +139,32 @@ const ProjectDetail = () => {
               onClick={() => navigateToProject(currentIndex - 1)}
               aria-label="Previous Project"
             >
-              &#x2039; {/* Unicode for ‹ */}
+              &#x2039;
             </button>
             <button
               className="nav-button nav-button--next"
               onClick={() => navigateToProject(currentIndex + 1)}
               aria-label="Next Project"
             >
-              &#x203A; {/* Unicode for › */}
+              &#x203A;
             </button>
+          
           </div>
+          
         </div>
 
+
+
         <LoginModal
-          show={showLoginDetails}
-          onHide={() => setShowLoginDetails(false)}
-          project={selectedProject}
+          show={showLoginModal}
+          onHide={handleHideLoginDetails}
+          selectedProjectIndex={currentIndex}
+          project={project}
+          backdropClassName="login-modal-backdrop"
+          dialogClassName="project-login-modal"
           handleCopyToClipboard={(text) => {
             navigator.clipboard.writeText(text);
-            alert(`${text} copied to clipboard!`);
+            alert('Copied to clipboard');
           }}
         />
       </Layout>
