@@ -10,12 +10,15 @@
         padding-left: 1.5rem;
         margin-bottom: 0.75rem;
         line-height: 1.5;
+        display:flex;
+        align-items:center;
 
         &::before {
-            content: '▹'; // or '➤', '✦', '✔', etc.
+            content: '✦'; // or '➤', '✦', '✔', etc.
             position: absolute;
             left: 0;
             font-size: 1rem;
+            color:#fcbf49;
         }
     }
 }
