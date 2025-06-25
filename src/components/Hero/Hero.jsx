@@ -70,12 +70,7 @@ const Hero = ({ title, subtitle, buttons }) => {
         </div>
 
    
-        {/* Project Links */}
-        <ul className="hero__links">
-          <li><a onClick={() => scrollOrNavigate("react-projects")}>React Projects</a></li>
-          <li><a onClick={() => scrollOrNavigate("other-projects")}>Other Development Projects</a></li>
-          <li><a onClick={() => scrollOrNavigate("design-media")}>Design/Media</a></li>
-        </ul>
+   
       </div>
         {/* Media */}
 
@@ -101,7 +96,31 @@ const Hero = ({ title, subtitle, buttons }) => {
             </video>
           </div>
         )}
+             {/* Project Links */}
+   <div className="hero__vertical-menu">
+  <div className="hero__line hero__line--long" />
+  
+  <div className="hero__menu-item" onClick={() => scrollOrNavigate("react-projects")}>
+    React Projects
+  </div>
+  
+  <div className="hero__line hero__line--short" />
+  
+  <div className="hero__menu-item" onClick={() => scrollOrNavigate("other-projects")}>
+    Other Projects
+  </div>
+  
+  <div className="hero__line hero__line--short" />
+  
+  <div className="hero__menu-item" onClick={() => scrollOrNavigate("design-media")}>
+    Design / Media
+  </div>
+  
+  <div className="hero__line hero__line--long" />
+</div>
+
     </section>
+    
   );
 };
 
