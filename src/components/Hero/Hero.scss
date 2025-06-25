@@ -10,9 +10,9 @@
   position: relative;
   background-color: white;
   width: 100vw;
-  max-height:60vh;
+  max-height: 60vh;
   top: 7vh;
-  margin-bottom:7vh;
+  margin-bottom: 7vh;
 
 
   button {
@@ -32,8 +32,8 @@
     width: 100%;
     max-width: 600px;
     bottom: 0;
-    grid-row:3;
-        grid-column: 2;
+    grid-row: 3;
+    grid-column: 2;
 
   }
 
@@ -49,10 +49,10 @@
     align-items: flex-start;
     width: 100%;
     z-index: 2;
-    grid-row:2;
+    grid-row: 2;
     grid-column: 2;
-    width:100%;
-        max-width: 100%;
+    width: 100%;
+    max-width: 100%;
 
   }
 
@@ -85,43 +85,45 @@
     margin: 0;
   }
 
-.hero__vertical-menu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
-  font-family: 'GlacialIndifference-Bold';
-  color: #003049;
-  grid-column: 3;
-}
-
-.hero__line {
-  width: 2px;
-  background-color: #d62828;
-}
-
-.hero__line--long {
-  height: 50px;
-}
-
-.hero__line--short {
-  height: 20px;
-}
-
-.hero__menu-item {
-  text-orientation: mixed;
-  font-size: 0.95rem;
-  cursor: pointer;
-  transition: color 0.3s;
-right:0;
-  &:hover {
-    color: #005a34;
+  &__vertical-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    font-family: 'GlacialIndifference-Bold';
+    color: #003049;
+    grid-column: 3;
   }
-}
+
+  &__line {
+    width: 2px;
+    background-color: #d62828;
+  }
+
+  &__line--long {
+    height: 50px;
+  }
+
+  &__line--short {
+    height: 20px;
+  }
+
+  &__menu-item {
+    text-orientation: mixed;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: color 0.3s;
+    right: 0;
+    padding:1rem;
+
+    &:hover {
+      color: #003049;
+      transform:scale(1.02);
+    }
+  }
 
 
   &__image {
@@ -189,7 +191,7 @@ right:0;
     }
 
     &__button-container {
-      display:none;
+      display: none;
       bottom: 0;
       gap: var(--small-gap);
     }
@@ -203,7 +205,9 @@ right:0;
 
     }
 
-    &__vertical-menu {display:none !important;}
+    &__vertical-menu {
+      display: none !important;
+    }
   }
 }
 
