@@ -29,8 +29,10 @@ import PortfolioScreen from './images/portfolio-screen.png'
 import NewsSiteScreen from './images/news-screen.png';
 import SentispecScreen from './images/sentispec-screen.png';
 import SnippetsScreen from './images/snippets-screen.png';
-
-import LandingPagesScreen from './images/landingpages-screen.png'
+import ReactIcon from './images/react-icon.png';
+import JSIcon from './images/js-icon.png';
+import CreativeIcon from './images/design-icon.png';
+import LandingPagesScreen from './images/landingpages-screen.png';
 
 const Images = {
   FooterLogo,
@@ -42,8 +44,10 @@ const Images = {
   heroVideoHD,
   NavbarLogo,
   NavbarLogoScrolled,
-HeroImageMobile,
-
+  HeroImageMobile,
+  ReactIcon,
+  CreativeIcon,
+  JSIcon,
   AiImagesScreen,
   CalendarScreen,
   ClothesStoreScreen,

@@ -28,8 +28,9 @@
     border-radius: 20px !important;
 
     &:hover {
-      background-color: #eae2b7 !important;
+      background-color: #f1ede8 !important;
       color: var(--black-color) !important;
+      border:none;
     }
 
     @media (min-width: 1050px) {

@@ -13,7 +13,7 @@ const AboutMePage = () => {
           heroSubtitle="Welcome to my portfolio"
 
        buttons={[
-        { type: 'link', text: 'Home', path: '/' },
+        { type: 'link', text: 'Projects', path: '/' },
       ]}
   >
         <AboutMe />

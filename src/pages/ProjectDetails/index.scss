@@ -15,7 +15,6 @@
             content: '▹'; // or '➤', '✦', '✔', etc.
             position: absolute;
             left: 0;
-            color: $primary-color;
             font-size: 1rem;
         }
     }
@@ -221,7 +220,7 @@
             ;
         }
 
-     
+
 
         .buttons-container {
             @include flex-column;
@@ -229,7 +228,7 @@
             ;
         }
 
- 
+
 
         .project-details-container {
             padding: var(--small-padding);
