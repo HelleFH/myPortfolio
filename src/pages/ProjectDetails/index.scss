@@ -40,16 +40,19 @@
     .hero {
         max-height: 45vh;
         min-height: 45vh;
-          &__video-container {
-                position: absolute;
-                width: 100%;
-                height: 40%;
-                bottom: 0;
-                display:flex;
-                justify-content: flex-end;
-            }
 
-            &__video {width:40%;}
+        &__video-container {
+            position: absolute;
+            width: 100%;
+            height: 40%;
+            bottom: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        &__video {
+            width: 40%;
+        }
     }
 
 
@@ -241,20 +244,21 @@
         .hero {
             padding: var(--small-padding);
             min-height: 40vh;
+            justify-content: flex-start;
 
             &__video-container {
                 position: absolute;
                 width: 100%;
                 height: 40%;
                 bottom: 0;
-                display:flex;
+                display: flex;
                 justify-content: flex-end;
             }
 
-  &__title-container {
-    margin-top:6rem;
-   
-  }
+            &__title-container {
+                margin-top: 6rem;
+
+            }
 
         }
 
