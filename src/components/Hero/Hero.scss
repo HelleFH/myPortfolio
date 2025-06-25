@@ -147,6 +147,7 @@
   .hero {
     min-height: 40vh;
     justify-content: center;
+    grid-template-columns: 1fr;
 
 
     &__title {
