@@ -2,7 +2,7 @@
 
 .hero {
   display: grid;
-  grid-template-columns: 0.5fr 4fr 1fr;
+  grid-template-columns: 1fr 4fr 1fr;
   grid-template-rows: 200px 2fr 200px;
   background-position: center;
   justify-items: center;
@@ -30,7 +30,7 @@
     max-width: 600px;
     bottom: 0;
     grid-row: 3;
-    grid-column: 1/span all;
+    grid-column: 2;
 
   }
 
