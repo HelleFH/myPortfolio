@@ -61,10 +61,50 @@
       "Responsive design"
     ]
   },
-
+{
+  "id": 4,
+  "name": "Plant Calendar (React Native)",
+  "technologies": "React Native, Node.js, Express, MongoDB",
+  "images": [Images.MobileCalendarScreen],
+  "projectLink": "https://calendarappnative-1.onrender.com",
+  "githubLink": "https://github.com/HelleFH/PlantCalendarAppNative",
+  "buttonText": "View Project",
+  "githubButtonText": "GitHub",
+  "descriptionHeader": "Mobile Plant Calendar & Reminder App with React Native",
+  "description": "Mobile version of the Plant Calendar app. Designed for users to manage plant care directly from their phones — including reminders, photo logging, and progress tracking.",
+  "username": "Hellefruergaard@plantcalendar.com",
+  "password": "fruergaard",
+     "username": "duser7707@gmail.com",
+    "password": "Demopassword123",
+  "technologiesMore": [
+    "React Native",
+    "Expo",
+    "MongoDB",
+    "Express",
+    "Node.js",
+    "Multer",
+    "Cloudinary",
+    "Axios",
+    "AsyncStorage",
+    "DateTimePicker",
+    "Moment.js"
+  ],
+  "projectDetails": [
+    "Cross-platform mobile app with React Native and Expo",
+    "User authentication and persistent login using AsyncStorage",
+    "Add plants with photos, names, notes, and acquisition dates",
+    "Set recurring care reminders with calendar integration",
+    "Log plant updates with notes and image uploads (via Cloudinary)",
+    "View and filter plant history by date or plant name",
+    "Backend powered by Express and MongoDB with RESTful APIs",
+    "File upload support using Multer and Cloudinary for images",
+    "Clean and intuitive UI with mobile-first user experience"
+  ]
+}
+,
 
     {
-      id: 4,
+      id: 5,
       name: "A Product Portfolio",
       technologies: "React",
       images: [Images.PortfolioScreen],
@@ -77,7 +117,7 @@
       technologiesMore: ["React", "Bootstrap", "Styled Components", "React Swipable"]
     },
         {
-      id: 5,
+      id: 6,
       name: "React Snippets",
       technologies: "React, JavaScript",
       images: [Images.SnippetsScreen],
@@ -91,7 +131,7 @@
     },
   
   {
-    "id": 6,
+    "id": 7,
     "name": "MERN Listings",
     "technologies": "MongoDB, Express, React, Node.js",
     "images": [Images.ListingScreen],
@@ -122,7 +162,7 @@
     ]
   },
 {
-  "id": 7,
+  "id": 8,
   "name": "MERN Plant Calendar",
   "technologies": "MongoDB, Express, React, Node.js",
   "images": [Images.CalendarScreen], 

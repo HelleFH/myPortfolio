@@ -1,7 +1,7 @@
 import FooterLogo from './images/logo.png';
 import LogoWhite from './images/logo-white.png';
 import HeroLogo from './images/logo-white.png';
-import heroVideo from './images/hero-video1.mp4';
+import heroVideo from './images/herovideo1.mp4';
 import heroVideoHD from './images/hero-video1.mp4';
 import heroVideoMobile from './images/herovideo.mp4';
 import HeroImage from './images/heroimage.png';
@@ -33,6 +33,7 @@ import ReactIcon from './images/react-icon.png';
 import JSIcon from './images/js-icon.png';
 import CreativeIcon from './images/design-icon.png';
 import LandingPagesScreen from './images/landingpages-screen.png';
+import MobileCalendarScreen from './images/Plantcalendar-screen.png'
 
 const Images = {
   FooterLogo,
@@ -66,6 +67,7 @@ const Images = {
   PortfolioScreen,
   SentispecScreen,
   SnippetsScreen,
+  MobileCalendarScreen,
 
   LandingPagesScreen,
 };
