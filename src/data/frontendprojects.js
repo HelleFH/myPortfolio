@@ -63,7 +63,7 @@
   },
 {
   "id": 4,
-  "name": "Plant Calendar (React Native)",
+  "name": "Native Plant Calendar",
   "technologies": "React Native, Node.js, Express, MongoDB",
   "images": [Images.MobileCalendarScreen],
   "projectLink": "https://calendarappnative-1.onrender.com",
