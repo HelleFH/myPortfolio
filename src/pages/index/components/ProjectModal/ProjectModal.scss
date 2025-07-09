@@ -293,12 +293,12 @@
     align-items: flex-start;
     overflow-y: auto;
     padding: var(--xs-padding)!important;
-    margin:0 auto;
 
     .modal-dialog {
-      margin: auto;
       width: 100%;
+      margin:0;
     }
+    
 
     
   .technologies-list {
