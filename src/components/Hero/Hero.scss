@@ -3,7 +3,7 @@
 .hero {
   display: grid;
   grid-template-columns: 1fr 4fr 2fr;
-  grid-template-rows: 100px 1fr 200px;
+  grid-template-rows: 20vh 40vh 20vh;
   background-position: center;
   justify-items: center;
   justify-content: center;
@@ -27,7 +27,7 @@
   &__video-container {
     position: relative;
     width: 100%;
-    max-width: 600px;
+    max-width: 450px;
     bottom: 0;
     grid-row: 3;
     grid-column: 1/span all;
@@ -91,7 +91,7 @@
     font-family: 'GlacialIndifference-Regular';
     color: #003049;
     grid-column: 3;
-    grid-row: 2;
+    grid-row: 1/span all;
     white-space: nowrap;
     gap: 1rem;
 
