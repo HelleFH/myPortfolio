@@ -75,7 +75,7 @@ const ProjectDetail = () => {
   }
 
   return (
-    <div className="project-container" {...handlers}>
+    <div className="project-container project-details" {...handlers}>
       <Layout
         heroTitle={selectedProject.name}
         heroSubtitle={selectedProject.descriptionHeader}
@@ -124,14 +124,14 @@ const ProjectDetail = () => {
               githubButtonText={project.githubButtonText}
             />
           )}
-  {project && (
-  <div className="links-container">
+          {project && (
+            <div className="links-container">
 
-    {project.username && (
-      <a onClick={handleShowLoginDetails}>Show Login Details</a>
-    )}
-  </div>
-)}
+              {project.username && (
+                <a onClick={handleShowLoginDetails}>Show Login Details</a>
+              )}
+            </div>
+          )}
           {/* Navigation chevrons */}
           <div className="navigation-buttons">
             <button
@@ -148,9 +148,9 @@ const ProjectDetail = () => {
             >
               &#x203A;
             </button>
-          
+
           </div>
-          
+
         </div>
 
 

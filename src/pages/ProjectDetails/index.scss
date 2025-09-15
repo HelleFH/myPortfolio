@@ -1,5 +1,12 @@
 @import '/src/styles/main';
 
+.project-details {
+    .hero {
+        grid-template-rows: 20vh 25vh 20vh;
+    
+        &__vertical-menu {display: none !important;}
+}
+}
 
 .project-details-list {
     padding-left: 0;
@@ -10,15 +17,15 @@
         padding-left: 1.5rem;
         margin-bottom: 0.75rem;
         line-height: 1.5;
-        display:flex;
-        align-items:center;
+        display: flex;
+        align-items: center;
 
         &::before {
             content: '✦'; // or '➤', '✦', '✔', etc.
             position: absolute;
             left: 0;
             font-size: 1rem;
-            color:#fcbf49;
+            color: #fcbf49;
         }
     }
 }
@@ -120,7 +127,7 @@
     margin-top: 1.5rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    max-width: 1200px;
+    max-width: 800px;
 }
 
 .project-details-container:hover {
@@ -215,6 +222,13 @@
 /* Mobile Styles (Below 768px) */
 @media screen and (max-width: 1024px) {
 
+.project-details {
+    .hero {
+        grid-template-rows: 20vh 40vh 20vh;
+    
+        &__vertical-menu {display: none !important;}
+}
+}
 
     .project-container {
         .project-header {
