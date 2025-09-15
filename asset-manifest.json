@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/myPortfolio/static/css/main.2487403a.css",
-    "main.js": "/myPortfolio/static/js/main.8921663f.js",
+    "main.css": "/myPortfolio/static/css/main.66efa2e1.css",
+    "main.js": "/myPortfolio/static/js/main.6e6c0d61.js",
     "static/js/488.e1b4d113.chunk.js": "/myPortfolio/static/js/488.e1b4d113.chunk.js",
     "static/media/cloud-port-screen.png": "/myPortfolio/static/media/cloud-port-screen.fe27ea437d309c917c7c.png",
     "static/media/snippets-screen.png": "/myPortfolio/static/media/snippets-screen.10586faa8496f5ac58ca.png",
@@ -16,11 +16,10 @@
     "static/media/mevncart-screen.png": "/myPortfolio/static/media/mevncart-screen.dac0a0a064d77c8f5890.png",
     "static/media/montyhall-screen.png": "/myPortfolio/static/media/montyhall-screen.784da05cfd598a068e81.png",
     "static/media/clothes-store-screen.png": "/myPortfolio/static/media/clothes-store-screen.e6b7cba8099e24f14c11.png",
-    "static/media/hero-video1.mp4": "/myPortfolio/static/media/hero-video1.29f645b914e6f559f171.mp4",
     "static/media/herovideo.mp4": "/myPortfolio/static/media/herovideo.ab3273a02b117329c154.mp4",
     "static/media/sentispec-screen.png": "/myPortfolio/static/media/sentispec-screen.40feeb7fdcb20a76f8f9.png",
-    "static/media/herovideo1.mp4": "/myPortfolio/static/media/herovideo1.e0de7b1027031b1f229d.mp4",
     "static/media/fa-brands-400.ttf": "/myPortfolio/static/media/fa-brands-400.1815e00441357e01619e.ttf",
+    "static/media/herovideo1.mp4": "/myPortfolio/static/media/herovideo1.1adbc10b2ec4d0ca2e5d.mp4",
     "static/media/fa-solid-900.woff2": "/myPortfolio/static/media/fa-solid-900.2463b90d9a316e4e5294.woff2",
     "static/media/IT.png": "/myPortfolio/static/media/IT.18424351baee8962b999.png",
     "static/media/datingapp-screen.png": "/myPortfolio/static/media/datingapp-screen.ac008c409b5f2d59e666.png",
@@ -47,12 +46,12 @@
     "static/media/js-icon.png": "/myPortfolio/static/media/js-icon.2e4dd58a674aeb420f57.png",
     "static/media/fa-v4compatibility.woff2": "/myPortfolio/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
     "index.html": "/myPortfolio/index.html",
-    "main.2487403a.css.map": "/myPortfolio/static/css/main.2487403a.css.map",
-    "main.8921663f.js.map": "/myPortfolio/static/js/main.8921663f.js.map",
+    "main.66efa2e1.css.map": "/myPortfolio/static/css/main.66efa2e1.css.map",
+    "main.6e6c0d61.js.map": "/myPortfolio/static/js/main.6e6c0d61.js.map",
     "488.e1b4d113.chunk.js.map": "/myPortfolio/static/js/488.e1b4d113.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2487403a.css",
-    "static/js/main.8921663f.js"
+    "static/css/main.66efa2e1.css",
+    "static/js/main.6e6c0d61.js"
   ]
 }
