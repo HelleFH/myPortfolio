@@ -3,9 +3,11 @@
 .project-details {
     .hero {
         grid-template-rows: 20vh 25vh 20vh;
-    
-        &__vertical-menu {display: none !important;}
-}
+
+        &__vertical-menu {
+            display: none !important;
+        }
+    }
 }
 
 .project-details-list {
@@ -222,13 +224,15 @@
 /* Mobile Styles (Below 768px) */
 @media screen and (max-width: 1024px) {
 
-.project-details {
-    .hero {
-        grid-template-rows: 20vh 40vh 20vh;
-    
-        &__vertical-menu {display: none !important;}
-}
-}
+    .project-details {
+        .hero {
+            grid-template-rows: 10vh 40vh 15vh;
+
+            &__vertical-menu {
+                display: none !important;
+            }
+        }
+    }
 
     .project-container {
         .project-header {
