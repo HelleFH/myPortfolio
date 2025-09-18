@@ -61,8 +61,7 @@ const ProjectsOverview = () => {
 
       <div   id="react-projects"  className="projects-overview__intro">
       <h2 >React Projects</h2>
-      <p>Here's some work that I've done in React. I'm comfortable building responsive apps from the ground up, and I have a strong focus on state management and component architecture.
-         I work with both JSX and TypeScript, including React Native.</p>
+      <p>I build responsive React apps with clean, reusable components using JSX, TypeScript, and React Native.</p>
          </div>
       <div className="projects-overview">
         {frontendProjects.map((project, index) => (
