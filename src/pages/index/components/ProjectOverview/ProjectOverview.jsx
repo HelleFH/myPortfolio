@@ -75,7 +75,6 @@ const ProjectsOverview = () => {
 
   <div id="other-projects"   className="projects-overview__intro">
       <h2 >Other Web Development Projects</h2>
-      <p>Here's some samples of my school, practice and hobby work done mainly with JQuery and JavaScript</p>
          </div>   
          <AnimatedSection>
 
