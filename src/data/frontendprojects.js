@@ -82,11 +82,7 @@
     "MongoDB",
     "Express",
     "Node.js",
-    "Multer",
     "Cloudinary",
-    "Axios",
-    "AsyncStorage",
-    "DateTimePicker",
     "Moment.js"
   ],
   "projectDetails": [
