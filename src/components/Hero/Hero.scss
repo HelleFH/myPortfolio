@@ -43,7 +43,7 @@
   &__content {
     position: relative;
     @include flex-column;
-    gap: 0.5rem;
+    gap: 0;
     align-items: flex-start;
     z-index: 2;
     grid-row: 2;
@@ -173,7 +173,6 @@
     &__content {
       grid-column: 1/span all;
       padding: var(--padding);
-      gap: 0.5rem;
     }
 
     &__button-container {
