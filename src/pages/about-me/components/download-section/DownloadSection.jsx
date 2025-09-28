@@ -6,7 +6,7 @@ const DownloadSection = () => {
     <div className="download-section">
       <a
         className="download-section__button"
-        href="/myPortfolio/images/Helle-Fruergaard-Resume.pdf"
+        href="/portfolio/images/Helle-Fruergaard-Resume.pdf"
         download="Helle_Fruergaard_Resume"
       >
         Download Resume (pdf)
