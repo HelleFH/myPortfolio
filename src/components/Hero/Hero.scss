@@ -156,11 +156,7 @@
 
 @media (max-width: 1000px) {
   .hero {
-    max-height: 60vh;
-    grid-template-rows: 1fr 2fr 1fr;
-
     &__vertical-menu {
-
       display: none;
     }
   }
