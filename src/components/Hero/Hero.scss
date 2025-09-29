@@ -156,6 +156,8 @@
 
 @media (max-width: 1000px) {
   .hero {
+  grid-template-rows: 1fr 2fr 1fr;
+
     &__vertical-menu {
       display: none;
     }
