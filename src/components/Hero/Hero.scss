@@ -65,12 +65,12 @@
   }
 
   &__subtitle {
-    font-family: 'GlacialIndifference-Regular';
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    letter-spacing: -0.05rem;
     height: 40px;
-    display: flex;
-    justify-content: center;
     align-items: flex-end;
+  p {    font-family: 'PangramSans-Medium', sans-serif !important;
+}
 
   }
 

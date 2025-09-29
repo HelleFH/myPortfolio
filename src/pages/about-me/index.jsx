@@ -10,7 +10,7 @@ const AboutMePage = () => {
   
    <Layout
     heroTitle="About Me"
-          heroSubtitle="Welcome to my portfolio"
+          heroSubtitle="Helle Fruergaard | Full Stack Developer"
 
        buttons={[
         { type: 'link', text: 'Projects', path: '/' },

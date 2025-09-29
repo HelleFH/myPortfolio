@@ -30,8 +30,8 @@ const Home = () => {
   }, [location, navigate]);
   return (
     <Layout
-      heroTitle="Full-stack web developer specialising in modern, responsive applications."
-      heroSubtitle="Welcome to my portfolio"
+      heroTitle="I specialise in modern, responsive applications."
+      heroSubtitle="Helle Fruergaard | Full Stack Developer"
       buttons={[
         { type: 'link', text: 'About me', path: '/about' },
       ]}
