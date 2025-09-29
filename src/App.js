@@ -29,7 +29,7 @@ function App() {
             </motion.div>
           }
         />
-                <Route
+        <Route
           path="/about"
           element={
             <motion.div
@@ -44,9 +44,9 @@ function App() {
         />
 
 
-        
 
-<Route path="/project/:type/:id" element={<ProjectDetail />} />
+
+        <Route path="/project/:type/:id" element={<ProjectDetail />} />
 
       </Routes>
     </AnimatePresence>
@@ -55,8 +55,8 @@ function App() {
 
 export default function AnimatedApp() {
   return (
-<Router basename={process.env.NODE_ENV === 'production' ? '/portfolio' : ''}>
-<App />
+    <Router basename={process.env.NODE_ENV === 'production' ? '/portfolio' : ''}>
+      <App />
     </Router>
   );
 }
