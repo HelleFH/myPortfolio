@@ -257,7 +257,7 @@
 
 @media (max-width: 768px) {
   .custom-modal {
-    align-items: center;
+    align-items: flex-start;
     overflow-y: auto;
     padding: var(--xs-padding) !important;
 
