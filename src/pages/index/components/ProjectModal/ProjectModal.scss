@@ -50,8 +50,13 @@
     max-width: 100%;
   }
 
-  
-
+  .modal-content-container {
+    @include flex-column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 3rem 2rem 3rem 0;
+    min-width: 500px;
+  }
 
   .modal-content {
     border: none;
@@ -60,8 +65,6 @@
     margin: 0 auto;
     background-color: white;
     border-radius: var(--border-radius);
-
-
   }
 
   .modal-body-custom {
@@ -84,7 +87,7 @@
     padding: var(--small-padding);
     width: 100%;
     max-width: 500px;
-    
+
   }
 
   .modal-image {
@@ -96,7 +99,7 @@
     position: absolute;
     z-index: 9999;
     top: 50%;
-    display:flex;
+    display: flex;
     transform: translateY(-50%);
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.15);
@@ -135,18 +138,7 @@
     }
   }
 
-  .modal-content-custom {
-    position: relative;
-    @include flex-column;
-    text-align: center;
-    max-width: 600px;
 
-    @media (min-width: 800px) {
-      text-align: left;
-      width: 450px;
-      padding: 4em 2.5em 1em 1em;
-    }
-  }
 
   .modal-title {
     font-size: 28px;
@@ -238,14 +230,11 @@
 
   .links-container {
     display: flex;
-    justify-content: flex-end;
-    padding: 0 1em 1em;
-    margin-top: 2em;
+    gap: var(--gap);
 
     a {
       color: #222524;
       font-weight: 400;
-      padding: 5px 10px;
       transition: all 0.3s ease-in-out;
 
       &:hover {
@@ -263,48 +252,35 @@
     }
   }
 
-  .buttons-container {
-    margin-top: 2em;
-    display: flex;
-    gap: 0.5em;
-    align-self: center;
-    padding-right: 2em;
-    justify-content: flex-end;
-    align-items: flex-end;
 
-
-    @media (min-width: 1000px) {
-      margin-top: 0;
-      align-self: flex-end;
-      padding-right: 1em;
-      padding-top: 1em;
-      width: 100%;
-      justify-content: flex-end;
-
-    }
-
-    @media (min-width: 800px) and (max-width: 1000px) {
-      justify-content: flex-end;
-    }
-  }
 }
 
-@media (max-width: 699px) {
+@media (max-width: 768px) {
   .custom-modal {
-    align-items: flex-start;
+    align-items: center;
     overflow-y: auto;
-    padding: var(--xs-padding)!important;
+    padding: var(--xs-padding) !important;
 
     .modal-dialog {
       width: 100%;
-      margin:0;
+      margin: 0;
     }
-    
 
-    
-  .technologies-list {
-    justify-content: center;
-  }
+    .links-container {
+      @include flex-row;
+    }
+
+    .modal-content-container {
+      min-width: 250px;
+      min-height: 325px;
+
+      align-items: center;
+      padding: 2rem;
+    }
+
+    .technologies-list {
+      justify-content: center;
+    }
 
     .modal-content {
       max-height: none;

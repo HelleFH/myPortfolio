@@ -64,8 +64,7 @@ const ProjectModal = ({
             <FontAwesomeIcon icon={faChevronRight} size="sm" />
           </div>
 
-          <div className="d-flex flex-column justify-content-around gap-2">
-            <div className="modal-content-custom">
+          <div className="modal-content-container">
               <h2 className="modal-title">{project.name}</h2>
               <p className="project-description">{project.descriptionHeader}</p>
 
@@ -76,23 +75,22 @@ const ProjectModal = ({
                   </li>
                 ))}
               </ul>
-            </div>
 
             {project && (
-  <ProjectButtons
-    projectLink={project.projectLink}
-    githubLink={project.githubLink}
-    buttonText={project.buttonText}
-    githubButtonText={project.githubButtonText}
-  />
-)}
+              <ProjectButtons
+                projectLink={project.projectLink}
+                githubLink={project.githubLink}
+                buttonText={project.buttonText}
+                githubButtonText={project.githubButtonText}
+              />
+            )}
 
 
             <div className="links-container">
               <Link
                 to={{
                   pathname: `/project/${project.type}/${project.id}`,
-                  state: { selectedProjectIndex, projectType: project.type }, 
+                  state: { selectedProjectIndex, projectType: project.type },
                 }}
                 className="read-more-link"
               >
