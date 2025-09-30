@@ -3,6 +3,10 @@
   display: flex;
   gap: 0.5em;
   align-items: flex-start;
+      @media (max-width: 768px) {
+      margin-top:0;
+
+  }
 
   @media (min-width: 1000px) {
     margin-top: 0;
@@ -33,4 +37,5 @@
       color: #2a4756 !important;
     }
   }
+
 }

@@ -40,7 +40,7 @@
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
-
+  overflow-y: auto;
   display: flex !important;
   align-items: center;
   justify-content: center;
@@ -55,7 +55,7 @@
     justify-content: space-between;
     align-items: flex-start;
     padding: 3rem 2rem 3rem 0;
-    min-width: 500px;
+    min-width: 400px;
   }
 
   .modal-content {
@@ -272,7 +272,6 @@
 
     .modal-content-container {
       min-width: 250px;
-      min-height: 325px;
 
       align-items: center;
       padding: 2rem;
